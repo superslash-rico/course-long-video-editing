@@ -1,0 +1,92 @@
+[
+  {
+    "key": "text",
+    "label": "金句文本",
+    "type": "text",
+    "defaultValue": "专业知识越扎实，\n越有依据判断\n结果是否可信。"
+  },
+  {
+    "key": "keywords",
+    "label": "荧光词",
+    "type": "text",
+    "defaultValue": "专业知识,可信"
+  },
+  {
+    "key": "cues",
+    "label": "短语节奏",
+    "type": "text",
+    "defaultValue": "[{\"row\":0,\"from\":0,\"to\":4,\"start\":0.013,\"end\":0.633},{\"row\":0,\"from\":4,\"to\":8,\"start\":0.633,\"end\":1.493},{\"row\":1,\"from\":0,\"to\":4,\"start\":2.213,\"end\":2.823},{\"row\":1,\"from\":4,\"to\":6,\"start\":3.133,\"end\":3.373},{\"row\":2,\"from\":0,\"to\":2,\"start\":3.693,\"end\":4.053},{\"row\":2,\"from\":2,\"to\":4,\"start\":4.053,\"end\":4.333},{\"row\":2,\"from\":4,\"to\":7,\"start\":4.333,\"end\":4.773}]"
+  },
+  {
+    "key": "font",
+    "label": "字体",
+    "type": "font",
+    "defaultValue": "MiSans"
+  },
+  {
+    "key": "textColor",
+    "label": "正文色",
+    "type": "color",
+    "defaultValue": "#FFFFFF"
+  },
+  {
+    "key": "activeColor",
+    "label": "跟读色",
+    "type": "color",
+    "defaultValue": "#F4A6FF"
+  },
+  {
+    "key": "markerColor",
+    "label": "荧光色",
+    "type": "color",
+    "defaultValue": "#EBC4F5"
+  },
+  {
+    "key": "inkColor",
+    "label": "荧光字色",
+    "type": "color",
+    "defaultValue": "#231529"
+  },
+  {
+    "key": "accentColor",
+    "label": "细线色",
+    "type": "color",
+    "defaultValue": "#E802F8"
+  },
+  {
+    "key": "bgColor",
+    "label": "背景色",
+    "type": "color",
+    "defaultValue": "#0C0A14"
+  },
+  {
+    "key": "bgOpacity",
+    "label": "背景不透明度",
+    "type": "number",
+    "defaultValue": 0.52
+  },
+  {
+    "key": "transparentBackground",
+    "label": "纯透明背景",
+    "type": "boolean",
+    "defaultValue": false
+  },
+  {
+    "key": "seconds",
+    "label": "总时长秒",
+    "type": "number",
+    "defaultValue": 5.2
+  },
+  {
+    "key": "leadSize",
+    "label": "前提字号",
+    "type": "number",
+    "defaultValue": 64
+  },
+  {
+    "key": "mainSize",
+    "label": "结论字号",
+    "type": "number",
+    "defaultValue": 92
+  }
+]

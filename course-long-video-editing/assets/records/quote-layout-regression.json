@@ -1,0 +1,39 @@
+{
+  "purpose": "Actual-layout probe copy only, no speech timings supplied; use native registered font and final-instance layout",
+  "notAQuoteTimingFixture": true,
+  "cases": [
+    {
+      "id": "short-zh",
+      "text": "方法要能检查。"
+    },
+    {
+      "id": "long-zh",
+      "text": "模型说得很流畅，不代表答案就有依据。"
+    },
+    {
+      "id": "mixed-case",
+      "text": "先核对 RAG，再检查来源。"
+    },
+    {
+      "id": "numbers-units",
+      "text": "50 ÷ 300 ≈ 16.7%\n孔径 6 mm"
+    },
+    {
+      "id": "emoji-utf16",
+      "text": "🤖 AI 参与整理，\n判断留给自己。"
+    },
+    {
+      "id": "marked-long",
+      "text": "专业知识越扎实，\n越有依据判断\n结果是否可信。",
+      "keywords": "专业知识,可信"
+    }
+  ],
+  "checks": [
+    "final logical row versus actual visual wrap",
+    "true native glyph/family/weight",
+    "CJK and Latin width, punctuation and digits",
+    "marker padding and letter spacing",
+    "caption/presenter clearance",
+    "regenerate cues after explicit reflow; structural check not visual pass"
+  ]
+}

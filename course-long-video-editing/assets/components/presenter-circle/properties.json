@@ -1,0 +1,86 @@
+[
+  {
+    "key": "seconds",
+    "label": "总时长秒，0表示跟随效果区间",
+    "type": "number",
+    "defaultValue": 0
+  },
+  {
+    "key": "entranceSeconds",
+    "label": "入场秒",
+    "type": "number",
+    "defaultValue": 0.8
+  },
+  {
+    "key": "exitSeconds",
+    "label": "退场秒",
+    "type": "number",
+    "defaultValue": 0.8
+  },
+  {
+    "key": "startCenterX",
+    "label": "开始圆窗中心X比例",
+    "type": "number",
+    "defaultValue": 0.86
+  },
+  {
+    "key": "startCenterY",
+    "label": "开始圆窗中心Y比例",
+    "type": "number",
+    "defaultValue": 0.72
+  },
+  {
+    "key": "endCenterX",
+    "label": "目标圆窗中心X比例",
+    "type": "number",
+    "defaultValue": 0.14
+  },
+  {
+    "key": "endCenterY",
+    "label": "目标圆窗中心Y比例",
+    "type": "number",
+    "defaultValue": 0.72
+  },
+  {
+    "key": "moveStartSeconds",
+    "label": "圆窗移动开始秒",
+    "type": "number",
+    "defaultValue": 3
+  },
+  {
+    "key": "moveSeconds",
+    "label": "圆窗移动持续秒",
+    "type": "number",
+    "defaultValue": 0.8
+  },
+  {
+    "key": "diameterFraction",
+    "label": "相对短边直径",
+    "type": "number",
+    "defaultValue": 0.26
+  },
+  {
+    "key": "sourceCenterX",
+    "label": "人脸源中心X比例",
+    "type": "number",
+    "defaultValue": 0.5
+  },
+  {
+    "key": "sourceCenterY",
+    "label": "人脸源中心Y比例",
+    "type": "number",
+    "defaultValue": 0.47
+  },
+  {
+    "key": "sourceHeight",
+    "label": "人像源裁切高度比例",
+    "type": "number",
+    "defaultValue": 0.65
+  },
+  {
+    "key": "ringColor",
+    "label": "边缘颜色",
+    "type": "color",
+    "defaultValue": "#F4A6FF"
+  }
+]

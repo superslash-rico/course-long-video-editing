@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "task": {
+    "requestSummary": "",
+    "scope": "",
+    "sourcePath": "",
+    "projectId": null,
+    "timelineId": null,
+    "width": null,
+    "height": null,
+    "fps": null,
+    "coordinateSystem": "current edited timeline; absolute frames + local seconds"
+  },
+  "understanding": {
+    "goal": "",
+    "factsAndSources": [],
+    "objectsAndStates": [],
+    "visibleTransformation": "",
+    "professionalOrQuote": "professional"
+  },
+  "overallDesign": {
+    "openingWhole": {
+      "description": "",
+      "evidence": null
+    },
+    "intermediateWholes": [],
+    "resultWhole": {
+      "description": "",
+      "evidence": null
+    },
+    "hierarchyGroupsSpacingAlignmentNegativeSpaceAndBalance": "",
+    "wholeAtPlaybackScaleChecked": false,
+    "thumbnailChecked": false
+  },
+  "modules": [],
+  "shots": [],
+  "soundEvents": [],
+  "presenterRoute": [],
+  "subtitlesAndFaceClearance": [],
+  "implementation": {
+    "sourceVersion": null,
+    "entry": null,
+    "propertySchema": null,
+    "defaults": null,
+    "importedAssets": [],
+    "instanceId": null,
+    "overrides": null,
+    "sourceDigests": []
+  },
+  "verification": {
+    "contentFacts": "pending",
+    "wholeComposition": "pending",
+    "moduleDetails": "pending",
+    "nativeComposite": "pending",
+    "editableControlsAndRestore": "pending",
+    "randomSeekConsistency": "pending",
+    "continuousViewedRanges": [],
+    "listenedRanges": [],
+    "decodeStatus": "pending",
+    "engineProtection": "pending",
+    "currentExport": null,
+    "userAestheticReview": "pending",
+    "viewerComprehensionTest": "not-performed"
+  },
+  "problemsAndRepairs": [],
+  "historicalVersions": []
+}

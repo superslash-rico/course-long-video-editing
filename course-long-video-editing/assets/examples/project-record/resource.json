@@ -1,0 +1,34 @@
+{
+  "entry": "src/ExplodedRecordPurple.tsx",
+  "runtime": "remotion",
+  "type": "motion-graphic",
+  "width": 1920,
+  "height": 1080,
+  "exampleSeconds": 24.7,
+  "usage": "historical partial craft study: material, depth, object decomposition and identity continuity only",
+  "portableChanges": [
+    "Original font registration alias replaced with original MiSans with companion files bundled at assets/fonts",
+    "Unused connector callouts removed",
+    "Relative dependencies kept",
+    "Removed unbound legacy labels cue/n/d fields; timing is driven by clockJSON and cameraPlan",
+    "Live presenter uses separate normalized second-based component; unreferenced old effect omitted"
+  ],
+  "presenter": "Live instructor effect is separate, not embedded into MG",
+  "audio": "Reference composite includes source voice/SFX; MG code alone is silent",
+  "status": "historical-partial-craft-only; final-whole-composition-standard-not-accepted; whole-first-method-not-implemented",
+  "license": "../../licenses/LICENSE-video-shotcraft.txt",
+  "timingControls": {
+    "content": "labelsJSON key/t/body only",
+    "internalChoreography": "clockJSON maps the example seconds-derived cue clock to spatial motion; inspect before changing",
+    "camera": "src/cameraPlan.ts specifies the example camera choreography, not a universal layout",
+    "warning": "Changing content alone does not retime the example to new speech"
+  },
+  "wholeFirstMethodImplemented": false,
+  "meetsFinalProfessionalStandard": false,
+  "productionImportAllowedWithoutRedesign": false,
+  "notFor": [
+    "final whole-composition benchmark",
+    "copying old overall layout or camera plan",
+    "evidence that the whole-first method was implemented"
+  ]
+}

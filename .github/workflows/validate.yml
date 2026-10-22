@@ -1,0 +1,25 @@
+name: Validate complete skill package
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Verify all packaged files, fonts and dependencies
+        run: python3 course-long-video-editing/scripts/verify_package.py
+      - name: Check package in isolation
+        run: python3 course-long-video-editing/scripts/check_environment.py --package-only
+      - name: Check quote cue defaults
+        run: python3 course-long-video-editing/scripts/validate_quote.py course-long-video-editing/assets/templates/quote-highlight-follow/defaults.json
+      - name: Preview installation into an isolated location
+        run: python3 course-long-video-editing/scripts/install_skill.py --target-root "${RUNNER_TEMP}/course-skill-check" --dry-run

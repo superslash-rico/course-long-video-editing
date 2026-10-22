@@ -1,0 +1,11 @@
+{
+  "entry": "effect.html",
+  "type": "pixel-effect",
+  "runtime": "html",
+  "coordinates": "normalized viewport fractions, input source normalized crop",
+  "timing": "seconds; effect timeline supplies duration",
+  "status": "portable derivative;108geometry/mock cases and seek/endpoints checked; receiver native validation required",
+  "notFaceTracking": true,
+  "source": "authored course live-input morph mechanism, reimplemented for normalized coordinates and seconds",
+  "knownValidation": "Mock draw commands preserve crop/target aspect for landscape/portrait/square; not a real native visual or face-tracking test"
+}

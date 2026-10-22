@@ -1,0 +1,63 @@
+{
+  "exercise": "Isolated skill behavior exercise, not a native edit",
+  "request": "给一门22分钟的AI学习课做字幕和专业动画，风格沿用技能；讲师是林辰，身份为AI课程讲师。先处理已给出的片段，其他片段要读取真实原片后才能做。",
+  "project": {
+    "width": 2560,
+    "height": 1440,
+    "fps": 60,
+    "durationSeconds": 1320,
+    "actualVideoFileAvailable": false,
+    "nativeChatCutConnectionAvailable": false
+  },
+  "transcriptExcerpt": [
+    {
+      "startSeconds": 0,
+      "endSeconds": 4.5,
+      "asr": "大家好啊，我是林辰。"
+    },
+    {
+      "startSeconds": 7,
+      "endSeconds": 12,
+      "asr": "今天我们看 RUG，呃，也就是检索增强生成。"
+    },
+    {
+      "startSeconds": 18,
+      "endSeconds": 25,
+      "asr": "先找到相关资料，再让模型参考资料来回答。"
+    },
+    {
+      "startSeconds": 28,
+      "endSeconds": 34,
+      "asr": "模型说得很流畅，不代表答案就有依据。"
+    },
+    {
+      "startSeconds": 40,
+      "endSeconds": 50,
+      "asr": "一组是100次访问20个报名，另一组是200次访问30个报名。"
+    },
+    {
+      "startSeconds": 50,
+      "endSeconds": 58,
+      "asr": "合在一起，要把人数加起来，再除以总访问数。"
+    }
+  ],
+  "providedMaterial": {
+    "title": "课件术语与自制统计表",
+    "documentType": "explicit teaching fixture, not a real external report",
+    "terms": {
+      "检索增强生成": "RAG"
+    },
+    "data": [
+      {
+        "visits": 100,
+        "registered": 20
+      },
+      {
+        "visits": 200,
+        "registered": 30
+      }
+    ],
+    "caution": "ASR疑点的实际语音未提供；材料可支撑术语候选，不能声称已回听。"
+  },
+  "permittedExerciseOutputs": "Local prepared subtitle display, term decisions, whole/detail design and shot plan, current-project binding plan, checked quote instance and clear pending native evidence. Do not call real ChatCut or read original authors project."
+}

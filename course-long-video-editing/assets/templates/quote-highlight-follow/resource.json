@@ -1,0 +1,13 @@
+{
+  "entry": "quote.html",
+  "type": "motion-graphic",
+  "runtime": "html",
+  "width": 1440,
+  "height": 930,
+  "seconds": "Per current spoken sentence; not asset import capacity",
+  "style": "C intertitle + B fluorescent annotation + D phrase follow",
+  "background": "translucent fade; preserve live instructor",
+  "sound": "entrance only; no exit sound",
+  "timing": "cues must cover final lines completely with valid ordered finite seconds; fallback is not acceptance",
+  "status": "accepted-style; current-content-and-native-fonts-need-verification"
+}

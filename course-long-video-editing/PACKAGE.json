@@ -1,0 +1,24 @@
+{
+  "name": "course-long-video-editing",
+  "displayName": "课程长视频剪辑",
+  "version": "1.0.2",
+  "edition": "first-colleague-pilot",
+  "createdDate": "2026-10-22",
+  "coreStages": [
+    "subtitles",
+    "animation"
+  ],
+  "wholeFirstMethodFullyIncluded": true,
+  "fontsIncluded": true,
+  "nativeAppIncluded": false,
+  "requiresReceiverOwnProject": true,
+  "validation": "validation/report.json",
+  "manifest": "assets/manifest.json",
+  "updatedDate": "2026-10-22",
+  "professionalAnimationStatus": {
+    "wholeFirstMethodImplemented": false,
+    "fullStandardValidatedExampleIncluded": false,
+    "partialCraftStudyIncluded": true,
+    "fixedIdentityAndQuoteVisualsConfirmed": true
+  }
+}

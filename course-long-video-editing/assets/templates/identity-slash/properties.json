@@ -1,0 +1,44 @@
+[
+  {
+    "key": "name",
+    "label": "姓名",
+    "type": "text",
+    "defaultValue": "Rico"
+  },
+  {
+    "key": "identity",
+    "label": "身份",
+    "type": "text",
+    "defaultValue": "超级斜杠创始人"
+  },
+  {
+    "key": "font",
+    "label": "字体",
+    "type": "font",
+    "defaultValue": "MiSans"
+  },
+  {
+    "key": "accentColor",
+    "label": "斜线色",
+    "type": "color",
+    "defaultValue": "#E802F8"
+  },
+  {
+    "key": "textColor",
+    "label": "姓名色",
+    "type": "color",
+    "defaultValue": "#FFFFFF"
+  },
+  {
+    "key": "identityColor",
+    "label": "身份色",
+    "type": "color",
+    "defaultValue": "#EEE9F1"
+  },
+  {
+    "key": "seconds",
+    "label": "总时长秒",
+    "type": "number",
+    "defaultValue": 6
+  }
+]

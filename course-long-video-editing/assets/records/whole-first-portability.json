@@ -1,0 +1,16 @@
+{
+  "sourceDocument": "整体构图与镜头设计工作法.md",
+  "coreSectionStart": "核心标准与范围",
+  "coreSectionEndExclusive": "提示词吸收结果与本轮产出",
+  "originalCoreSha256": "f02fa905f027528431cad7a892e2bb0b8e94a86571c9cd0a01dfc9f2a9c31248",
+  "portableCoreSha256": "f02fa905f027528431cad7a892e2bb0b8e94a86571c9cd0a01dfc9f2a9c31248",
+  "allProductionDetailsVerbatimPreserved": true,
+  "changedSections": [
+    "Replace original machine/project lookup with receiver-side discovery and bundled resource links",
+    "Replace project-specific ending with portable provenance and validation boundary",
+    "v1.0.2 correct reference entrypoints only: remove FDE and mark project-record historical partial craft; no production-core change"
+  ],
+  "absoluteOriginalPathsCopied": false,
+  "methodImplemented": false,
+  "fullStandardValidatedExampleIncluded": false
+}

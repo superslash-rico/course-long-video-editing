@@ -1,0 +1,164 @@
+[
+  {
+    "key": "title",
+    "label": "主标题",
+    "defaultValue": "把过程，整理成项目记录",
+    "type": "text"
+  },
+  {
+    "key": "subtitle",
+    "label": "说明",
+    "defaultValue": "问题有起点，判断有依据，修改有来由。",
+    "type": "text"
+  },
+  {
+    "key": "closingTitle",
+    "label": "收束标题",
+    "defaultValue": "用具体任务，讲清AI能力",
+    "type": "text"
+  },
+  {
+    "key": "fontFamily",
+    "label": "字体",
+    "defaultValue": "MiSans",
+    "type": "font"
+  },
+  {
+    "key": "accentColor",
+    "label": "引线色",
+    "defaultValue": "#E802F8",
+    "type": "color"
+  },
+  {
+    "key": "headingColor",
+    "label": "标题色",
+    "defaultValue": "#F4A6FF",
+    "type": "color"
+  },
+  {
+    "key": "textColor",
+    "label": "正文色",
+    "defaultValue": "#FFFFFF",
+    "type": "color"
+  },
+  {
+    "key": "backgroundColor",
+    "label": "舞台底色",
+    "defaultValue": "#0C0A14",
+    "type": "color"
+  },
+  {
+    "key": "seconds",
+    "label": "实例秒数",
+    "defaultValue": 24.7,
+    "type": "number"
+  },
+  {
+    "key": "transparentBackground",
+    "label": "透明背景",
+    "defaultValue": false,
+    "type": "boolean"
+  },
+  {
+    "key": "labelsJSON",
+    "label": "分层标题与正文（key对应物件；时序由clockJSON/机位计划驱动）",
+    "defaultValue": "[{\"key\":\"side\",\"t\":\"起点问题\",\"body\":\"任务目标\\n最初的问题\\n预期的变化\"},{\"key\":\"chart\",\"t\":\"材料来源\",\"body\":\"用到的原始材料\\n来源与使用范围\\n需要核对的依据\"},{\"key\":\"ai\",\"t\":\"判断与AI协作\",\"body\":\"自己做的判断\\nAI参与的部分\\n保留选择的理由\"},{\"key\":\"kpi\",\"t\":\"检查与修改\",\"body\":\"检查时发现了什么？\\n后来怎样修改？\"},{\"key\":\"top\",\"t\":\"完整过程记录\",\"body\":\"问题与材料　／　判断与协作　／　检查与修改\"}]",
+    "type": "text"
+  },
+  {
+    "key": "clockJSON",
+    "label": "原生动作与本片段时钟",
+    "defaultValue": "[[0,0],[30,18],[60,24],[105,62],[340,85],[406,104],[448,134],[480,160],[500,169],[712,169]]",
+    "type": "text"
+  },
+  {
+    "key": "conclusionJSON",
+    "label": "方法结果不足的出现帧",
+    "defaultValue": "[{\"text\":\"方法\",\"at\":590,\"detail\":\"自己怎样做判断\"},{\"text\":\"结果\",\"at\":636,\"detail\":\"任务得到了什么\"},{\"text\":\"不足\",\"at\":669,\"detail\":\"仍有什么待改进\"}]",
+    "type": "text"
+  },
+  {
+    "key": "dotColor",
+    "label": "点阵颜色",
+    "type": "color",
+    "defaultValue": "#B4A7C4"
+  },
+  {
+    "key": "dotOpacity",
+    "label": "点阵不透明度",
+    "type": "number",
+    "defaultValue": 0.42
+  },
+  {
+    "key": "dotSpacing",
+    "label": "点间距",
+    "type": "number",
+    "defaultValue": 42
+  },
+  {
+    "key": "dotRadius",
+    "label": "圆点半径",
+    "type": "number",
+    "defaultValue": 1.6
+  },
+  {
+    "key": "dotDriftEnabled",
+    "label": "轻微背景漂移",
+    "type": "boolean",
+    "defaultValue": true
+  },
+  {
+    "key": "dotPatternKey",
+    "label": "点阵实例标识",
+    "type": "text",
+    "defaultValue": "PA18"
+  },
+  {
+    "key": "dotCameraFollow",
+    "label": "点阵随镜头联动",
+    "type": "boolean",
+    "defaultValue": true
+  },
+  {
+    "key": "dotBaseScale",
+    "label": "远景参考镜头倍率",
+    "type": "number",
+    "defaultValue": 0.45
+  },
+  {
+    "key": "dotZoomStrength",
+    "label": "远景缩放响应",
+    "type": "number",
+    "defaultValue": 0.55
+  },
+  {
+    "key": "dotParallaxStrength",
+    "label": "远景位移响应",
+    "type": "number",
+    "defaultValue": 0.006
+  },
+  {
+    "key": "haloEnabled",
+    "label": "横向微光",
+    "type": "boolean",
+    "defaultValue": true
+  },
+  {
+    "key": "haloColor",
+    "label": "微光颜色",
+    "type": "color",
+    "defaultValue": "#B989D2"
+  },
+  {
+    "key": "haloOpacity",
+    "label": "微光强度",
+    "type": "number",
+    "defaultValue": 0.18
+  },
+  {
+    "key": "haloHeight",
+    "label": "微光纵向扩散",
+    "type": "number",
+    "defaultValue": 220
+  }
+]

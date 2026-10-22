@@ -1,0 +1,16 @@
+{
+  "entry": "speaker.html",
+  "type": "motion-graphic",
+  "runtime": "html",
+  "width": 640,
+  "height": 256,
+  "exampleDurationSeconds": 6,
+  "durationPolicy": "set to current introduction duration and recheck start/hold/exit",
+  "fontRequirement": "Acquire original MiSans on receiver, map actual font family; no font binaries included",
+  "identityExampleOnly": {
+    "name": "Rico",
+    "identity": "超级斜杠创始人"
+  },
+  "sound": "restrained entrance whoosh; choose local licensed source or bundled original candidate; no exit ding",
+  "status": "accepted-A-visual; portable-font-registration-requires-new-native-check"
+}

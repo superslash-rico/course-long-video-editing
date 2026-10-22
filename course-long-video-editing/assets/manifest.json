@@ -1,0 +1,591 @@
+{
+  "package": "course-long-video-editing",
+  "version": "1.0.2",
+  "files": [
+    {
+      "path": "PACKAGE.json",
+      "bytes": 698,
+      "sha256": "35bc7ab6bc5b48fd86aaa76e259262c3526100c0896f55e46da5955fcb01a7b1",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 11292,
+      "sha256": "51f0596755295159506c9448c03045e657d5ba3d75834a5244f1f12cc7736d10",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3012,
+      "sha256": "bfdb55e11ca89d680842f90b3c20d781c2042eaf364a7c370fbed5aff970dff0",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 362,
+      "sha256": "a31de8a0b329c50ad82eb66cd4d93ffe634f46f0866af38088a101bba8d7fae1",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/audio/generate_candidates.py",
+      "bytes": 2028,
+      "sha256": "a29ba1f0dfdf4985666bf68e498e4870ec82da3690adf18423a5d256936e5baf",
+      "role": "candidate SFX/recipe",
+      "rights": "Original deterministic mathematical signal/recipe; no third-party sample",
+      "status": "candidate-not-user-approved"
+    },
+    {
+      "path": "assets/audio/paper-settle.wav",
+      "bytes": 42284,
+      "sha256": "22182d1206624e735fb67f3ebc68032f809bc2b62c5e1ff109eac8ebd21dbaf6",
+      "role": "candidate SFX/recipe",
+      "rights": "Original deterministic mathematical signal/recipe; no third-party sample",
+      "status": "candidate-not-user-approved"
+    },
+    {
+      "path": "assets/audio/select-soft.wav",
+      "bytes": 19244,
+      "sha256": "e5a6ecff5d7782eb1c109ccedaca3938c7f0a9125f0532dc6ff40b8335eda4ce",
+      "role": "candidate SFX/recipe",
+      "rights": "Original deterministic mathematical signal/recipe; no third-party sample",
+      "status": "candidate-not-user-approved"
+    },
+    {
+      "path": "assets/audio/soft-whoosh.wav",
+      "bytes": 99884,
+      "sha256": "459de2d383bf01258e521cb000fd625b6b598854dd5157accecc812c7431591a",
+      "role": "candidate SFX/recipe",
+      "rights": "Original deterministic mathematical signal/recipe; no third-party sample",
+      "status": "candidate-not-user-approved"
+    },
+    {
+      "path": "assets/components/presenter-circle/effect.html",
+      "bytes": 3318,
+      "sha256": "d65ee6e6680dc82f8247b8e9912083165ea7c269f95798244a4e77348168c5d6",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/components/presenter-circle/properties.json",
+      "bytes": 1696,
+      "sha256": "ebeb625c8aa0e631e7fbee9313a66348031dab16c118871fcfb401cc68cef174",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/components/presenter-circle/resource.json",
+      "bytes": 623,
+      "sha256": "5cec9a5f5722e6469e00f3fa7d5f0c637094e2a6c23924a1ca2b87771d189621",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/craft-studies/project-record/chronology-metadata.json",
+      "bytes": 920,
+      "sha256": "52fc1f049427d84bf92f06ef916e52b4fdc9ecfbaf5f14be013b0adbfb31b627",
+      "role": "historical-partial-craft-view-only",
+      "rights": "Authorized course audiovisual study; no extraction of person/voice/SFX into stock",
+      "status": "partial material/depth/object-motion study only; final overall standard NOT accepted; whole-first method NOT implemented"
+    },
+    {
+      "path": "assets/craft-studies/project-record/preview-metadata.json",
+      "bytes": 840,
+      "sha256": "686cf9ae93f0507a2f6606442202978b56508bb772c618a5f77c6b505b2f3bba",
+      "role": "historical-partial-craft-view-only",
+      "rights": "Authorized course audiovisual study; no extraction of person/voice/SFX into stock",
+      "status": "partial material/depth/object-motion study only; final overall standard NOT accepted; whole-first method NOT implemented"
+    },
+    {
+      "path": "assets/craft-studies/project-record/project-record-chronology.jpg",
+      "bytes": 315934,
+      "sha256": "ab74460d07c5c9e82d54c7a3054d9e3f3dfd99ae300bc91394e461b0fa4019db",
+      "role": "historical-partial-craft-view-only",
+      "rights": "Authorized course audiovisual study; no extraction of person/voice/SFX into stock",
+      "status": "partial material/depth/object-motion study only; final overall standard NOT accepted; whole-first method NOT implemented"
+    },
+    {
+      "path": "assets/craft-studies/project-record/project-record-native.jpg",
+      "bytes": 178139,
+      "sha256": "f3e9fa6ac63832ba38a2260c9769faa4fad06110ba7688ca11b832d1a04a2c2f",
+      "role": "historical-partial-craft-view-only",
+      "rights": "Authorized course audiovisual study; no extraction of person/voice/SFX into stock",
+      "status": "partial material/depth/object-motion study only; final overall standard NOT accepted; whole-first method NOT implemented"
+    },
+    {
+      "path": "assets/craft-studies/project-record/project-record-partial-craft.mp4",
+      "bytes": 26701863,
+      "sha256": "727c792fdbd3ba0a025332bd21daad647555da20105e70c6bcb2208e2d0d4a13",
+      "role": "historical-partial-craft-view-only",
+      "rights": "Authorized course audiovisual study; no extraction of person/voice/SFX into stock",
+      "status": "partial material/depth/object-motion study only; final overall standard NOT accepted; whole-first method NOT implemented"
+    },
+    {
+      "path": "assets/examples/project-record/defaults.json",
+      "bytes": 1664,
+      "sha256": "0d68ce939a89a3317719ee8f90518f9c381adabe4945c0f8963d190ff15732e4",
+      "role": "historical-partial-craft-source",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/project-record/properties.json",
+      "bytes": 4158,
+      "sha256": "d0bbc6a8521ca2f7d31178d24a06b863e2e7cf88c6cf75e366412196fe56f839",
+      "role": "historical-partial-craft-source",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/project-record/resource.json",
+      "bytes": 1722,
+      "sha256": "1f280b44163255974ed965a0a9d9d9b9b2a2f3d3a03381a742a6acd53d89086e",
+      "role": "historical-partial-craft-source",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/project-record/src/DotBackdrop.tsx",
+      "bytes": 3220,
+      "sha256": "5a08e8af38760c6df837188575726904fd5e7a63ed8ef5ad3e49d0a6c9e0949d",
+      "role": "historical-partial-craft-source",
+      "rights": "Apache-2.0 derivative; see THIRD_PARTY_NOTICES and bundled license",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/project-record/src/ExplodedRecordPurple.tsx",
+      "bytes": 12215,
+      "sha256": "0b48865bd26dec0302eccec378ba82b7bfa977128cce8af21d851eb235be87c0",
+      "role": "historical-partial-craft-source",
+      "rights": "Apache-2.0 derivative; see THIRD_PARTY_NOTICES and bundled license",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/project-record/src/_fixtures/Look.tsx",
+      "bytes": 18440,
+      "sha256": "88b97d49a5489126eaaaff2269d02fd491ccbd7f13f3e1d6df764a592635ae28",
+      "role": "historical-partial-craft-source",
+      "rights": "Apache-2.0 derivative; see THIRD_PARTY_NOTICES and bundled license",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/project-record/src/_fixtures/Polish.tsx",
+      "bytes": 13591,
+      "sha256": "a8278be39ab7bc8f6d248795e4b91bbf90bf193a93f48035a0630cde199df1cc",
+      "role": "historical-partial-craft-source",
+      "rights": "Apache-2.0 derivative; see THIRD_PARTY_NOTICES and bundled license",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/project-record/src/cameraPlan.ts",
+      "bytes": 448,
+      "sha256": "b62d91f5e4ea6757bf3965c807a1b72d6e02a2d92c86e549dd24c591a36b1baf",
+      "role": "historical-partial-craft-source",
+      "rights": "Apache-2.0 derivative; see THIRD_PARTY_NOTICES and bundled license",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/project-record/src/shotCamera.ts",
+      "bytes": 1324,
+      "sha256": "b4d7c53436f6fd8b3e54106851e56c9f07f21678c2512a2d4a73cab593dd1130",
+      "role": "historical-partial-craft-source",
+      "rights": "Apache-2.0 derivative; see THIRD_PARTY_NOTICES and bundled license",
+      "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/fonts/MiSans-Bold.ttf",
+      "bytes": 7804780,
+      "sha256": "250fb5c8d4657f103e332b0b948a995e45f2c159beb8d0528424e2d32ae421be",
+      "role": "original companion brand font",
+      "rights": "Xiaomi MiSans original license; unchanged copyright/binary; see assets/fonts/MiSans字体知识产权许可协议.pdf; no additional font rights granted",
+      "status": "original Version 2.000 and weight/hash checked; receiver registration/native rendering unverified"
+    },
+    {
+      "path": "assets/fonts/MiSans-Medium.ttf",
+      "bytes": 7876052,
+      "sha256": "93528275ee67039c1daeb2ef700625bcf72abab2d3f97e1b6afae6273b579fc1",
+      "role": "original companion brand font",
+      "rights": "Xiaomi MiSans original license; unchanged copyright/binary; see assets/fonts/MiSans字体知识产权许可协议.pdf; no additional font rights granted",
+      "status": "original Version 2.000 and weight/hash checked; receiver registration/native rendering unverified"
+    },
+    {
+      "path": "assets/fonts/MiSans-Regular.ttf",
+      "bytes": 7924400,
+      "sha256": "7172aa1b5c703780ee12df3fe4c50481dde01f3b125a045a398000a88d032ae5",
+      "role": "original companion brand font",
+      "rights": "Xiaomi MiSans original license; unchanged copyright/binary; see assets/fonts/MiSans字体知识产权许可协议.pdf; no additional font rights granted",
+      "status": "original Version 2.000 and weight/hash checked; receiver registration/native rendering unverified"
+    },
+    {
+      "path": "assets/fonts/MiSans-Semibold.ttf",
+      "bytes": 7824000,
+      "sha256": "7143f0160b52fa639c464f8dc904f01e1c1d28a6c514dd8d1fb99fcf28886258",
+      "role": "original companion brand font",
+      "rights": "Xiaomi MiSans original license; unchanged copyright/binary; see assets/fonts/MiSans字体知识产权许可协议.pdf; no additional font rights granted",
+      "status": "original Version 2.000 and weight/hash checked; receiver registration/native rendering unverified"
+    },
+    {
+      "path": "assets/fonts/MiSans字体知识产权许可协议.pdf",
+      "bytes": 79535,
+      "sha256": "4a93a27cd2bd81b3b5ecfd0a853144a876fa26938a93a68443c67d74172fcb86",
+      "role": "original MiSans license",
+      "rights": "Official Xiaomi MiSans license retained with font copies",
+      "status": "downloaded from official source without modification"
+    },
+    {
+      "path": "assets/fonts/acquisition.md",
+      "bytes": 3293,
+      "sha256": "1d6c73aa4d723b36c7440a184fbc9a197a4b9c95358eb8bc2be9c272b878d9dc",
+      "role": "font inventory/install/native verification guide",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "four original weights and official license included; target rendering still requires verification"
+    },
+    {
+      "path": "assets/fonts/requirements.json",
+      "bytes": 2830,
+      "sha256": "f4147095e0cf679018b79bf53a14ca530d5e3b1ab41d6b4c54caa13e13e6f0a3",
+      "role": "font inventory/install/native verification guide",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "four original weights and official license included; target rendering still requires verification"
+    },
+    {
+      "path": "assets/licenses/LICENSE-video-shotcraft.txt",
+      "bytes": 11340,
+      "sha256": "b2ce9877a55547ada9b870150664d1468ff777e67cc9888806a73927d31c5771",
+      "role": "third-party license",
+      "rights": "Apache-2.0 license text retained",
+      "status": "included"
+    },
+    {
+      "path": "assets/records/quote-layout-regression.json",
+      "bytes": 1126,
+      "sha256": "31efb9e10cfd02da5ee8bf64c85ed407212277a1adcf21e6f3319c0fb563adb8",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/records/scene-plan-template.json",
+      "bytes": 1679,
+      "sha256": "8105039ac194b66025192b1003f22587a71d9cd36d36afb99525573505220a12",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/records/whole-first-portability.json",
+      "bytes": 889,
+      "sha256": "757aa001a47180d2dfb5b816bce56dbecf7136352249c8fc4a5904367ee6994a",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/reference-previews/identity-slash-native.jpg",
+      "bytes": 134162,
+      "sha256": "8f8f1e0994eddb8dbf825b3367ac74ed5566aca835b1d0bc718aa49c1cae404a",
+      "role": "fixed-style-view-only",
+      "rights": "Authorized course audiovisual reference; no extraction of person/voice/SFX into stock",
+      "status": "confirmed identity/quote visual direction only; new timing/layout/native composite still requires verification"
+    },
+    {
+      "path": "assets/reference-previews/identity-slash-silent.mp4",
+      "bytes": 11192654,
+      "sha256": "c347db62f10804ec7419f3c63ccd37979d1d7514b009727361530da1cacb655d",
+      "role": "fixed-style-view-only",
+      "rights": "Authorized course audiovisual reference; no extraction of person/voice/SFX into stock",
+      "status": "confirmed identity/quote visual direction only; new timing/layout/native composite still requires verification"
+    },
+    {
+      "path": "assets/reference-previews/preview-metadata.json",
+      "bytes": 600,
+      "sha256": "0f3ee67e72cdb4f7510c557ad1446fb9bd061fcfc8c9e6a4019a3438dc13bf46",
+      "role": "fixed-style-view-only",
+      "rights": "Authorized course audiovisual reference; no extraction of person/voice/SFX into stock",
+      "status": "confirmed identity/quote visual direction only; new timing/layout/native composite still requires verification"
+    },
+    {
+      "path": "assets/reference-previews/quote-hybrid-motion.jpg",
+      "bytes": 242469,
+      "sha256": "3fafc3a710f60a45d6cc37f77fef2e53780f1dee372597072675a1bf341ecbb4",
+      "role": "fixed-style-view-only",
+      "rights": "Authorized course audiovisual reference; no extraction of person/voice/SFX into stock",
+      "status": "confirmed identity/quote visual direction only; new timing/layout/native composite still requires verification"
+    },
+    {
+      "path": "assets/reference-previews/quote-hybrid-native.jpg",
+      "bytes": 149196,
+      "sha256": "9f4a19ac1971e02d6c6d8d8ea8ef290c2a4ea8fb51f9333da8057dc198017856",
+      "role": "fixed-style-view-only",
+      "rights": "Authorized course audiovisual reference; no extraction of person/voice/SFX into stock",
+      "status": "confirmed identity/quote visual direction only; new timing/layout/native composite still requires verification"
+    },
+    {
+      "path": "assets/templates/identity-slash/defaults.json",
+      "bytes": 179,
+      "sha256": "bffbe74199d78e9651cebb58503b6b6ea4ad4dc0c8ed4924feaf2bb250a7574a",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/identity-slash/properties.json",
+      "bytes": 759,
+      "sha256": "dbff1b8715dccfc5ee338153834628935eb41f918927a7e152bfdd7c8a87d279",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/identity-slash/resource.json",
+      "bytes": 635,
+      "sha256": "805d6aa1456906ee8dd7baa7ee310f2608e169ca715ec91c7dfa135d11bc6285",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/identity-slash/speaker.html",
+      "bytes": 3563,
+      "sha256": "d5022f5a368686dca08c9a382a3463b5379ace839883dbb1f8b861b0bb158c83",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/defaults.json",
+      "bytes": 858,
+      "sha256": "4da6e69746aa73930a69e293f7868fde7c7ae50c94857ed85808323d1c646797",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/properties.json",
+      "bytes": 2150,
+      "sha256": "6289b42e61b2aa6dd02ee44cf9ad79928bd56599fa49e20b38f38ac64cef9830",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/quote-runtime.js",
+      "bytes": 4300,
+      "sha256": "8e339394d78c760c5279a02e9728c82109701233dbb8320a8303bf5b97c13c1a",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/quote.css",
+      "bytes": 1327,
+      "sha256": "59a280110a05c96569647549b900471bc12b77458ce8f6bf2a53242c26524bf7",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/quote.html",
+      "bytes": 868,
+      "sha256": "1248e99e14869cd7f6c24b104887f4541e5b9b7973231909fdc58a68a977d387",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/resource.json",
+      "bytes": 556,
+      "sha256": "6da78cfa1c8df43486f17d30f238f7657349c9cdefb9c9d18a77cb19c99656a7",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/animation-production.md",
+      "bytes": 20015,
+      "sha256": "6ef2e15d51887d98632e71aae2eed6d774b833d3b069bd76969da11c5188347d",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/brand-and-assets.md",
+      "bytes": 3043,
+      "sha256": "9601b0763e43c095e84146747ea9db0713537e73f9abc97628b4e53093d3d917",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/colleague-pilot.md",
+      "bytes": 2761,
+      "sha256": "35d68b9a20e96dc5912f95aa6f0aa6aad8fd89f346c2315a1e5a3c95dd6c4cda",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/environment-and-portability.md",
+      "bytes": 15934,
+      "sha256": "86501bfd6a9ae11d90e8776618ecf68f4c236cb3a5f301e26b1a03321cc1bbc6",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/example-guide.md",
+      "bytes": 4511,
+      "sha256": "6aea2744fd4860790c60e71b89e6e85dc8084163c43831c231a1eb8283199578",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/failure-patterns.md",
+      "bytes": 9471,
+      "sha256": "afe4c2b6212e7cffce58f9c05e659b3e76f8a25771517ab7f2b251d6fa1618f8",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/identity-and-quotes.md",
+      "bytes": 16046,
+      "sha256": "fdec0249e27f97c515303c0664d2f4225f275415046f7b8170d873d526e41a4f",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/partial-inputs-and-design-previews.md",
+      "bytes": 4474,
+      "sha256": "bf5ececf33176718006d5c315a715db8f379c7191216ee821942be98d7bc3890",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/provenance-and-validation.md",
+      "bytes": 3779,
+      "sha256": "f34b65b80918e6cf1d4c8f74cf2cffe572167a400993acef2ff446b4ab30430a",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/quality-and-handoff.md",
+      "bytes": 4328,
+      "sha256": "672263a62892536b12b27de0433563546c0e4e1760ebae8206bd3a89efa2f3a2",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/runtime-and-binding.md",
+      "bytes": 5458,
+      "sha256": "121a8dad313082543eaf96ec9cae8a5083a2ed89f841dabf7c6822e610a0b523",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/subtitles.md",
+      "bytes": 9437,
+      "sha256": "b9beccf38d3d83e0c9702355ebccd6d42f18e68fb2d39a8e08f1f8fcc8791587",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/whole-first-design-and-camera.md",
+      "bytes": 16816,
+      "sha256": "1d88ea0e602d5ef86bd1dce12e76ce98e1e2b93c348791ab02f3b0bb0099cfdb",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "scripts/check_environment.py",
+      "bytes": 16381,
+      "sha256": "264e204cf7ada8970e209bca080257a6d9668727d746a42e26b5ee36d6cda1ac",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "scripts/install_skill.py",
+      "bytes": 2181,
+      "sha256": "3c4ad593b3ff1a021058edc5eddf83245692a1eabff3cbad28ca00be313ccf18",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "scripts/validate_quote.py",
+      "bytes": 3854,
+      "sha256": "71a12f25a5953e0985a5a29edd0f75dc244e19c720f82ae1b19cf45f6dd9f79f",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "scripts/verify_package.py",
+      "bytes": 10956,
+      "sha256": "bf260ff4de39fe1c8fc95c6560b59499d4fd7b3a82c6440eb7c9f3484a7d8332",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "validation/preparation-fixture.json",
+      "bytes": 2048,
+      "sha256": "b679b9be07251ee5248a078ebfab614dc36183eb59671723678fabb8dcd42a3e",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "validation/report.json",
+      "bytes": 2606,
+      "sha256": "39b6117f779a0065f6dcee61047f73c90285f649f160ed272ad97d3d20bdfc41",
+      "role": "supporting code/data",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "开始使用.md",
+      "bytes": 3565,
+      "sha256": "9fff3bb26d7e3028a5317eb717780dca738c15150c321031226dfc4f3ac2ec3f",
+      "role": "workflow/reference",
+      "rights": "Project-authored workflow resource for authorized course work and colleague testing",
+      "status": "portable resource; receiver native validation required where applicable"
+    }
+  ],
+  "externalRequirements": [
+    {
+      "name": "ChatCut Desktop and current native Agent integration",
+      "included": false,
+      "how": "references/environment-and-portability.md"
+    },
+    {
+      "name": "receiver MiSans registration and actual native rendering",
+      "included": false,
+      "how": "Original font files and license are bundled; follow assets/fonts/acquisition.md on the receiver"
+    },
+    {
+      "name": "current lecture video and task sources",
+      "included": false,
+      "how": "User supplies actual local files and lawful material sources"
+    }
+  ]
+}
