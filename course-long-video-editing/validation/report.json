@@ -1,45 +1,81 @@
 {
-  "packageVersion": "1.0.2",
+  "packageVersion": "1.2.0",
   "date": "2026-10-22",
-  "status": "workflow-and-partial-resources-for-pilot; professional-whole-first-method-not-implemented",
-  "qualityStatus": {
-    "professionalFinalTargetAchieved": false,
+  "status": "real-material-research-and-course-companion-update; native course pilot still required",
+  "confirmedRequirements": {
+    "videoModes": [
+      "talking-head",
+      "screen-tutorial"
+    ],
+    "screenTutorial": "keep real operations primary; professional animation only for useful concept explanation; protect operation/reading pauses",
+    "roughCut": "ask when unknown; natural teaching only when requested; skip if already edited",
+    "packaging": "user provides intro/outro with course; only intro-to-course and course-to-outro transitions; no design/selection or automatic chapter packaging",
+    "covers": "use actual user-provided files; no generation, required three-ratio set, or automatic adaptation",
+    "missingAssets": "record pending; request needed input; continue independent work without creating replacements",
+    "maintenance": "automatically update generalized confirmed rules locally; GitHub publication requires explicit confirmation",
+    "visualMaterials": "Understand corrected subtitles and optional user inputs; proactively research and capture real primary sources before MG production; optional generated illustrations clearly distinguished",
+    "courseCompanion": "After final edit deliver grounded title, short introduction and superslash student PDF with applicable mindmap/material/source links; copyable text and editable source"
+  },
+  "professionalQualityStatus": {
     "wholeFirstMethodImplemented": false,
-    "completeValidatedProfessionalExampleIncluded": false,
-    "projectRecord": "historical partial craft only; no overall-composition acceptance",
-    "fde": "removed from transfer package by latest user correction",
-    "identityAndQuotes": "fixed visual choices retained; new instances still need timing/layout/native checks"
+    "completeFinalStandardProfessionalSampleIncluded": false,
+    "historicalProjectRecord": "partial craft only",
+    "FDEIncluded": false
   },
   "completed": [
     {
-      "check": "Current package correction",
-      "result": "FDE previews and all historical source removed to author-side archive; project-record separated from reference-previews into craft-studies; all current guides and metadata corrected."
+      "check": "Portable companion renderer and data boundaries",
+      "passed": 20,
+      "scope": "Actual PDF/Markdown generation, source URLs and embedded MiSans, draft/template gates, existing-output preservation, malformed/unsafe inputs, 48 mindmap items and 18 source notes preserved across 8 pages; normal source title and note stay together."
     },
     {
-      "check": "Official skill structure validator",
+      "check": "Branded template visual review",
+      "result": "All 3 current template pages rendered and inspected at readable size; 8-page long-input contact sheet inspected. Fixed page-vs-frame dimensions and orphaned source headings before final checks.",
+      "scope": "Template说明, not a real course handout or professional animation acceptance."
+    },
+    {
+      "check": "Original resources and production method",
+      "result": "43 original creative files and all six existing helper scripts byte unchanged; whole-first document entirely byte unchanged; two added logos match original brand resources."
+    },
+    {
+      "check": "Official tool references",
+      "result": "Playwright screenshots, ReportLab guide and PyMuPDF page-image reference opened and checked on 2026-10-22."
+    },
+    {
+      "check": "Official Skill structure",
       "result": "Skill is valid"
     },
     {
-      "check": "Current resource/correction preservation checks",
-      "passed": 11,
-      "scope": "72-file closure; fixed preview whitelist;18 FDE files archived outside package with matching hashes;24 unchanged fixed components/fonts/scripts; complete whole-first production core unchanged; three partial-study media byte-preserved; metadata scope consistent"
+      "check": "Inventory, relative resource links and static portability",
+      "result": "passed;94 files including manifest,93 resource records; all new brand/template references resolve"
     },
     {
-      "check": "Independent package-only reader",
-      "result": "Reader reports no full professional sample meeting latest standard, method not implemented, fixed previews separate from historical partial craft; no conflicting acceptance status. Silent-preview metadata wording corrected.",
-      "scope": "Document comprehension and path/state review only; no new animation produced or aesthetic test"
+      "check": "Redacted source credential scan",
+      "result": "gitleaks no leaks found"
     }
   ],
-  "carriedForwardTests": {
-    "scope": "Earlier script/data/font/geometry/preparation tests retain their original limited scopes for unchanged files only; not evidence that professional animation quality or whole-first method passed. Current package checks recorded in delivery sidecar.",
-    "previousVersion": "1.0.1"
+  "carriedForward": {
+    "version": "1.1.1",
+    "scope": "Original creative resources, six helper scripts and complete whole-first document retain their previous scope-specific evidence; no repeated native/aesthetic claim."
   },
   "notPerformed": [
-    "Implementation of latest whole-first design and camera method",
-    "Complete professional animation sample meeting latest overall standard",
-    "User aesthetic acceptance under new method",
-    "Physical second-computer native ChatCut/font/export test",
-    "Target-viewer comprehension validation"
+    "Raw-lecture rough cut with native tool and listening under this workflow",
+    "Actual two-boundary transitions using new user-supplied intro/outro",
+    "Screen-tutorial native operation-preservation trial",
+    "Whole-first professional animation implementation and final-standard aesthetic review",
+    "Physical second-computer end-to-end production",
+    "GitHub publication of v1.2.0: requires user confirmation",
+    "Real new-course web/software capture and material integration under this added workflow",
+    "Title/intro and student handout verified against a newly edited real course"
   ],
-  "notes": "The absence of a final-standard professional sample is explicit. Do not substitute historical partial praise, technical tests, or successful imports for it."
+  "outOfScope": [
+    "Intro/outro/cover creation or style selection",
+    "Automatic chapter packaging"
+  ],
+  "notes": "Workflow/document checks do not prove final video quality. User media remain project-specific. Optional PNG checker validates container and dimensions only.",
+  "templateRuntime": {
+    "reportlab": "4.4.9",
+    "Pillow": "12.3.0",
+    "pypdf": "6.10.0"
+  }
 }

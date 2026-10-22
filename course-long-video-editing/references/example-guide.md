@@ -1,5 +1,7 @@
 # 如何使用参考资源：固定风格与局部工艺分开
 
+课程资料另有[品牌PDF模板预览](../assets/templates/course-companion/template-preview.pdf)，它仅说明学员资料的阅读版式，不是专业动画样片或真实新课成品。
+
 **目前没有按最新“整体构图与镜头设计工作法”制作并通过用户审核的完整专业动画样片。** 新方法已成文，尚未实施验证；早期阶段的认可不能写成最终整体质量达标。制作须以[完整工作法](whole-first-design-and-camera.md)及当前用户要求为准。
 
 ## 1. reference-previews：已确定的名签与金句视觉

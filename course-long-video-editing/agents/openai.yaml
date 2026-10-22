@@ -1,4 +1,4 @@
 interface:
   display_name: "课程长视频剪辑"
-  short_description: "在本地ChatCut完成课程长视频字幕、专业动画与金句，先整体构图再精修细节和镜头"
-  default_prompt: "使用 $course-long-video-editing，按随包规范在本地ChatCut完成这个课程长视频的字幕和动画，并交付可编辑草稿与审核记录。"
+  short_description: "按需粗剪与字幕，真实素材驱动教学动画，首尾转场及课程标题简介和品牌学员PDF"
+  default_prompt: "使用 $course-long-video-editing，在本地ChatCut按视频类型剪辑课程，沿用我提供的片头片尾和封面，先搜集真实素材再制作动画，完成标题简介、品牌学员资料PDF、检查与本机Skill复盘。"

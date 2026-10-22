@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "templateOnly": false,
+  "isTemplateExample": true,
+  "title": "课程资料模板使用说明",
+  "introduction": "这份示例用于说明：如何将已剪辑课程的标题、简介、复习导图和真实来源整理为一份可阅读、可复制、可追溯的学员资料。它是模板说明，不对应一门已完成的实际课程。",
+  "course": {
+    "series": "超级斜杠 · 模板示例",
+    "lessonNumber": null,
+    "instructor": null,
+    "versionDate": "2026-10-22"
+  },
+  "keyPoints": [
+    "标题和简介从最终课程内容提炼，不增加没讲过的结果承诺。",
+    "思维导图帮助复习，关键概念与讲解保持对应。",
+    "真实素材记录原出处；学生版只保留适合分享的链接与说明。"
+  ],
+  "mindmap": {
+    "title": "课程资料",
+    "branches": [
+      {
+        "title": "上传信息",
+        "items": [
+          "一个明确的课程标题",
+          "一段简短、准确的简介"
+        ]
+      },
+      {
+        "title": "学习复习",
+        "items": [
+          "本课关键要点",
+          "概念、关系与流程的导图"
+        ]
+      },
+      {
+        "title": "真实来源",
+        "items": [
+          "课堂引用的原始资料",
+          "另行标明的延伸阅读"
+        ]
+      },
+      {
+        "title": "交付检查",
+        "items": [
+          "内容与最终视频一致",
+          "逐页版式、字体与链接核验"
+        ]
+      }
+    ]
+  },
+  "sections": [
+    {
+      "heading": "替换为本课内容",
+      "text": "先复制可编辑内容模板到课程项目，填写真实标题、简介和实际需要的栏目；素材清单与最终字幕用于核对。不要把本示例的说明文字当作课程学习内容。"
+    }
+  ],
+  "sources": [
+    {
+      "id": "REF-1",
+      "title": "Playwright 截图指南",
+      "publisher": "Playwright",
+      "url": "https://playwright.dev/docs/screenshots",
+      "role": "模板工具参考",
+      "note": "用于查阅真实页面/整页/局部截图方法；不代表任何实际课堂案例。",
+      "accessedDate": "2026-10-22"
+    },
+    {
+      "id": "REF-2",
+      "title": "ReportLab PDF 用户指南",
+      "publisher": "ReportLab",
+      "url": "https://www.reportlab.com/docs/reportlab-userguide.pdf",
+      "role": "模板工具参考",
+      "note": "本PDF生成器的官方技术参考。",
+      "accessedDate": "2026-10-22"
+    },
+    {
+      "id": "REF-3",
+      "title": "PyMuPDF 页面与图像指南",
+      "publisher": "PyMuPDF",
+      "url": "https://pymupdf.readthedocs.io/en/latest/recipes-images.html",
+      "role": "模板工具参考",
+      "note": "另一种页面渲染/图像检查方法；模板不强制依赖它。",
+      "accessedDate": "2026-10-22"
+    }
+  ],
+  "basis": {
+    "finalVideoVersion": null,
+    "captionVersion": null,
+    "checkedAgainstFinalCourse": false
+  }
+}

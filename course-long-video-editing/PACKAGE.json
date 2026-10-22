@@ -1,12 +1,20 @@
 {
   "name": "course-long-video-editing",
   "displayName": "课程长视频剪辑",
-  "version": "1.0.2",
-  "edition": "first-colleague-pilot",
+  "version": "1.2.0",
+  "edition": "real-materials-and-course-companion-local-update",
   "createdDate": "2026-10-22",
   "coreStages": [
+    "intake_and_mode",
+    "optional_rough_cut",
+    "provided_intro_outro_and_boundary_transitions",
     "subtitles",
-    "animation"
+    "real_material_research_and_capture",
+    "mode_adaptive_animation",
+    "provided_cover_handoff",
+    "course_title_intro_and_branded_student_pdf",
+    "quality_handoff",
+    "local_skill_iteration"
   ],
   "wholeFirstMethodFullyIncluded": true,
   "fontsIncluded": true,
@@ -20,5 +28,76 @@
     "fullStandardValidatedExampleIncluded": false,
     "partialCraftStudyIncluded": true,
     "fixedIdentityAndQuoteVisualsConfirmed": true
+  },
+  "videoModes": [
+    "talking_head",
+    "screen_tutorial"
+  ],
+  "mixedModeHandledPerSegment": true,
+  "roughCutPolicy": {
+    "askWhenUnknown": true,
+    "defaultStyle": "natural-teaching",
+    "alreadyRoughCutSkipsSpeechCleanup": true
+  },
+  "brandPackagingPolicy": {
+    "source": "user-provided-with-course-video",
+    "creativeGeneration": false,
+    "styleSelectionRequired": false,
+    "transitionBoundaries": [
+      "intro-to-course",
+      "course-to-outro"
+    ],
+    "automaticChapterCards": false,
+    "missingAssets": "record-pending-and-request-needed-input; continue-independent-work; do-not-create-replacements"
+  },
+  "maintenancePolicy": {
+    "localUpdate": "automatic-for-generalized-confirmed-learning",
+    "githubPublication": "explicit-user-confirmation-required"
+  },
+  "newWorkflowNativePilotPerformed": false,
+  "coverPolicy": {
+    "source": "user-provided",
+    "generation": false,
+    "automaticAdaptation": false,
+    "threeRatioSetRequired": false,
+    "optionalSuppliedPNGRatioChecks": [
+      "4:3",
+      "3:4",
+      "16:9"
+    ],
+    "suppliedOriginalsRemainProjectSpecific": true
+  },
+  "visualMaterialPolicy": {
+    "beforeAnimationProduction": true,
+    "transcriptDriven": true,
+    "userMaterialsOptional": true,
+    "researchOriginalSources": true,
+    "actualCapturePreferredForFactualVisuals": true,
+    "generatedImages": "optional-illustration-only; never-fabricated-evidence",
+    "fixedRealMaterialPercentage": null,
+    "perCourseAssetsRemainProjectSpecific": true
+  },
+  "courseCompanionPolicy": {
+    "basis": "final-edited-course-content",
+    "required": [
+      "one-upload-ready-title",
+      "short-introduction",
+      "branded-student-pdf"
+    ],
+    "includeWhenApplicable": [
+      "mindmap",
+      "course-materials",
+      "verified-source-links"
+    ],
+    "copyableTextAndEditableData": true,
+    "brand": "superslash",
+    "portableBrandResourcesIncluded": true,
+    "publicationOrSendingAutomatic": false
+  },
+  "courseCompanionTemplateStatus": {
+    "previewRendered": true,
+    "previewPurpose": "Template usage guide only, not an actual lesson",
+    "allThreePreviewPagesVisuallyInspected": true,
+    "realCourseHandoutValidated": false
   }
 }

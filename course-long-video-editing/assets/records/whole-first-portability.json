@@ -8,7 +8,8 @@
   "changedSections": [
     "Replace original machine/project lookup with receiver-side discovery and bundled resource links",
     "Replace project-specific ending with portable provenance and validation boundary",
-    "v1.0.2 correct reference entrypoints only: remove FDE and mark project-record historical partial craft; no production-core change"
+    "v1.0.2 correct reference entrypoints only: remove FDE and mark project-record historical partial craft; no production-core change",
+    "v1.1 add rough-cut/packaging baseline and screen-tutorial applicability before unchanged production core"
   ],
   "absoluteOriginalPathsCopied": false,
   "methodImplemented": false,

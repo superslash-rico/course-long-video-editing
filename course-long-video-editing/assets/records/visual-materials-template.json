@@ -1,0 +1,41 @@
+{
+  "templateOnly": true,
+  "schemaVersion": 1,
+  "items": [],
+  "entryTemplate": {
+    "sourceId": null,
+    "courseSegmentOrTimeRange": null,
+    "explanationGoal": null,
+    "originKind": null,
+    "title": null,
+    "publisherOrOwner": null,
+    "sourceUrl": null,
+    "publishedOrUpdatedDate": null,
+    "accessedDate": null,
+    "pageOrSoftwareVersion": null,
+    "originalFile": null,
+    "sha256": null,
+    "captureMethod": null,
+    "captureSize": null,
+    "derivatives": [],
+    "factChecks": [],
+    "usageBoundaryAndLicense": null,
+    "sensitiveAreasHandled": null,
+    "generationRecordIfAny": null,
+    "plannedAnimationUse": null,
+    "currentProjectBinding": null,
+    "usableForStudentHandout": null,
+    "checked": false
+  },
+  "originKinds": [
+    "user-original",
+    "official-web-capture",
+    "original-pdf-page",
+    "actual-software-capture",
+    "licensed-photo-or-media",
+    "generated-illustration",
+    "explicit-diagram"
+  ],
+  "readiness": "pending-course-and-material-research",
+  "note": "Create records only for actual inputs/captures/generations. Source publication and public access do not establish reuse permission. Private raw records stay in the project."
+}

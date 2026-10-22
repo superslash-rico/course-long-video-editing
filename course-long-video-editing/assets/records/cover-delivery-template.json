@@ -1,0 +1,29 @@
+{
+  "templateOnly": true,
+  "source": "user-provided",
+  "status": "unknown",
+  "files": [],
+  "pendingAssets": [],
+  "generationPerformed": false,
+  "adaptationAuthorized": false,
+  "adaptations": [],
+  "fileRecordFields": [
+    "file",
+    "format",
+    "actualWidth",
+    "actualHeight",
+    "ratio",
+    "intendedUse",
+    "opensSuccessfully",
+    "matchesCourse",
+    "notes"
+  ],
+  "optionalThreeRatioPNGCheck": {
+    "applicable": false,
+    "performed": false,
+    "report": null
+  },
+  "requiredCount": null,
+  "editableMasterRequired": false,
+  "notes": "Fill only actual supplied files; no prefilled rendered assets, mandatory names, ratios or creative approval."
+}

@@ -1,0 +1,79 @@
+{
+  "templateOnly": true,
+  "projectName": null,
+  "videoMode": "unknown",
+  "mixedSegmentModes": [],
+  "roughCutStatus": "unknown",
+  "roughCutQuestionAnswers": [
+    "该视频暂未粗剪，需要你帮我粗剪",
+    "该视频已经粗剪，可以直接添加校对字幕"
+  ],
+  "roughCutResponse": null,
+  "roughCutAuthorized": false,
+  "roughCutDefault": "natural-teaching",
+  "lectureFacts": {
+    "series": null,
+    "title": null,
+    "lessonNumber": null,
+    "instructorName": null,
+    "instructorIdentity": null
+  },
+  "packaging": {
+    "source": "user-provided",
+    "designOrSelectionRequired": false,
+    "intro": {
+      "file": null,
+      "status": "unknown",
+      "alreadyEmbedded": null
+    },
+    "outro": {
+      "file": null,
+      "status": "unknown",
+      "alreadyEmbedded": null
+    },
+    "transitions": [
+      {
+        "boundary": "intro-to-course",
+        "status": "pending-source-review",
+        "method": null,
+        "finalInterval": null
+      },
+      {
+        "boundary": "course-to-outro",
+        "status": "pending-source-review",
+        "method": null,
+        "finalInterval": null
+      }
+    ],
+    "automaticChapterPackaging": false,
+    "pendingAssets": []
+  },
+  "timing": {
+    "sourceToContentMapping": [],
+    "contentToFinalMapping": [],
+    "speechTimingFinalized": false,
+    "packagingTimingFinalized": false
+  },
+  "assetRightsAndPrivateMaterialNotes": [],
+  "covers": {
+    "source": "user-provided",
+    "files": [],
+    "status": "unknown",
+    "automaticGenerationOrAdaptation": false
+  },
+  "materialResearch": {
+    "userMaterialsOptional": true,
+    "status": "not-started",
+    "sourceLedger": null,
+    "coveredAnimationTasks": [],
+    "openGaps": []
+  },
+  "courseCompanion": {
+    "status": "not-started",
+    "basedOnFinalVideoAndCaptions": false,
+    "titleAndIntroductionFile": null,
+    "pdf": null,
+    "editableSource": null,
+    "visualReview": false
+  }
+}

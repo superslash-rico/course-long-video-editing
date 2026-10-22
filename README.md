@@ -1,83 +1,94 @@
 # 课程长视频剪辑 Skill
 
-在本地 ChatCut 中剪辑课程、讲解和教学口播长视频，完成字幕校对、讲师介绍卡、专业教学动画与重点句。
+在本地 ChatCut 剪辑人像口播或软件录屏课程：按需粗剪、校对字幕，先准备真实素材再制作教学动画，衔接用户提供的片头片尾，并整理课程标题、简介和品牌学员资料 PDF。
 
-当前版本：**v1.0.2 · 首轮试用版**。
+当前版本：**v1.2.0 · 同事试用版**。完整技能与字体、参考资源、可编辑组件、课程资料模板共 94 个文件。
 
-**专业动画的最终整体效果尚未达到本项目的目标；新的整体构图与镜头设计工作法已完整成文，但尚未实施验证。目前没有符合新标准的完整专业动画样片。** 名签和金句已确定的固定视觉保留；项目记录资料仅供局部工艺研究。
+**专业动画的最终整体目标尚未达到；完整的整体构图与镜头设计方法已成文，仍待新课程实际制作验证。目前没有符合新标准的完整专业动画样片。** 名签/金句固定视觉保留；项目记录只供局部工艺研究。新增 PDF 预览是资料排版模板说明，不是实际课程成品或动画品质样片。
 
-## 下载与开始
+## 下载与安装
 
-- [下载 v1.0.2 完整技能包及 SHA256](https://github.com/superslash-rico/course-long-video-editing/releases/tag/v1.0.2)
-- 或点击 GitHub 的 **Code → Download ZIP**，解压整个仓库。
-- 先读 [开始使用.md](course-long-video-editing/开始使用.md)，保留完整的 `course-long-video-editing/` 子目录，不要只复制 `SKILL.md`。
-
-也可以克隆：
+- [v1.2.0 完整技能包与 SHA256](https://github.com/superslash-rico/course-long-video-editing/releases/tag/v1.2.0)
+- [直接下载完整 ZIP](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.2.0/course-long-video-editing-v1.2.0.zip)
+- [SHA256 校验文件](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.2.0/course-long-video-editing-v1.2.0.sha256)
+- 或使用 **Code → Download ZIP**。先读[开始使用](course-long-video-editing/开始使用.md)，安装内层完整的 `course-long-video-editing/`，不要只复制 `SKILL.md`。
 
 ```sh
 git clone https://github.com/superslash-rico/course-long-video-editing.git
 cd course-long-video-editing
-```
-
-接收电脑需准备自己的 ChatCut Desktop、当前可用的本地 Agent 集成、账号和真实课程原片。没有 Python 也能按文档安装和使用；下面的 Python 脚本仅辅助检查及复制技能，不替代剪辑工具。
-
-从仓库根目录运行（Windows 可将 `python3` 换为 `py -3`）：
-
-```sh
 python3 course-long-video-editing/scripts/verify_package.py
 python3 course-long-video-editing/scripts/check_environment.py --package-only
-python3 course-long-video-editing/scripts/check_environment.py
 python3 course-long-video-editing/scripts/install_skill.py --dry-run
 python3 course-long-video-editing/scripts/install_skill.py
 ```
 
-安装器只新增完整技能或确认已有同版；遇到不同的既有版本会保留并退出，不覆盖个人修改。默认安装到当前用户的 Codex skills 目录，设置 `CODEX_HOME` 时按其目录解析。技能文件安装后，在新任务中确认被发现；ChatCut 连接和实际渲染另外检查。
+Windows 可将 `python3` 换为 `py -3`。安装器只新增完整技能或确认已有同版；已有其他版本时先备份并核对个人修改，按[本机维护工作流](course-long-video-editing/references/learning-and-skill-maintenance.md)升级，不强制覆盖。安装后在新任务中确认技能被发现。
 
-MiSans 原版 Regular、Medium、Semibold、Bold 及完整许可作为工作流配套资源位于 [assets/fonts](course-long-video-editing/assets/fonts/)。按[字体说明](course-long-video-editing/assets/fonts/acquisition.md)阅读许可、安装和核对真实字形/字重；安装技能不会自动安装系统字体。
+接收电脑需要自己的 ChatCut Desktop、当前可用的本地 Agent 集成和课程原片。截图/浏览器控制、AI 生图或外部资料服务按本机实际能力使用，不依赖原作者账户。Python 检查器只辅助文件核对；随包 PDF 生成器另需 ReportLab/Pillow，也可用当前可用的等价 PDF 制作工具。连接、字体和真实渲染要在接收电脑验证。
 
-## 给 AI 的任务示例
+MiSans 原版四字重和完整许可位于[字体目录](course-long-video-editing/assets/fonts/)。视频端按[字体说明](course-long-video-editing/assets/fonts/acquisition.md)注册并核对实际字形；安装技能不会自动安装系统字体。PDF 模板可以直接嵌入随包字体。
+
+## 当前制作流程
+
+接收素材与判断人像/录屏 → 确认粗剪状态 → 按需自然教学粗剪 → 两处首尾转场 → 字幕校对 → 真实素材调研/截图 → 专业动画与未覆盖重点句 → 课程标题/简介和学员 PDF → 整片核查与本机复盘。
+
+- **片头、片尾和封面由用户提供。** 包装仅做片头到正文、正文到片尾两处转场，不自动设计选样、制作封面或插入章节包装。缺素材记待补并继续独立工序。
+- **粗剪状态未知先问。** 已粗剪直接校对字幕；需要粗剪时按自然教学去明确口误/失败重录、缩短无意义长空白，保留原意、教学停顿和软件操作链。
+- **人像与录屏分流。** 人像可更多使用精心设计的解释动画；录屏保留真实操作为主体，仅在概念和必要重点上加动画。
+- **先理解与找素材，再做动画。** 从校对字幕和可选用户材料形成视觉需求，主动检索一手来源、实际采集页面/报告/软件界面，记录原件、派生图、出处和用途；必要时用生成插画补充，明确示意与真实证据的边界。
+- **整体设计与镜头细节完整保留。** 每段先设计开场/过程/结果全景，再精修模块和镜头；专业动画覆盖确定后再安排固定金句。金句仅入场声音，无退场叮声。
+- **剪辑后交课程资料。** 根据最终视频写一个可直接上传的标题和短简介，整理适用的思维导图、材料与真实来源链接，输出超级斜杠品牌 PDF、可复制文案和可编辑数据。
+- **通用经验自动更新本机，GitHub 发布须确认。** 项目原片、私人截图/来源记录、账号、旧工程 ID 和未达标样例不自动写入全局或公开仓库。
+
+## 给 Agent 的任务示例
 
 ```text
-使用 $course-long-video-editing，在本地 ChatCut 从零完成我提供的课程长视频的字幕与动画。
-保留原讲解、原声和顺序。完整执行整体构图与镜头设计工作法，先做专业动画，
-再处理动画未覆盖内容的金句。素材使用我提供的路径，完成后交可编辑草稿和审核记录。
+使用 $course-long-video-editing，在本地 ChatCut 从零剪辑我提供的课程长视频。
+先识别人像/录屏并确认粗剪状态。沿用我给的片头、片尾和封面，完成两处转场。
+校对字幕后，根据课程内容主动检索并截图真实素材，完整执行整体构图与镜头方法，
+先专业动画，再做未覆盖的重点句。剪辑定稿后整理课程标题、短简介和品牌学员资料 PDF，
+包含适用的思维导图、材料/来源链接，并保留可编辑工程、文案与资料源。
+按实际结果记录检查和复盘，本机通用规则可更新，GitHub 发布由我确认。
 ```
 
-首次先用真实新工程跑通字幕、一段动画、实时圆窗、声音、预览和导出的最小闭环，再完成整片。若只要先做一个样片，在任务里明确范围。
+先以真实新视频跑通最小原生闭环，再完成长片。若只要字幕、某个片段或一段样片，在任务中明确范围。素材未提供时不编造课程内容或宣称完成了实际剪辑。
 
-## 内容目录
+## 文档与资源入口
 
-| 路径 | 内容 |
+| 入口 | 用途 |
 | --- | --- |
-| [SKILL.md](course-long-video-editing/SKILL.md) | 技能入口与两大剪辑环节 |
-| [references/subtitles.md](course-long-video-editing/references/subtitles.md) | 字幕纠错、语气词、英文规范与实际画面检查 |
-| [references/animation-production.md](course-long-video-editing/references/animation-production.md) | 选段、真实素材、专业动画、镜头、人像与声音 |
-| [完整整体构图与镜头工作法](course-long-video-editing/references/whole-first-design-and-camera.md) | 整体先行、模块精修、目的驱动的镜头、逐层检查与版本交接 |
-| [references/example-guide.md](course-long-video-editing/references/example-guide.md) | 固定风格、历史局部工艺和最终标准的用途边界 |
-| [assets/reference-previews](course-long-video-editing/assets/reference-previews/) | 已确定的名签、金句视觉；不是专业动画最终样片库 |
-| [assets/craft-studies](course-long-video-editing/assets/craft-studies/) | 项目记录的局部材质、透视和对象动作研究 |
-| [assets/templates](course-long-video-editing/assets/templates/) | 可编辑名签和金句组件 |
-| [assets/components](course-long-video-editing/assets/components/) | 实时圆形人像窗参考实现 |
-| [assets/fonts](course-long-video-editing/assets/fonts/) | 四字重、完整许可、安装和字体验证说明 |
-| [scripts](course-long-video-editing/scripts/) | 完整性、环境、金句 cues 与安装助手 |
-| [validation/report.json](course-long-video-editing/validation/report.json) | 已完成的检查及尚未验证的范围 |
-| [同事试用记录](course-long-video-editing/references/colleague-pilot.md) | 在新电脑用新视频试做时的记录表 |
-
-专业动画每段独立设计，先做好开场、过程和结果的整体构图，再深入模块和镜头；金句使用固定风格。FDE 旧画面及源码已从当前技能移出，不作为合格整体样例。
+| [SKILL.md](course-long-video-editing/SKILL.md) | 完整流程、范围与必要分支 |
+| [接收与粗剪](course-long-video-editing/references/intake-and-rough-cut.md) / [录屏路径](course-long-video-editing/references/screen-tutorial.md) | 粗剪授权、自然节奏与操作保护 |
+| [首尾转场](course-long-video-editing/references/branding-intro-outro-transitions.md) / [用户封面](course-long-video-editing/references/covers.md) | 用户供稿与两处衔接 |
+| [字幕](course-long-video-editing/references/subtitles.md) | 中文/英文/术语、语气词、样式及合成检查 |
+| [真实素材研究](course-long-video-editing/references/material-research-and-capture.md) / [素材表](course-long-video-editing/assets/records/visual-materials-template.json) | 实际采集、事实与来源、派生文件、真实/生成边界 |
+| [动画工艺](course-long-video-editing/references/animation-production.md) / [完整整体构图与镜头方法](course-long-video-editing/references/whole-first-design-and-camera.md) | 全景、模块、镜头、人像、声音、可编辑性与验收 |
+| [课程标题/简介与 PDF](course-long-video-editing/references/course-companion.md) | 成片内容驱动的上传文案与学员资料 |
+| [品牌模板](course-long-video-editing/assets/templates/course-companion/使用说明.md) / [三页 PDF 预览](course-long-video-editing/assets/templates/course-companion/template-preview.pdf) | A4 阅读版式、JSON、官方 Logo、可移植生成器 |
+| [参考用途指南](course-long-video-editing/references/example-guide.md) | 固定风格、历史局部工艺与最终标准的边界 |
+| [固定视觉预览](course-long-video-editing/assets/reference-previews/) / [局部工艺研究](course-long-video-editing/assets/craft-studies/) | 名签/金句视觉与历史项目记录；不是完整专业样片库 |
+| [组件与模板](course-long-video-editing/assets/templates/) / [圆窗组件](course-long-video-editing/assets/components/) | 可编辑资源，需在当前工程重新绑定和验证 |
+| [品牌资源](course-long-video-editing/assets/brand/) / [原版字体](course-long-video-editing/assets/fonts/) | 公开品牌配置、两版原始 Logo、MiSans 四字重和许可 |
+| [官方工具参考](course-long-video-editing/references/resource-links.md) / [跨机指南](course-long-video-editing/references/environment-and-portability.md) | 当前能力发现与等价工具选择 |
+| [同事试用记录](course-long-video-editing/references/colleague-pilot.md) | 用新电脑、新视频记录真实测试 |
+| [逐文件清单](course-long-video-editing/assets/manifest.json) / [验证快照](course-long-video-editing/validation/report.json) | 摘要、权利/用途、已检与未检范围 |
 
 ## 验证范围
 
-随包检查及 GitHub Actions 验证文件完整性、依赖、数据和脚本可以执行，不证明动画审美达标、字体已在接收机渲染、连续声音合格或观众已经理解。另一台电脑的真实原生制作、最新方法的成片和用户审美验收仍待试用。
+v1.2.0 的完整 94 文件包已核对本机源码、ZIP 和全局安装一致。新增资料模板做过 20 项相关输出/边界/资源保护检查，三页示例逐页渲染查看；长内容测试保留了 48 个导图子项与 18 条来源说明，并检查分页、字体和链接。换到含中文/空格的新目录后，完整性、安装预演和 PDF 再生成通过。
 
-两段现有预览使用 HEVC/HLG，播放兼容性和色彩由实际播放器决定；原生截图可供对照。名签视频有意静音；金句只有定格与时序图，没有连续 MP4。
+这些证据不代表另一台电脑已完成真实原生剪辑，也不证明专业动画审美、连续听感或学生理解达标。完整整体方法和新流程仍需用真实新课程测试。随包 `validation/report.json` 是打包时的检查快照；本次仓库发布以 Release、提交和 GitHub Actions 状态为准。
 
-## 资源与许可
+GitHub Actions 运行包完整性、相对依赖、字体文件、金句数据、环境静态检查和安装预演；不会操作接收电脑的 ChatCut、安装系统字体或代替成片审核。
 
-本仓库公开分享完整工作流和配套资源，各资源的权利范围分别说明，未对全部文件统一授予 MIT 等开源许可。详见 [THIRD_PARTY_NOTICES.md](course-long-video-editing/THIRD_PARTY_NOTICES.md) 和逐文件[资源清单](course-long-video-editing/assets/manifest.json)。
+## 资源与使用边界
 
-- Apache-2.0 衍生代码保留上游来源、完整许可和改动说明。
-- 本工作流使用 MiSans。原版字体保持原始名称、字节与版权，附小米完整协议；仅作为工作流文字渲染的配套资源，不额外转授字体权利，不拆出作为独立字体库分发。[官方 FAQ](https://hyperos.mi.com/font/zh/faq/)与[许可原文](https://hyperos.mi.com/font-download/MiSans字体知识产权许可协议.pdf)供使用者阅读。
-- 课程画面中的 Rico 人像、声音和讲解仅供观看研究，不用作其他讲师的新课素材或提取为素材库。合成视频中的第三方声音不单独再分发；随包候选 WAV 由原创数学配方生成。
-- 私有 MotionGit 包、账户 Key、登录态、旧工程数据库、大原片和作者私人过程日志不在仓库中。
+本仓库分享完整工作流及配套资源，不对全部文件统一授予 MIT 等开源许可。各项用途、权利和来源以[资源说明](course-long-video-editing/THIRD_PARTY_NOTICES.md)及[逐文件清单](course-long-video-editing/assets/manifest.json)为准。
 
-技能的核心工作法不依赖原作者账号或私有服务。使用本地工具和真实素材完成作品，再依据实际反馈更新该技能。
+- Apache-2.0 衍生代码保留固定上游来源、完整许可与改动说明。
+- MiSans 四字重保留原始字节、名称、版权及小米完整协议，作为工作流配套字体，不额外转授字体权利。
+- 超级斜杠 Logo 与品牌配置用于本品牌课程资料；未附私人联系方式、二维码、客户正文或公司课程台账，不授予独立商标使用权。
+- Rico 人像、讲解及课程成片只供观看研究，不充当其他讲师素材或提取为素材库。第三方裸音效不附带；随包候选 WAV 为原创确定性声音配方。
+- 私有 MotionGit 包、Key、登录态、原课程大原片、旧工程数据库、私人过程日志和新课专属截图不在仓库中。
+
+核心工作法不依赖原作者账户；用接收方的实际工具与合法素材制作，再依据真实反馈迭代。

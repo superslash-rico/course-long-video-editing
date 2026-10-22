@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "templateOnly": true,
+  "isTemplateExample": false,
+  "title": "",
+  "introduction": "",
+  "course": {
+    "series": null,
+    "lessonNumber": null,
+    "instructor": null,
+    "versionDate": null
+  },
+  "keyPoints": [],
+  "mindmap": null,
+  "sections": [],
+  "sources": [],
+  "basis": {
+    "finalVideoVersion": null,
+    "captionVersion": null,
+    "checkedAgainstFinalCourse": false
+  }
+}

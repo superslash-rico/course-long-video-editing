@@ -1,0 +1,24 @@
+{
+  "templateOnly": true,
+  "oldVersion": null,
+  "newVersion": null,
+  "items": [
+    {
+      "sourceSummary": null,
+      "type": "candidate",
+      "previousRule": null,
+      "newRule": null,
+      "scope": null,
+      "projectPrivateEvidenceLocation": null,
+      "sanitizedGeneralEvidence": null,
+      "validationPerformed": [],
+      "unverified": [],
+      "status": "candidate"
+    }
+  ],
+  "addedFileMetadata": [],
+  "backupLocation": null,
+  "installedFilesVerified": false,
+  "githubPublicationPolicy": "requires-explicit-user-confirmation",
+  "githubPublished": false
+}

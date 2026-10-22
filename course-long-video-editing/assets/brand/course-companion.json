@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "brand_name": "超级斜杠",
+  "company_name": "合肥超级斜杠网络科技有限公司",
+  "domain": "slashx.cn",
+  "website": "https://slashx.cn",
+  "official_palette": {
+    "black": "#000000",
+    "blue": "#3C00BE",
+    "purple": "#E802F8"
+  },
+  "editorial_palette": {
+    "graphite": "#15191E",
+    "paper": "#FBFAF7",
+    "ink": "#1D2023",
+    "muted": "#60656B",
+    "rule": "#DCDAD4",
+    "pale_blue": "#F0ECFA",
+    "white": "#FFFFFF"
+  },
+  "fonts": {
+    "family": "MiSans",
+    "regular": "fonts/MiSans-Regular.ttf",
+    "medium": "fonts/MiSans-Medium.ttf",
+    "semibold": "fonts/MiSans-Semibold.ttf",
+    "bold": "fonts/MiSans-Bold.ttf"
+  },
+  "formats": {
+    "a4_portrait": {
+      "width_pt": 595.275591,
+      "height_pt": 841.889764,
+      "margin_pt": 56.692913
+    },
+    "a4_landscape": {
+      "width_pt": 841.889764,
+      "height_pt": 595.275591,
+      "margin_pt": 51.023622
+    },
+    "slide_16_9": {
+      "width_pt": 960,
+      "height_pt": 540,
+      "margin_pt": 48,
+      "width_px": 1280,
+      "height_px": 720
+    }
+  },
+  "logos": {
+    "dark_on_light": "brand/logos/dark-on-light.png",
+    "light_on_dark": "brand/logos/light-on-dark.png"
+  },
+  "provenance": "User-confirmed superslash-brand A4 reading layout and original logos; course facts supplied per lesson; no contact data bundled"
+}
