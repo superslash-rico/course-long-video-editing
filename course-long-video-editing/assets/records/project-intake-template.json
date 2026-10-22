@@ -75,5 +75,45 @@
     "pdf": null,
     "editableSource": null,
     "visualReview": false
+  },
+  "courseTitle": null,
+  "publicationTitle": null,
+  "workspaceRoot": null,
+  "courseProjectRoot": null,
+  "projectCreatedDate": null,
+  "directoryName": null,
+  "intakeStage": "awaiting-course-title",
+  "materialOrganization": {
+    "status": "not-started",
+    "inputs": [],
+    "pendingClassifications": [],
+    "inputFolders": [
+      "原片",
+      "片头",
+      "片尾",
+      "封面",
+      "参考资料"
+    ],
+    "inputRecordFields": [
+      "sourcePath",
+      "destinationRelativePath",
+      "category",
+      "bytes",
+      "sha256",
+      "copyOrMove",
+      "notes"
+    ]
+  },
+  "generatedPaths": {
+    "working": "工作文件",
+    "previews": "预览",
+    "deliverables": "交付",
+    "log": "创作日志.md"
+  },
+  "nativeProject": {
+    "projectId": null,
+    "timelineId": null,
+    "projectPath": null,
+    "storedInsideCourseDirectory": null
   }
 }

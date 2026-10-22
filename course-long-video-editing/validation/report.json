@@ -1,7 +1,7 @@
 {
-  "packageVersion": "1.2.0",
+  "packageVersion": "1.3.0",
   "date": "2026-10-22",
-  "status": "real-material-research-and-course-companion-update; native course pilot still required",
+  "status": "title-first-per-course-folder-local-update; actual course pilot still required",
   "confirmedRequirements": {
     "videoModes": [
       "talking-head",
@@ -14,7 +14,8 @@
     "missingAssets": "record pending; request needed input; continue independent work without creating replacements",
     "maintenance": "automatically update generalized confirmed rules locally; GitHub publication requires explicit confirmation",
     "visualMaterials": "Understand corrected subtitles and optional user inputs; proactively research and capture real primary sources before MG production; optional generated illustrations clearly distinguished",
-    "courseCompanion": "After final edit deliver grounded title, short introduction and superslash student PDF with applicable mindmap/material/source links; copyable text and editable source"
+    "courseCompanion": "After final edit deliver grounded title, short introduction and superslash student PDF with applicable mindmap/material/source links; copyable text and editable source",
+    "projectStart": "Actual editing intent triggers title-first intake; local YYYYMMDD-title directory with five categories; assistant organizes supplied files, all course outputs/log stay inside; reuse same course across days; publication title separate"
   },
   "professionalQualityStatus": {
     "wholeFirstMethodImplemented": false,
@@ -24,39 +25,67 @@
   },
   "completed": [
     {
-      "check": "Portable companion renderer and data boundaries",
-      "passed": 20,
-      "scope": "Actual PDF/Markdown generation, source URLs and embedded MiSans, draft/template gates, existing-output preservation, malformed/unsafe inputs, 48 mindmap items and 18 source notes preserved across 8 pages; normal source title and note stay together."
+      "check": "Project initialization and explicit-classification intake",
+      "passed": 17,
+      "scope": "Real temporary filesystem tests: exact date/title/five directories, empty intake, copied supplied files with SHA256, preserved originals/log/state, same-content reuse, different-content naming, nested references, date/role/path errors and identity conflicts. Synthetic files only; no native video or model conversation trial. Includes preservation of existing editing-stage and unresolved copy records during resume/other-file import."
     },
     {
-      "check": "Branded template visual review",
-      "result": "All 3 current template pages rendered and inspected at readable size; 8-page long-input contact sheet inspected. Fixed page-vs-frame dimensions and orphaned source headings before final checks.",
-      "scope": "Template说明, not a real course handout or professional animation acceptance."
+      "check": "Existing resources and production method",
+      "result": "57 existing script/creative/brand/PDF-template paths byte unchanged; entire whole-first method document byte unchanged."
     },
     {
-      "check": "Original resources and production method",
-      "result": "43 original creative files and all six existing helper scripts byte unchanged; whole-first document entirely byte unchanged; two added logos match original brand resources."
+      "check": "Trigger and workflow scope review",
+      "result": "Actual course editing intent uses title-first intake; skill discussion is not a new course. First question only when current title unknown. Both user-supplied and waiting-for-materials paths lead to per-course organization before editing.",
+      "scope": "Primary-agent document readback; not an independent model behavioral test."
     },
     {
-      "check": "Official tool references",
-      "result": "Playwright screenshots, ReportLab guide and PyMuPDF page-image reference opened and checked on 2026-10-22."
+      "check": "Official Skill structure and invocation metadata",
+      "result": "valid; implicit invocation explicitly enabled; required UI metadata parsed"
     },
     {
-      "check": "Official Skill structure",
-      "result": "Skill is valid"
+      "check": "Package integrity and local references",
+      "result": "passed;96 files,95 manifest records"
     },
     {
-      "check": "Inventory, relative resource links and static portability",
-      "result": "passed;94 files including manifest,93 resource records; all new brand/template references resolve"
-    },
-    {
-      "check": "Redacted source credential scan",
+      "check": "Redacted credential scan",
       "result": "gitleaks no leaks found"
     }
   ],
   "carriedForward": {
-    "version": "1.1.1",
-    "scope": "Original creative resources, six helper scripts and complete whole-first document retain their previous scope-specific evidence; no repeated native/aesthetic claim."
+    "version": "1.2.0",
+    "checks": [
+      {
+        "check": "Portable companion renderer and data boundaries",
+        "passed": 20,
+        "scope": "Actual PDF/Markdown generation, source URLs and embedded MiSans, draft/template gates, existing-output preservation, malformed/unsafe inputs, 48 mindmap items and 18 source notes preserved across 8 pages; normal source title and note stay together."
+      },
+      {
+        "check": "Branded template visual review",
+        "result": "All 3 current template pages rendered and inspected at readable size; 8-page long-input contact sheet inspected. Fixed page-vs-frame dimensions and orphaned source headings before final checks.",
+        "scope": "Template说明, not a real course handout or professional animation acceptance."
+      },
+      {
+        "check": "Original resources and production method",
+        "result": "43 original creative files and all six existing helper scripts byte unchanged; whole-first document entirely byte unchanged; two added logos match original brand resources."
+      },
+      {
+        "check": "Official tool references",
+        "result": "Playwright screenshots, ReportLab guide and PyMuPDF page-image reference opened and checked on 2026-10-22."
+      },
+      {
+        "check": "Official Skill structure",
+        "result": "Skill is valid"
+      },
+      {
+        "check": "Inventory, relative resource links and static portability",
+        "result": "passed;94 files including manifest,93 resource records; all new brand/template references resolve"
+      },
+      {
+        "check": "Redacted source credential scan",
+        "result": "gitleaks no leaks found"
+      }
+    ],
+    "scope": "Original animation resources, seven existing helper scripts and PDF template bytes unchanged; prior checks retain only their recorded scope."
   },
   "notPerformed": [
     "Raw-lecture rough cut with native tool and listening under this workflow",
@@ -64,9 +93,10 @@
     "Screen-tutorial native operation-preservation trial",
     "Whole-first professional animation implementation and final-standard aesthetic review",
     "Physical second-computer end-to-end production",
-    "GitHub publication of v1.2.0: requires user confirmation",
     "Real new-course web/software capture and material integration under this added workflow",
-    "Title/intro and student handout verified against a newly edited real course"
+    "Title/intro and student handout verified against a newly edited real course",
+    "GitHub publication of v1.3.0: requires explicit user confirmation",
+    "Actual new-course conversation-to-folder-to-native-edit trial under title-first intake"
   ],
   "outOfScope": [
     "Intro/outro/cover creation or style selection",

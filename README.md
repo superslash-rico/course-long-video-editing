@@ -1,16 +1,16 @@
 # 课程长视频剪辑 Skill
 
-在本地 ChatCut 剪辑人像口播或软件录屏课程：按需粗剪、校对字幕，先准备真实素材再制作教学动画，衔接用户提供的片头片尾，并整理课程标题、简介和品牌学员资料 PDF。
+在本地 ChatCut 剪辑人像口播或软件录屏课程：先确认课程标题、建立一课一目录并归类素材，再按需粗剪、校对字幕，准备真实素材并制作教学动画，衔接用户提供的片头片尾，最后整理上传标题、简介和品牌学员资料 PDF。
 
-当前版本：**v1.2.0 · 同事试用版**。完整技能与字体、参考资源、可编辑组件、课程资料模板共 94 个文件。
+当前版本：**v1.3.0 · 同事试用版**。完整技能与字体、参考资源、可编辑组件、课程资料模板共 96 个文件。
 
 **专业动画的最终整体目标尚未达到；完整的整体构图与镜头设计方法已成文，仍待新课程实际制作验证。目前没有符合新标准的完整专业动画样片。** 名签/金句固定视觉保留；项目记录只供局部工艺研究。新增 PDF 预览是资料排版模板说明，不是实际课程成品或动画品质样片。
 
 ## 下载与安装
 
-- [v1.2.0 完整技能包与 SHA256](https://github.com/superslash-rico/course-long-video-editing/releases/tag/v1.2.0)
-- [直接下载完整 ZIP](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.2.0/course-long-video-editing-v1.2.0.zip)
-- [SHA256 校验文件](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.2.0/course-long-video-editing-v1.2.0.sha256)
+- [v1.3.0 完整技能包与 SHA256](https://github.com/superslash-rico/course-long-video-editing/releases/tag/v1.3.0)
+- [直接下载完整 ZIP](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.3.0/course-long-video-editing-v1.3.0.zip)
+- [SHA256 校验文件](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.3.0/course-long-video-editing-v1.3.0.sha256)
 - 或使用 **Code → Download ZIP**。先读[开始使用](course-long-video-editing/开始使用.md)，安装内层完整的 `course-long-video-editing/`，不要只复制 `SKILL.md`。
 
 ```sh
@@ -30,7 +30,24 @@ MiSans 原版四字重和完整许可位于[字体目录](course-long-video-edit
 
 ## 当前制作流程
 
-接收素材与判断人像/录屏 → 确认粗剪状态 → 按需自然教学粗剪 → 两处首尾转场 → 字幕校对 → 真实素材调研/截图 → 专业动画与未覆盖重点句 → 课程标题/简介和学员 PDF → 整片核查与本机复盘。
+实际课程剪辑意图 → 确认本课标题 → 建立日期标题目录并归类已供素材 → 判断人像/录屏与确认粗剪状态 → 按需自然教学粗剪 → 两处首尾转场 → 字幕校对 → 真实素材调研/截图 → 专业动画与未覆盖重点句 → 上传标题/简介和学员 PDF → 整片核查与本机复盘。
+
+只说“我想剪辑一个课程长视频”也可启动。标题未知时，Agent 首先询问“这次想剪辑的课程标题是什么？”；已明确给出当前标题则直接复用，不从旧课或文件名擅自推定。收到标题后，在实际项目工作区创建：
+
+```text
+YYYYMMDD-课程标题/
+├── 原片/
+├── 片头/
+├── 片尾/
+├── 封面/
+├── 参考资料/
+├── 课程项目.json
+└── 创作日志.md
+```
+
+日期取用户/客户端当地的建项目日期。尚未给素材就提示实际目录路径；已经给出素材时，Agent 按用途复制、核验并记录来源/目标/摘要，保留原件，同名不同内容另存。完成建档和已供素材归类后再开始剪辑。后续按需增加 `工作文件/`、`预览/`、`交付/`；字幕、动画源码、来源记录、审核片、成片和 PDF 都跟随本课。跨日续作复用原目录，最终上传标题另存，不自动改目录名。只讨论或更新 Skill 不创建课程占位目录。
+
+每课建立独立 ChatCut 工程。应用受管工程包若无法选择存放位置，记录工程与课程目录的映射，不搬动应用数据库。可选标准库助手和归档格式详见[课程建档与资料管理](course-long-video-editing/references/project-start-and-file-management.md)。
 
 - **片头、片尾和封面由用户提供。** 包装仅做片头到正文、正文到片尾两处转场，不自动设计选样、制作封面或插入章节包装。缺素材记待补并继续独立工序。
 - **粗剪状态未知先问。** 已粗剪直接校对字幕；需要粗剪时按自然教学去明确口误/失败重录、缩短无意义长空白，保留原意、教学停顿和软件操作链。
@@ -44,7 +61,8 @@ MiSans 原版四字重和完整许可位于[字体目录](course-long-video-edit
 
 ```text
 使用 $course-long-video-editing，在本地 ChatCut 从零剪辑我提供的课程长视频。
-先识别人像/录屏并确认粗剪状态。沿用我给的片头、片尾和封面，完成两处转场。
+先确认本课标题，建立 YYYYMMDD-课程标题 与五类素材目录，由你整理已给素材，
+再识别人像/录屏并确认粗剪状态。沿用我给的片头、片尾和封面，完成两处转场。
 校对字幕后，根据课程内容主动检索并截图真实素材，完整执行整体构图与镜头方法，
 先专业动画，再做未覆盖的重点句。剪辑定稿后整理课程标题、短简介和品牌学员资料 PDF，
 包含适用的思维导图、材料/来源链接，并保留可编辑工程、文案与资料源。
@@ -58,6 +76,7 @@ MiSans 原版四字重和完整许可位于[字体目录](course-long-video-edit
 | 入口 | 用途 |
 | --- | --- |
 | [SKILL.md](course-long-video-editing/SKILL.md) | 完整流程、范围与必要分支 |
+| [课程建档与资料管理](course-long-video-editing/references/project-start-and-file-management.md) / [初始化助手](course-long-video-editing/scripts/init_course_project.py) | 标题优先、一课一目录、已供素材归档、续作与工程映射 |
 | [接收与粗剪](course-long-video-editing/references/intake-and-rough-cut.md) / [录屏路径](course-long-video-editing/references/screen-tutorial.md) | 粗剪授权、自然节奏与操作保护 |
 | [首尾转场](course-long-video-editing/references/branding-intro-outro-transitions.md) / [用户封面](course-long-video-editing/references/covers.md) | 用户供稿与两处衔接 |
 | [字幕](course-long-video-editing/references/subtitles.md) | 中文/英文/术语、语气词、样式及合成检查 |
@@ -75,7 +94,9 @@ MiSans 原版四字重和完整许可位于[字体目录](course-long-video-edit
 
 ## 验证范围
 
-v1.2.0 的完整 94 文件包已核对本机源码、ZIP 和全局安装一致。新增资料模板做过 20 项相关输出/边界/资源保护检查，三页示例逐页渲染查看；长内容测试保留了 48 个导图子项与 18 条来源说明，并检查分页、字体和链接。换到含中文/空格的新目录后，完整性、安装预演和 PDF 再生成通过。
+v1.3.0 完整 96 文件包已核对本机源码、冻结 ZIP 和全局安装一致。新增建档/归档助手完成 17 项真实临时文件系统及资源保护检查，覆盖标题/日期/五类目录、已供文件复制及摘要、冲突另存、续作时原件/日志/状态和待归档记录保护。换到含中文/空格的新目录后，包完整性、安装预演及初始化/复制实际运行通过；57 个既有脚本/创作资源/品牌及 PDF 模板路径、整份整体构图与镜头方法保持原字节。
+
+原 v1.2.0 的资料模板 20 项输出/边界/资源保护检查及三页模板逐页渲染检查按原范围沿用；长内容样例保留 48 个导图子项和 18 条来源说明。当前新增建档测试使用合成文件，没有创建实际用户课程，不代表真实对话自动触发或原生剪辑已验收。
 
 这些证据不代表另一台电脑已完成真实原生剪辑，也不证明专业动画审美、连续听感或学生理解达标。完整整体方法和新流程仍需用真实新课程测试。随包 `validation/report.json` 是打包时的检查快照；本次仓库发布以 Release、提交和 GitHub Actions 状态为准。
 
