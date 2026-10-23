@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "check": "same-seconds-30-and-60fps",
+      "ok": true
+    },
+    {
+      "check": "seek-order-independent",
+      "ok": true
+    },
+    {
+      "check": "continuous-arrival-and-departure",
+      "ok": true
+    },
+    {
+      "check": "visible-reading-push",
+      "ok": true
+    },
+    {
+      "check": "strong-whole-detail-contrast",
+      "ok": true
+    },
+    {
+      "check": "zero-strength-is-valid",
+      "ok": true
+    },
+    {
+      "check": "negative-scale-is-rejected",
+      "ok": true
+    },
+    {
+      "check": "overlapping-holds-are-rejected",
+      "ok": true
+    },
+    {
+      "check": "out-of-duration-is-rejected",
+      "ok": true
+    },
+    {
+      "check": "bad-angle-is-rejected",
+      "ok": true
+    },
+    {
+      "check": "unmarked-zero-time-motion-is-rejected",
+      "ok": true
+    },
+    {
+      "check": "explicit-cut-has-defined-boundary",
+      "ok": true
+    },
+    {
+      "check": "zero-reading-hold-has-no-extra-jump",
+      "ok": true
+    }
+  ],
+  "scope": "Pure camera invariants and seconds/fps reconstruction. Does not establish native geometry or visual taste."
+}

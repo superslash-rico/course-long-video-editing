@@ -1,0 +1,15 @@
+{
+  "cards": [
+    {
+      "id": "caption-a",
+      "text": "先说清目标",
+      "seconds": [
+        4,
+        5
+      ]
+    }
+  ],
+  "totalCount": 1,
+  "paginationComplete": true,
+  "visibleCaptionTrackCount": 1
+}

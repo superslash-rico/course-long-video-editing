@@ -14,8 +14,8 @@
     "Live presenter uses separate normalized second-based component; unreferenced old effect omitted"
   ],
   "presenter": "Live instructor effect is separate, not embedded into MG",
-  "audio": "Reference composite includes source voice/SFX; MG code alone is silent",
-  "status": "historical-partial-craft-only; final-whole-composition-standard-not-accepted; whole-first-method-not-implemented",
+  "audio": "Historical MG code is silent; personal composite reference media are not included in this share package",
+  "status": "historical-partial-code-study-only; not current production baseline or complete aesthetic benchmark",
   "license": "../../licenses/LICENSE-video-shotcraft.txt",
   "timingControls": {
     "content": "labelsJSON key/t/body only",

@@ -37,7 +37,7 @@ python3 scripts/verify_package.py
 
 有可用离线SVG/浏览器渲染器时，可以把设计帧渲染为PNG再审；记录具体引擎、字体和范围。不能假定ffmpeg一定带SVG解码器、Quick Look可跨平台或沙箱允许启动。没有实际渲染条件就交设计源和本地查看入口，标“未渲染验收”，保留在真实目标机补检的任务，不停止其他内容/分镜准备。
 
-单独的局部工艺研究目录提供[项目记录时序图](../assets/craft-studies/project-record/project-record-chronology.jpg)，仅辅助观察旧例材质与对象动作；没有完整新标准达标成片，不能照搬其整体布局。HLG普通解码图可能偏暗，不能代替原生色彩检查、连续观看和听审。
+随包[通用工艺示范](../assets/examples/portable-workflow/preview.mp4)和[联系表](../assets/examples/portable-workflow/native-contact.jpg)用于理解组件与镜头，不替代新片素材/布局。旧局部代码仅作研究，整体审美和跨机结果见当前验证范围。HLG普通解码图可能偏暗，不能代替原生色彩检查、连续观看和听审。
 
 ## 金句行容量的额外检查
 

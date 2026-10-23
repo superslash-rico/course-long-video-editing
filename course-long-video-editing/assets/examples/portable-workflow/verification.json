@@ -1,0 +1,191 @@
+{
+  "version": "1.4.0",
+  "date": "2026-10-23",
+  "purpose": "neutral assembly example, not lecture or final-standard aesthetic endorsement",
+  "actualExport": {
+    "durationSeconds": 46.0,
+    "bytes": 24824216,
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "nb_frames": "1380",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "sample_rate": null,
+        "channels": null
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "profile": "LC",
+        "width": null,
+        "height": null,
+        "pix_fmt": null,
+        "avg_frame_rate": "0/0",
+        "nb_frames": "2159",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null,
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ],
+    "AVDecoded": true,
+    "sha256": "c1a557c96a0b59d11710964e4cb580c26c3827a6cecfa8446ee224e688b46ce2"
+  },
+  "sourceDependencies": [
+    {
+      "path": "assets/components/course-stage/background-only.html",
+      "sha256": "7d898f5fdf2b747c2862214be65d2561c9358eaad944a4daabdf2948a35272e9"
+    },
+    {
+      "path": "assets/components/course-stage/background-only.js",
+      "sha256": "ae0630943b0dedb061d31647c6c16e115061574f652a97885adeef7f86cd04d9"
+    },
+    {
+      "path": "assets/components/course-stage/background-properties.json",
+      "sha256": "0dc1ac3acf54ab3658b3265ff31536082a01aea435f8bf85ede2f18290b5ac66"
+    },
+    {
+      "path": "assets/components/course-stage/background.js",
+      "sha256": "31abc264efecbc9c7c0fd7ec98f70f57edd01527750f4680a0d0b5bc17105fda"
+    },
+    {
+      "path": "assets/components/course-stage/camera.js",
+      "sha256": "1c0b999256c6686c89fe5ce7bc92226a6e9eb841f57d75169096b501c566cffe"
+    },
+    {
+      "path": "assets/components/course-stage/defaults.js",
+      "sha256": "4bf0014a3fa4ed4435708686ff9d0713895292bb6cc820971a372f4fec7781f7"
+    },
+    {
+      "path": "assets/components/course-stage/defaults.json",
+      "sha256": "1b3cfdbab0e15693bc5bf2f442c6f57395251aaca8778213249f7568a6556ba0"
+    },
+    {
+      "path": "assets/components/course-stage/index.html",
+      "sha256": "5cf0cb656d1db711485f6f44e99bd479d09434e7a26b1bd7634d52cecb02f3e8"
+    },
+    {
+      "path": "assets/components/course-stage/package.json",
+      "sha256": "016b0d3ba648a34e2bc61215ce36db5c620cff9d857d06266b49b39800b9ede7"
+    },
+    {
+      "path": "assets/components/course-stage/properties.json",
+      "sha256": "cb37ae112c07dfe73767f8efb2334ed7d05e9bc7cf90c9285a505eb77a556156"
+    },
+    {
+      "path": "assets/components/course-stage/remotion-example.tsx",
+      "sha256": "5c012ec74fd98e6a7ec36b60f195e03b34dc35f237152e7c3bfa51653d74cf29"
+    },
+    {
+      "path": "assets/components/course-stage/scene.css",
+      "sha256": "ba52293985b48ac9b3a4831ada78398e705065d9bb3a896a5448e51aa62abc58"
+    },
+    {
+      "path": "assets/components/course-stage/scene.js",
+      "sha256": "8762c4db828313f62c7cc2436dabccbd9d42ced9ffdf174a0a6b388d95f6c404"
+    },
+    {
+      "path": "assets/components/course-stage/shots.json",
+      "sha256": "100fb7b9a399a9efabbc6d5cad3e8ddc5fde3a39a00afa715313516b147eb35a"
+    },
+    {
+      "path": "assets/components/course-stage/stage.tsx",
+      "sha256": "c31fa766d1990226410eb487a300e6621f3fda2723d2e98fa08fd2523fdca0c4"
+    },
+    {
+      "path": "assets/components/course-stage/surface.js",
+      "sha256": "55a0fd5f62911533473d293b5f2265bceb62ea6465af99762d7880c2c3e32db8"
+    },
+    {
+      "path": "assets/templates/identity-slash/defaults.js",
+      "sha256": "66dd651e97172ec213f531b8018bd03d4f26dc985d12f1c634f4372739898dfa"
+    },
+    {
+      "path": "assets/templates/identity-slash/defaults.json",
+      "sha256": "bffbe74199d78e9651cebb58503b6b6ea4ad4dc0c8ed4924feaf2bb250a7574a"
+    },
+    {
+      "path": "assets/templates/identity-slash/properties.json",
+      "sha256": "dbff1b8715dccfc5ee338153834628935eb41f918927a7e152bfdd7c8a87d279"
+    },
+    {
+      "path": "assets/templates/identity-slash/speaker.html",
+      "sha256": "67b2a86f51b2cc55ca58907090793c7e513af71425869a86395c7c0472f3aac1"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/defaults.js",
+      "sha256": "2179ab71ed8bea86d96cd3834bf6214d1af3526cfb20e8f789f8b71784f86aa6"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/defaults.json",
+      "sha256": "5e01eaea90e57c82f9b6031d876d2de3567b631466e352ea2f5df37b63a52485"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/properties.json",
+      "sha256": "1f6f5e08fcaa3873fe5ef1f3ce3ee04a89e7d96bc4966a8ce94d554acfd7cbe9"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/quote-runtime.js",
+      "sha256": "bac500a1c43a30927586b2f93ec93490b32a41a3038fdeee51dfff3b636c7d0c"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/quote.css",
+      "sha256": "59a280110a05c96569647549b900471bc12b77458ce8f6bf2a53242c26524bf7"
+    },
+    {
+      "path": "assets/templates/quote-highlight-follow/quote.html",
+      "sha256": "1248e99e14869cd7f6c24b104887f4541e5b9b7973231909fdc58a68a977d387"
+    },
+    {
+      "path": "assets/examples/portable-workflow/assembly.json",
+      "sha256": "3d76186cd16d6210375b62146f5b54ece777f56200b074cc66c375017e5a6099"
+    },
+    {
+      "path": "assets/examples/portable-workflow/demo-config.json",
+      "sha256": "baf1c17f0f01a66ce3da2d256f7cff737a4b5bb615364fe6af2287b5fdd3ab81"
+    },
+    {
+      "path": "assets/examples/portable-workflow/gallery.html",
+      "sha256": "44d0b9de93b4b7ed35aceaab8e0ec5efcdcfedef9c82303a122410cfe964a5f4"
+    },
+    {
+      "path": "assets/examples/portable-workflow/gallery.js",
+      "sha256": "e0cc61782643c373b05a663b7b47612eace220f1a73c288386e0b43022a91524"
+    },
+    {
+      "path": "assets/audio/paper-settle.wav",
+      "sha256": "22182d1206624e735fb67f3ebc68032f809bc2b62c5e1ff109eac8ebd21dbaf6"
+    },
+    {
+      "path": "assets/audio/select-soft.wav",
+      "sha256": "e5a6ecff5d7782eb1c109ccedaca3938c7f0a9125f0532dc6ff40b8335eda4ce"
+    },
+    {
+      "path": "assets/audio/soft-whoosh.wav",
+      "sha256": "459de2d383bf01258e521cb000fd625b6b598854dd5157accecc812c7431591a"
+    }
+  ],
+  "codeAndInstanceChecks": {
+    "htmlNativeImport": true,
+    "remotionNativeImport": true,
+    "currentEightSecondRemotionPlan": true,
+    "greenOverrideThenExplicitPurpleRestore": true,
+    "circleExplicitDurationNative": true,
+    "originalCourseTimelineNotEditedByProbe": true
+  },
+  "visualInspection": "12 actual native gallery frames plus before/after override and circle contact sheets inspected; fixed ticket occlusion before current export",
+  "syntheticQuoteTiming": true,
+  "humanNarration": false,
+  "subjectiveListening": "not-performed",
+  "userAestheticReview": "pending",
+  "originalNativeReceipts": "kept outside shared package; no IDs or user paths shipped"
+}

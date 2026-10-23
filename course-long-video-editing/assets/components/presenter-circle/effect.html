@@ -2,31 +2,31 @@
 <style>canvas{display:block;width:100%;height:100%}</style>
 <canvas></canvas>
 <script type="module">
+import {defaults} from './defaults.js';
 // Portable derivative of the course's live-input morph. Coordinates are normalized;
 // time is local seconds. This is authored framing, not automatic face tracking.
-export default function mount({root,input,viewport,timeline,props}){
+export default function mount({root,input,viewport,timeline={},props}){
  const canvas=root.querySelector('canvas');
  canvas.width=viewport.width;canvas.height=viewport.height;
  const ctx=canvas.getContext('2d');
  if(!ctx)throw new Error('Live presenter circle requires Canvas 2D');
- let p={...props};
+ let p={...defaults,...(props||{})};
  const clamp=v=>Math.max(0,Math.min(1,v));
  const smooth=v=>{v=clamp(v);return v*v*v*(v*(v*6-15)+10);};
  const mix=(a,b,t)=>a+(b-a)*t;
  const num=(key,value)=>Number.isFinite(Number(p[key]))?Number(p[key]):value;
  return {
-  update({props}){p={...props};},
-  render({timeSeconds,frame,progress}){
-   const duration=num('seconds',0)>0?num('seconds',0):timeline.durationInSeconds;
+  update({props}){p={...defaults,...(props||{})};},
+  render({timeSeconds}){
+   const duration=num('seconds',0);
    if(!Number.isFinite(duration)||duration<=0)throw new Error('Actual effect duration in seconds is required');
    const t=Math.max(0,timeSeconds),w0=canvas.width,h0=canvas.height;
    ctx.resetTransform();ctx.clearRect(0,0,w0,h0);
-   const finalFrame=Number.isFinite(frame)&&Number.isFinite(timeline.durationInFrames)&&frame>=timeline.durationInFrames-1;
-   if(finalFrame||(Number.isFinite(progress)&&progress>=1)||t>=duration){ctx.drawImage(input,0,0,w0,h0);return;}
+   if(t>=duration){ctx.drawImage(input,0,0,w0,h0);return;}
    const enterSeconds=Math.min(Math.max(.01,num('entranceSeconds',.8)),duration/3);
    const exitSeconds=Math.min(Math.max(.01,num('exitSeconds',.8)),duration/3);
    const k=smooth(t/enterSeconds)*(1-smooth((t-duration+exitSeconds)/exitSeconds));
-   if(k<.000001){ctx.drawImage(input,0,0,w0,h0);return;}
+   if(k<.0001){ctx.drawImage(input,0,0,w0,h0);return;}
    const route=smooth((t-num('moveStartSeconds',duration*.35))/Math.max(.01,num('moveSeconds',.8)));
    const d=Math.min(w0,h0)*Math.max(.08,Math.min(.6,num('diameterFraction',.26)));
    const centerX=Math.max(d/2,Math.min(w0-d/2,mix(num('startCenterX',.86),num('endCenterX',.14),route)*w0));

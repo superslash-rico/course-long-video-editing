@@ -114,6 +114,18 @@
     "projectId": null,
     "timelineId": null,
     "projectPath": null,
-    "storedInsideCourseDirectory": null
+    "storedInsideCourseDirectory": null,
+    "targetConfirmedFromCurrentRead": false
+  },
+  "transcription": {
+    "existingResult": "unknown",
+    "reuseAcceptedResult": true,
+    "cloudConsent": {
+      "status": "unknown",
+      "service": null,
+      "audioScope": null,
+      "authorizationEvidence": null
+    },
+    "editingSurface": "local-native-desktop"
   }
 }

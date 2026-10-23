@@ -1,0 +1,109 @@
+{
+  "seconds": 46,
+  "timelineFPS": 60,
+  "syntheticQuoteCues": true,
+  "quoteValues": {
+    "text": "先说清目标\n再对照材料\n判断结果是否可信",
+    "keywords": "目标,材料,可信",
+    "cues": "[{\"row\": 0, \"from\": 0, \"to\": 5, \"start\": 0.3, \"end\": 1.7}, {\"row\": 1, \"from\": 0, \"to\": 5, \"start\": 2.2, \"end\": 3.8}, {\"row\": 2, \"from\": 0, \"to\": 8, \"start\": 4.4, \"end\": 6.8}]",
+    "font": "MiSans",
+    "textColor": "#FFFFFF",
+    "activeColor": "#F4A6FF",
+    "markerColor": "#EBC4F5",
+    "inkColor": "#231529",
+    "accentColor": "#E802F8",
+    "bgColor": "#0C0A14",
+    "bgOpacity": 0.52,
+    "transparentBackground": false,
+    "seconds": 8,
+    "leadSize": 70,
+    "mainSize": 98,
+    "copyX": 100,
+    "copyY": 160,
+    "copyWidth": 1120,
+    "lineGap": 11,
+    "inactiveOpacity": 0.22,
+    "washX": 600,
+    "washY": 450,
+    "washRadiusX": 1100,
+    "washRadiusY": 550
+  },
+  "soundEvents": [
+    {
+      "file": "../../audio/soft-whoosh.wav",
+      "startSeconds": 3,
+      "gainDb": -1,
+      "purpose": "推进左侧主要阅读单位",
+      "auditionState": "candidate; not user-approved"
+    },
+    {
+      "file": "../../audio/paper-settle.wav",
+      "startSeconds": 8.5,
+      "gainDb": 0,
+      "purpose": "笔记在右侧落定",
+      "auditionState": "candidate; not user-approved"
+    },
+    {
+      "file": "../../audio/soft-whoosh.wav",
+      "startSeconds": 15,
+      "gainDb": -2,
+      "purpose": "拉回已设计的整体",
+      "auditionState": "candidate; not user-approved"
+    },
+    {
+      "file": "../../audio/paper-settle.wav",
+      "startSeconds": 18.5,
+      "gainDb": -1,
+      "purpose": "核对记录收合",
+      "auditionState": "candidate; not user-approved"
+    },
+    {
+      "file": "../../audio/soft-whoosh.wav",
+      "startSeconds": 31.9,
+      "gainDb": -2,
+      "purpose": "名牌唯一入场",
+      "auditionState": "candidate; not user-approved"
+    },
+    {
+      "file": "../../audio/soft-whoosh.wav",
+      "startSeconds": 37.9,
+      "gainDb": -2,
+      "purpose": "金句唯一入场",
+      "auditionState": "candidate; not user-approved"
+    }
+  ],
+  "sections": [
+    {
+      "name": "HTML整体、特写与同对象变化",
+      "seconds": [
+        0,
+        24
+      ]
+    },
+    {
+      "name": "Remotion共用组件",
+      "seconds": [
+        24,
+        32
+      ]
+    },
+    {
+      "name": "已选定名签语言",
+      "seconds": [
+        32,
+        38
+      ]
+    },
+    {
+      "name": "金句布局与合成",
+      "seconds": [
+        38,
+        46
+      ]
+    }
+  ],
+  "remotionValues": {
+    "seconds": 8,
+    "cameraJSON": "[{\"at\": 0, \"until\": 1.2, \"p\": {\"fx\": 0, \"fy\": 0, \"s\": 0.77, \"rx\": 20, \"rz\": -1}}, {\"at\": 1.56, \"until\": 3.9, \"p\": {\"fx\": -350, \"fy\": 70, \"s\": 1.65, \"rx\": 9, \"rz\": 0}}, {\"at\": 4.26, \"until\": 6.4, \"p\": {\"fx\": 350, \"fy\": 70, \"s\": 1.65, \"rx\": 9, \"rz\": 0}}, {\"at\": 6.76, \"until\": 8, \"p\": {\"fx\": 0, \"fy\": 0, \"s\": 0.77, \"rx\": 20, \"rz\": -1}}]"
+  }
+}

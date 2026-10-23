@@ -1,0 +1,31 @@
+{
+  "entry": "index.html",
+  "type": "motion-graphic",
+  "runtime": "html",
+  "width": 1920,
+  "height": 1080,
+  "exampleDurationSeconds": 24,
+  "status": "confirmed-background-language; reusable engineering demonstration; new-complete-scene-aesthetic-review-pending",
+  "aspectPolicy": "16:9 design units; 1080p and 4K scaled placements; other aspect ratios require new layout",
+  "purpose": "self-contained background, layered opaque paper, deterministic strong camera and same-object teaching example",
+  "rights": "Self-authored adaptation for this workflow and authorized colleagues; no third-party lesson media",
+  "dependencyPolicy": "relative modules only; original MiSans companion fonts require receiver registration",
+  "copyFiles": [
+    "index.html",
+    "scene.js",
+    "scene.css",
+    "camera.js",
+    "background.js",
+    "surface.js",
+    "defaults.js",
+    "defaults.json",
+    "properties.json",
+    "shots.json",
+    "stage.tsx",
+    "background-only.html",
+    "background-only.js",
+    "background-properties.json",
+    "remotion-example.tsx",
+    "package.json"
+  ]
+}

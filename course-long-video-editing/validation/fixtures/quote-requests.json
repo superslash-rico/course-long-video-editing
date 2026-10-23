@@ -1,0 +1,20 @@
+[
+  {
+    "id": "quote-example",
+    "sourceSeconds": [
+      0,
+      2
+    ],
+    "rows": [
+      {
+        "display": "先核对",
+        "anchor": "先核对"
+      },
+      {
+        "display": "再判断",
+        "anchor": "再判断"
+      }
+    ],
+    "keywords": "核对"
+  }
+]

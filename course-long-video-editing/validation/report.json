@@ -1,111 +1,583 @@
 {
-  "packageVersion": "1.3.0",
-  "date": "2026-10-22",
-  "status": "title-first-per-course-folder-local-update; actual course pilot still required",
-  "confirmedRequirements": {
-    "videoModes": [
-      "talking-head",
-      "screen-tutorial"
-    ],
-    "screenTutorial": "keep real operations primary; professional animation only for useful concept explanation; protect operation/reading pauses",
-    "roughCut": "ask when unknown; natural teaching only when requested; skip if already edited",
-    "packaging": "user provides intro/outro with course; only intro-to-course and course-to-outro transitions; no design/selection or automatic chapter packaging",
-    "covers": "use actual user-provided files; no generation, required three-ratio set, or automatic adaptation",
-    "missingAssets": "record pending; request needed input; continue independent work without creating replacements",
-    "maintenance": "automatically update generalized confirmed rules locally; GitHub publication requires explicit confirmation",
-    "visualMaterials": "Understand corrected subtitles and optional user inputs; proactively research and capture real primary sources before MG production; optional generated illustrations clearly distinguished",
-    "courseCompanion": "After final edit deliver grounded title, short introduction and superslash student PDF with applicable mindmap/material/source links; copyable text and editable source",
-    "projectStart": "Actual editing intent triggers title-first intake; local YYYYMMDD-title directory with five categories; assistant organizes supplied files, all course outputs/log stay inside; reuse same course across days; publication title separate"
+  "packageVersion": "1.4.0",
+  "date": "2026-10-23",
+  "status": "20 reusable checkpoints implemented; local scoped tests recorded; receiver real-course acceptance pending",
+  "confirmedVisuals": {
+    "background": "#0C0A14 + visible quiet dots + middle horizontal lavender glow; foreground-independent stacking and weaker camera response",
+    "fixedIdentityAndQuoteLanguage": true,
+    "wholeNewGalleryAestheticApproval": false
   },
-  "professionalQualityStatus": {
-    "wholeFirstMethodImplemented": false,
-    "completeFinalStandardProfessionalSampleIncluded": false,
-    "historicalProjectRecord": "partial craft only",
-    "FDEIncluded": false
-  },
-  "completed": [
-    {
-      "check": "Project initialization and explicit-classification intake",
-      "passed": 17,
-      "scope": "Real temporary filesystem tests: exact date/title/five directories, empty intake, copied supplied files with SHA256, preserved originals/log/state, same-content reuse, different-content naming, nested references, date/role/path errors and identity conflicts. Synthetic files only; no native video or model conversation trial. Includes preservation of existing editing-stage and unresolved copy records during resume/other-file import."
+  "completed": {
+    "python": {
+      "ok": true,
+      "testsRun": 46,
+      "failures": [],
+      "scope": "Synthetic records and temporary filesystem. No aesthetic, actual transcript accuracy, listening, native rendering or second-computer claim."
     },
-    {
-      "check": "Existing resources and production method",
-      "result": "57 existing script/creative/brand/PDF-template paths byte unchanged; entire whole-first method document byte unchanged."
+    "camera": {
+      "ok": true,
+      "checks": [
+        {
+          "check": "same-seconds-30-and-60fps",
+          "ok": true
+        },
+        {
+          "check": "seek-order-independent",
+          "ok": true
+        },
+        {
+          "check": "continuous-arrival-and-departure",
+          "ok": true
+        },
+        {
+          "check": "visible-reading-push",
+          "ok": true
+        },
+        {
+          "check": "strong-whole-detail-contrast",
+          "ok": true
+        },
+        {
+          "check": "zero-strength-is-valid",
+          "ok": true
+        },
+        {
+          "check": "negative-scale-is-rejected",
+          "ok": true
+        },
+        {
+          "check": "overlapping-holds-are-rejected",
+          "ok": true
+        },
+        {
+          "check": "out-of-duration-is-rejected",
+          "ok": true
+        },
+        {
+          "check": "bad-angle-is-rejected",
+          "ok": true
+        },
+        {
+          "check": "unmarked-zero-time-motion-is-rejected",
+          "ok": true
+        },
+        {
+          "check": "explicit-cut-has-defined-boundary",
+          "ok": true
+        },
+        {
+          "check": "zero-reading-hold-has-no-extra-jump",
+          "ok": true
+        }
+      ],
+      "scope": "Pure camera invariants and seconds/fps reconstruction. Does not establish native geometry or visual taste."
     },
-    {
-      "check": "Trigger and workflow scope review",
-      "result": "Actual course editing intent uses title-first intake; skill discussion is not a new course. First question only when current title unknown. Both user-supplied and waiting-for-materials paths lead to per-course organization before editing.",
-      "scope": "Primary-agent document readback; not an independent model behavioral test."
+    "browser": {
+      "ok": true,
+      "checks": [
+        {
+          "check": "opaque-paper-faces",
+          "ok": true,
+          "scope": "ordinary face alpha; reveal opacity checked separately"
+        },
+        {
+          "check": "primary-reading-clearance-5.5",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "check": "primary-reading-clearance-11",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "check": "primary-reading-clearance-21",
+          "ok": true,
+          "issues": []
+        },
+        {
+          "check": "negative-occlusion-regression-detected",
+          "ok": true
+        },
+        {
+          "check": "out-of-order-seek",
+          "ok": true
+        },
+        {
+          "check": "identity-default-mount",
+          "ok": true
+        },
+        {
+          "check": "identity-editable-copy",
+          "ok": true
+        },
+        {
+          "check": "quote-exact-cues",
+          "ok": true
+        },
+        {
+          "check": "presenter-full-first",
+          "ok": true
+        },
+        {
+          "check": "presenter-live-input-changes",
+          "ok": true
+        },
+        {
+          "check": "presenter-restores-current-input",
+          "ok": true
+        }
+      ],
+      "errors": [],
+      "scope": "Local Chromium layout/seek/input harness with bundled fonts; native rendering, human listening and physical colleague machines are separate."
     },
-    {
-      "check": "Official Skill structure and invocation metadata",
-      "result": "valid; implicit invocation explicitly enabled; required UI metadata parsed"
+    "nativeMedia": {
+      "gallery": {
+        "durationSeconds": 46.0,
+        "bytes": 24824216,
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "profile": "High",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "avg_frame_rate": "30/1",
+            "nb_frames": "1380",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "sample_rate": null,
+            "channels": null
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "profile": "LC",
+            "width": null,
+            "height": null,
+            "pix_fmt": null,
+            "avg_frame_rate": "0/0",
+            "nb_frames": "2159",
+            "color_space": null,
+            "color_transfer": null,
+            "color_primaries": null,
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "AVDecoded": true,
+        "sha256": "c1a557c96a0b59d11710964e4cb580c26c3827a6cecfa8446ee224e688b46ce2"
+      },
+      "green": {
+        "durationSeconds": 3.0,
+        "bytes": 2314438,
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "profile": "High",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "avg_frame_rate": "30/1",
+            "nb_frames": "90",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "sample_rate": null,
+            "channels": null
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "profile": "LC",
+            "width": null,
+            "height": null,
+            "pix_fmt": null,
+            "avg_frame_rate": "0/0",
+            "nb_frames": "143",
+            "color_space": null,
+            "color_transfer": null,
+            "color_primaries": null,
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "AVDecoded": true,
+        "sha256": "535c2057214f23dbbdcc73c6d94c12cc0924774428d5c3010c414f65b19e1b2f"
+      },
+      "restored4K": {
+        "durationSeconds": 3.0,
+        "bytes": 5941397,
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "profile": "High",
+            "width": 3840,
+            "height": 2160,
+            "pix_fmt": "yuv420p",
+            "avg_frame_rate": "60/1",
+            "nb_frames": "180",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "sample_rate": null,
+            "channels": null
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "profile": "LC",
+            "width": null,
+            "height": null,
+            "pix_fmt": null,
+            "avg_frame_rate": "0/0",
+            "nb_frames": "143",
+            "color_space": null,
+            "color_transfer": null,
+            "color_primaries": null,
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "AVDecoded": true,
+        "sha256": "389d31e5cf62f86cc10ea10edc4aa79e517b65bc7ad24cda5ed66080342dc557"
+      },
+      "circle": {
+        "durationSeconds": 8.0,
+        "bytes": 4483586,
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "profile": "High",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "avg_frame_rate": "60/1",
+            "nb_frames": "480",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "sample_rate": null,
+            "channels": null
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "profile": "LC",
+            "width": null,
+            "height": null,
+            "pix_fmt": null,
+            "avg_frame_rate": "0/0",
+            "nb_frames": "378",
+            "color_space": null,
+            "color_transfer": null,
+            "color_primaries": null,
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ],
+        "AVDecoded": true,
+        "sha256": "045c21b4eca2bb6a600aca96ad412abd95956e11ea546e296a05aad114040e21"
+      },
+      "propertyEditAndRestore": {
+        "green": {
+          "greenPixels": 34305,
+          "purplePixels": 0
+        },
+        "restoredPurple": {
+          "greenPixels": 0,
+          "purplePixels": 35933
+        },
+        "restoredAgainst1080pPSNR": 36.70112061764412
+      },
+      "circleBoundEightSeconds": {
+        "frames": [
+          {
+            "frame": 0,
+            "seconds": 0.0,
+            "blackFraction": 2.4112654320987654e-06,
+            "PSNRToSource": 42.02093259318872
+          },
+          {
+            "frame": 120,
+            "seconds": 2.0,
+            "blackFraction": 0.9698533950617284,
+            "PSNRToSource": 4.543289703662212
+          },
+          {
+            "frame": 390,
+            "seconds": 6.5,
+            "blackFraction": 0.9698640046296296,
+            "PSNRToSource": 1.0151022640412102
+          },
+          {
+            "frame": 479,
+            "seconds": 7.983333333333333,
+            "blackFraction": 0.0,
+            "PSNRToSource": 38.90198997843975
+          }
+        ],
+        "ok": true,
+        "scope": "Actual native current-input test on synthetic changing footage; no face-position aesthetic claim"
+      },
+      "ok": true
     },
-    {
-      "check": "Package integrity and local references",
-      "result": "passed;96 files,95 manifest records"
+    "sameRealCourse": {
+      "ok": true,
+      "quoteCount": 18,
+      "maxCueDeltaSeconds": 1.9098611581114255e-13,
+      "captionCount": 457,
+      "fullCaptionStructurePassed": true,
+      "existingSourceAndTimelineProtectionPassed": true,
+      "expectedAddedItems": 72,
+      "scope": "Same real course used during development, after its authorized overlay changes; no second-person new-course or subjective listening claim. Private source files and IDs are not packaged."
     },
-    {
-      "check": "Redacted credential scan",
-      "result": "gitleaks no leaks found"
+    "independentInstallation": {
+      "ok": true,
+      "checks": [
+        {
+          "check": "cold-dry-run-no-write",
+          "ok": true
+        },
+        {
+          "check": "cold-install-and-byte-readback",
+          "ok": true
+        },
+        {
+          "check": "unrelated-skill-kept",
+          "ok": true
+        },
+        {
+          "check": "identical-repeat-is-idempotent",
+          "ok": true
+        },
+        {
+          "check": "different-install-kept-by-default",
+          "ok": true
+        },
+        {
+          "check": "modified-install-rejected-even-with-upgrade",
+          "ok": true
+        },
+        {
+          "check": "recognized-old-without-upgrade-kept",
+          "ok": true
+        },
+        {
+          "check": "upgrade-needs-explicit-backup",
+          "ok": true
+        },
+        {
+          "check": "upgrade-dry-run-preserves-both",
+          "ok": true
+        },
+        {
+          "check": "recognized-old-backed-up-and-upgraded",
+          "ok": true
+        },
+        {
+          "check": "unrecognized-valid-version-kept",
+          "ok": true
+        },
+        {
+          "check": "failed-final-check-rolls-back-byte-exact",
+          "ok": true
+        },
+        {
+          "check": "retained-relocated-cold-install",
+          "ok": true
+        },
+        {
+          "check": "package-only-from-unrelated-cwd",
+          "ok": true
+        },
+        {
+          "check": "all-regressions-from-relocated-copy",
+          "ok": true
+        }
+      ],
+      "count": 15,
+      "scope": "Actual local temporary/relocated directories with spaces; same macOS computer. No receiver Skill discovery or physical second-machine claim."
+    },
+    "relocatedNative": {
+      "ok": true,
+      "actualMedia": {
+        "durationSeconds": 3.0,
+        "bytes": 210745,
+        "streams": [
+          {
+            "codec_type": "video",
+            "codec_name": "h264",
+            "profile": "High",
+            "width": 1920,
+            "height": 1080,
+            "pix_fmt": "yuv420p",
+            "avg_frame_rate": "30/1",
+            "nb_frames": "90",
+            "color_space": "bt709",
+            "color_transfer": "bt709",
+            "color_primaries": "bt709",
+            "sample_rate": null,
+            "channels": null
+          },
+          {
+            "codec_type": "audio",
+            "codec_name": "aac",
+            "profile": "LC",
+            "width": null,
+            "height": null,
+            "pix_fmt": null,
+            "avg_frame_rate": "0/0",
+            "nb_frames": "143",
+            "color_space": null,
+            "color_transfer": null,
+            "color_primaries": null,
+            "sample_rate": "48000",
+            "channels": 2
+          }
+        ]
+      },
+      "AVDecoded": true,
+      "exportSHA256": "ed8d498ca5c3613eb9b8b2d3e37b8c19fc1b81159d8fc1e9a194210580433410",
+      "scope": "Pure background imported from a separate cold-installed directory with spaces and exported in isolated native timeline on same Mac. Physical second computer and receiver discovery remain untested."
+    },
+    "soundSignals": {
+      "ok": true,
+      "checks": [
+        {
+          "check": "per-source-gain-suggestion-on-synthetic-reference",
+          "ok": true,
+          "suggestedGainDb": -8.0
+        },
+        {
+          "check": "silent-reference-does-not-produce-extreme-gain",
+          "ok": true
+        },
+        {
+          "check": "actual-gallery-decodes-nonzero-mix-without-overzero-samples",
+          "ok": true,
+          "samplePeakDbFS": -12.27785878764082
+        }
+      ],
+      "subjectiveListening": "not-performed",
+      "scope": "Signal checks and gain/silent-window behavior. Synthetic reference is not human speech; no audibility, timing appropriateness or listening approval."
+    },
+    "officialSkillStructure": "valid",
+    "credentialScan": "gitleaks no leaks found; no course UUID, launcher, account configuration or personal footage shipped",
+    "packageGuardProbes": {
+      "ok": true,
+      "checks": [
+        {
+          "check": "all-python-source-parses",
+          "ok": true
+        },
+        {
+          "check": "runtime-default-drift-detected",
+          "ok": true
+        },
+        {
+          "check": "declared-copy-dependency-missing-detected",
+          "ok": true
+        },
+        {
+          "check": "assembly-dependency-missing-detected",
+          "ok": true
+        }
+      ],
+      "scope": "Package/source guard corruption probes in temporary local copies; does not test editorial judgment."
     }
-  ],
-  "carriedForward": {
-    "version": "1.2.0",
-    "checks": [
+  },
+  "environment": {
+    "system": "macOS, same developer machine",
+    "nativeServer": "chatcut_desktop 0.1.12",
+    "nativeTimelineFPS": 60,
+    "nativeGalleryOutputFPS": 30,
+    "python": "3.14.7",
+    "browser": "local installed Chromium via Playwright, isolated local harness",
+    "nativeAppVersion": "0.7.18"
+  },
+  "historicalChecks": {
+    "sourceVersion": "1.3.1",
+    "completed": [
       {
-        "check": "Portable companion renderer and data boundaries",
-        "passed": 20,
-        "scope": "Actual PDF/Markdown generation, source URLs and embedded MiSans, draft/template gates, existing-output preservation, malformed/unsafe inputs, 48 mindmap items and 18 source notes preserved across 8 pages; normal source title and note stay together."
+        "check": "Project initialization and explicit-classification intake",
+        "passed": 17,
+        "scope": "Real temporary filesystem tests: exact date/title/five directories, empty intake, copied supplied files with SHA256, preserved originals/log/state, same-content reuse, different-content naming, nested references, date/role/path errors and identity conflicts. Synthetic files only; no native video or model conversation trial. Includes preservation of existing editing-stage and unresolved copy records during resume/other-file import."
       },
       {
-        "check": "Branded template visual review",
-        "result": "All 3 current template pages rendered and inspected at readable size; 8-page long-input contact sheet inspected. Fixed page-vs-frame dimensions and orphaned source headings before final checks.",
-        "scope": "Template说明, not a real course handout or professional animation acceptance."
+        "check": "Existing resources and production method",
+        "result": "57 existing script/creative/brand/PDF-template paths byte unchanged; entire whole-first method document byte unchanged."
       },
       {
-        "check": "Original resources and production method",
-        "result": "43 original creative files and all six existing helper scripts byte unchanged; whole-first document entirely byte unchanged; two added logos match original brand resources."
+        "check": "Trigger and workflow scope review",
+        "result": "Actual course editing intent uses title-first intake; skill discussion is not a new course. First question only when current title unknown. Both user-supplied and waiting-for-materials paths lead to per-course organization before editing.",
+        "scope": "Primary-agent document readback; not an independent model behavioral test."
       },
       {
-        "check": "Official tool references",
-        "result": "Playwright screenshots, ReportLab guide and PyMuPDF page-image reference opened and checked on 2026-10-22."
+        "check": "Official Skill structure and invocation metadata",
+        "result": "valid; implicit invocation explicitly enabled; required UI metadata parsed"
       },
       {
-        "check": "Official Skill structure",
-        "result": "Skill is valid"
+        "check": "Package integrity and local references",
+        "result": "passed;96 files,95 manifest records"
       },
       {
-        "check": "Inventory, relative resource links and static portability",
-        "result": "passed;94 files including manifest,93 resource records; all new brand/template references resolve"
-      },
-      {
-        "check": "Redacted source credential scan",
+        "check": "Redacted credential scan",
         "result": "gitleaks no leaks found"
       }
     ],
-    "scope": "Original animation resources, seven existing helper scripts and PDF template bytes unchanged; prior checks retain only their recorded scope."
+    "carriedForward": {
+      "version": "1.2.0",
+      "checks": [
+        {
+          "check": "Portable companion renderer and data boundaries",
+          "passed": 20,
+          "scope": "Actual PDF/Markdown generation, source URLs and embedded MiSans, draft/template gates, existing-output preservation, malformed/unsafe inputs, 48 mindmap items and 18 source notes preserved across 8 pages; normal source title and note stay together."
+        },
+        {
+          "check": "Branded template visual review",
+          "result": "All 3 current template pages rendered and inspected at readable size; 8-page long-input contact sheet inspected. Fixed page-vs-frame dimensions and orphaned source headings before final checks.",
+          "scope": "Template说明, not a real course handout or professional animation acceptance."
+        },
+        {
+          "check": "Original resources and production method",
+          "result": "43 original creative files and all six existing helper scripts byte unchanged; whole-first document entirely byte unchanged; two added logos match original brand resources."
+        },
+        {
+          "check": "Official tool references",
+          "result": "Playwright screenshots, ReportLab guide and PyMuPDF page-image reference opened and checked on 2026-10-22."
+        },
+        {
+          "check": "Official Skill structure",
+          "result": "Skill is valid"
+        },
+        {
+          "check": "Inventory, relative resource links and static portability",
+          "result": "passed;94 files including manifest,93 resource records; all new brand/template references resolve"
+        },
+        {
+          "check": "Redacted source credential scan",
+          "result": "gitleaks no leaks found"
+        }
+      ],
+      "scope": "Original animation resources, seven existing helper scripts and PDF template bytes unchanged; prior checks retain only their recorded scope."
+    },
+    "scope": "Retained only as old scoped evidence; not rerun in full or promoted to current independent acceptance"
   },
   "notPerformed": [
-    "Raw-lecture rough cut with native tool and listening under this workflow",
-    "Actual two-boundary transitions using new user-supplied intro/outro",
-    "Screen-tutorial native operation-preservation trial",
-    "Whole-first professional animation implementation and final-standard aesthetic review",
-    "Physical second-computer end-to-end production",
-    "Real new-course web/software capture and material integration under this added workflow",
-    "Title/intro and student handout verified against a newly edited real course",
-    "GitHub publication of v1.3.0: requires explicit user confirmation",
-    "Actual new-course conversation-to-folder-to-native-edit trial under title-first intake"
+    "Physical second-computer install and actual Skill discovery in receiver new session",
+    "Another colleague independently producing a complete real course",
+    "Continuous whole-course viewing and subjective audio audition of current course revision",
+    "Final user aesthetic/rhythm approval and target-student comprehension",
+    "New raw-lecture natural rough-cut and screen-tutorial full operation-preservation trial",
+    "Real newly edited course title/intro/student PDF matched to final content (template has historical render checks)",
+    "Other OS, Agent and ChatCut versions; untested aspect ratios and advanced 3D",
+    "GitHub publication or external upload"
   ],
-  "outOfScope": [
-    "Intro/outro/cover creation or style selection",
-    "Automatic chapter packaging"
-  ],
-  "notes": "Workflow/document checks do not prove final video quality. User media remain project-specific. Optional PNG checker validates container and dimensions only.",
-  "templateRuntime": {
-    "reportlab": "4.4.9",
-    "Pillow": "12.3.0",
-    "pypdf": "6.10.0"
-  }
+  "scope": "Technical artifacts and engineering example are reusable. They do not guarantee every new course aesthetic or listening result. User course and private native receipts remain outside package."
 }

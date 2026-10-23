@@ -21,5 +21,14 @@ jobs:
         run: python3 course-long-video-editing/scripts/check_environment.py --package-only
       - name: Check quote cue defaults
         run: python3 course-long-video-editing/scripts/validate_quote.py course-long-video-editing/assets/templates/quote-highlight-follow/defaults.json
+      - name: Check workflow invariants and regression cases
+        run: python3 course-long-video-editing/scripts/selftest.py
+      - name: Check seconds-based camera invariants
+        run: node course-long-video-editing/scripts/test_camera.mjs
       - name: Preview installation into an isolated location
         run: python3 course-long-video-editing/scripts/install_skill.py --target-root "${RUNNER_TEMP}/course-skill-check" --dry-run
+      - name: Install complete package and verify installed files
+        run: |
+          python3 course-long-video-editing/scripts/install_skill.py --target-root "${RUNNER_TEMP}/course-skill-check"
+          python3 course-long-video-editing/scripts/verify_package.py --skill-root "${RUNNER_TEMP}/course-skill-check/course-long-video-editing"
+          python3 course-long-video-editing/scripts/install_skill.py --target-root "${RUNNER_TEMP}/course-skill-check"

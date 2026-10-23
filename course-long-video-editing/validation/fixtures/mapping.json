@@ -1,0 +1,15 @@
+{
+  "mapping": [
+    {
+      "sourceSeconds": [
+        0,
+        60
+      ],
+      "timelineSeconds": [
+        4,
+        64
+      ],
+      "rate": 1
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "gallery": {
+    "durationSeconds": 46.0,
+    "bytes": 24824216,
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "nb_frames": "1380",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "sample_rate": null,
+        "channels": null
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "profile": "LC",
+        "width": null,
+        "height": null,
+        "pix_fmt": null,
+        "avg_frame_rate": "0/0",
+        "nb_frames": "2159",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null,
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ],
+    "AVDecoded": true,
+    "sha256": "c1a557c96a0b59d11710964e4cb580c26c3827a6cecfa8446ee224e688b46ce2"
+  },
+  "green": {
+    "durationSeconds": 3.0,
+    "bytes": 2314438,
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "30/1",
+        "nb_frames": "90",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "sample_rate": null,
+        "channels": null
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "profile": "LC",
+        "width": null,
+        "height": null,
+        "pix_fmt": null,
+        "avg_frame_rate": "0/0",
+        "nb_frames": "143",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null,
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ],
+    "AVDecoded": true,
+    "sha256": "535c2057214f23dbbdcc73c6d94c12cc0924774428d5c3010c414f65b19e1b2f"
+  },
+  "restored4K": {
+    "durationSeconds": 3.0,
+    "bytes": 5941397,
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 3840,
+        "height": 2160,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "180",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "sample_rate": null,
+        "channels": null
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "profile": "LC",
+        "width": null,
+        "height": null,
+        "pix_fmt": null,
+        "avg_frame_rate": "0/0",
+        "nb_frames": "143",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null,
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ],
+    "AVDecoded": true,
+    "sha256": "389d31e5cf62f86cc10ea10edc4aa79e517b65bc7ad24cda5ed66080342dc557"
+  },
+  "circle": {
+    "durationSeconds": 8.0,
+    "bytes": 4483586,
+    "streams": [
+      {
+        "codec_type": "video",
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "avg_frame_rate": "60/1",
+        "nb_frames": "480",
+        "color_space": "bt709",
+        "color_transfer": "bt709",
+        "color_primaries": "bt709",
+        "sample_rate": null,
+        "channels": null
+      },
+      {
+        "codec_type": "audio",
+        "codec_name": "aac",
+        "profile": "LC",
+        "width": null,
+        "height": null,
+        "pix_fmt": null,
+        "avg_frame_rate": "0/0",
+        "nb_frames": "378",
+        "color_space": null,
+        "color_transfer": null,
+        "color_primaries": null,
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ],
+    "AVDecoded": true,
+    "sha256": "045c21b4eca2bb6a600aca96ad412abd95956e11ea546e296a05aad114040e21"
+  },
+  "propertyEditAndRestore": {
+    "green": {
+      "greenPixels": 34305,
+      "purplePixels": 0
+    },
+    "restoredPurple": {
+      "greenPixels": 0,
+      "purplePixels": 35933
+    },
+    "restoredAgainst1080pPSNR": 36.70112061764412
+  },
+  "circleBoundEightSeconds": {
+    "frames": [
+      {
+        "frame": 0,
+        "seconds": 0.0,
+        "blackFraction": 2.4112654320987654e-06,
+        "PSNRToSource": 42.02093259318872
+      },
+      {
+        "frame": 120,
+        "seconds": 2.0,
+        "blackFraction": 0.9698533950617284,
+        "PSNRToSource": 4.543289703662212
+      },
+      {
+        "frame": 390,
+        "seconds": 6.5,
+        "blackFraction": 0.9698640046296296,
+        "PSNRToSource": 1.0151022640412102
+      },
+      {
+        "frame": 479,
+        "seconds": 7.983333333333333,
+        "blackFraction": 0.0,
+        "PSNRToSource": 38.90198997843975
+      }
+    ],
+    "ok": true,
+    "scope": "Actual native current-input test on synthetic changing footage; no face-position aesthetic claim"
+  },
+  "ok": true
+}

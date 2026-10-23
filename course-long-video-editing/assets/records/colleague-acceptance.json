@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "environment": {
+    "agent": null,
+    "system": null,
+    "editorVersion": null,
+    "fontEvidence": null
+  },
+  "packageIntegrity": "pending",
+  "skillDiscovery": "pending",
+  "independentNativeComponentTest": "pending",
+  "realSpeechSample": "pending",
+  "completeNewCourse": "pending",
+  "continuousViewedRanges": [],
+  "listenedRanges": [],
+  "actualOutputs": [],
+  "userAestheticReview": "pending",
+  "studentComprehensionReview": "pending",
+  "problemsAndFixes": [],
+  "notPerformed": []
+}

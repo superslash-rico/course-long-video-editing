@@ -11,7 +11,7 @@
 - 金句固定采用 **C“幕间大字”＋B“荧光批注”＋D“聚光跟读”** 的融合语言，并使用半透明渐隐背景，让讲师同时可见。
 - 专业动画先行：先完成解释动画及其真实占屏范围，再给未覆盖的有价值内容安排金句。已存在且实际语义重复/画面冲突的金句为专业动画让位，连同它的入场声和审核标记一并处理。候选时间窗相交不能作为批量删除依据。
 
-随包资源：名签源码见 [identity-slash](../assets/templates/identity-slash/)，金句源码见 [quote-highlight-follow](../assets/templates/quote-highlight-follow/)，字体安装与注册说明见 [fonts/acquisition.md](../assets/fonts/acquisition.md)（已附原版四字重和完整许可），视觉/运动参考见 [reference-previews](../assets/reference-previews/)。只以打包清单列出的当前源码和默认值导入，旧工程请求和历史回执不作为可重放模板。
+随包资源：名签源码见 [identity-slash](../assets/templates/identity-slash/)，金句源码见 [quote-highlight-follow](../assets/templates/quote-highlight-follow/)，字体安装与注册说明见 [fonts/acquisition.md](../assets/fonts/acquisition.md)（已附原版四字重和完整许可），视觉/运动参考见 [通用工艺示范](../assets/examples/portable-workflow/)。只以打包清单列出的当前源码和默认值导入，旧工程请求和历史回执不作为可重放模板。
 
 ## 2. A 斜杠名签
 
@@ -71,9 +71,9 @@
 
 这些是组件设计坐标和默认值。每句重新检查行长、3—5 行等实际需要、字号与布局，不要求固定三行；长句可分成连续语义拍，不能用无限缩小字体来塞。讲师会移动和低头，必须看运动画面而非只看一张头像。文字区位置在 CSS 布局内；若需要改变布局，复制成项目自有版本后改对应源文件，不能假装当前 schema 暴露了并不存在的位置参数。
 
-### 15 项可编辑属性
+### 可编辑属性
 
-`text`、`keywords`、`cues`、`font`、`textColor`、`activeColor`、`markerColor`、`inkColor`、`accentColor`、`bgColor`、`bgOpacity`、`transparentBackground`、`seconds`、`leadSize`、`mainSize`。
+`text`、`keywords`、`cues`、`font`、`textColor`、`activeColor`、`markerColor`、`inkColor`、`accentColor`、`bgColor`、`bgOpacity`、`transparentBackground`、`seconds`、`leadSize`、`mainSize`；另有文字区X/Y/宽、行距、未读透明度及暗场中心/半径控制，见当前properties.json。
 
 `transparentBackground:false` 表示使用本套半透明渐隐光场；`true` 会关闭该光场成为纯透明。已选方向采用前者，不要因为属性名称就把 false 误认为不透明实底。
 

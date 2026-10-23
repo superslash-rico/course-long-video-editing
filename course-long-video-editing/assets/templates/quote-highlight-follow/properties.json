@@ -88,5 +88,86 @@
     "label": "结论字号",
     "type": "number",
     "defaultValue": 92
+  },
+  {
+    "key": "copyX",
+    "label": "文字区X",
+    "type": "number",
+    "defaultValue": 125,
+    "min": 0,
+    "max": 2000,
+    "step": 1
+  },
+  {
+    "key": "copyY",
+    "label": "文字区Y",
+    "type": "number",
+    "defaultValue": 370,
+    "min": 0,
+    "max": 2000,
+    "step": 1
+  },
+  {
+    "key": "copyWidth",
+    "label": "文字区宽",
+    "type": "number",
+    "defaultValue": 720,
+    "min": 0,
+    "max": 2000,
+    "step": 1
+  },
+  {
+    "key": "lineGap",
+    "label": "行间距",
+    "type": "number",
+    "defaultValue": 11,
+    "min": 0,
+    "max": 2000,
+    "step": 1
+  },
+  {
+    "key": "inactiveOpacity",
+    "label": "未读文字不透明度",
+    "type": "number",
+    "defaultValue": 0.22,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  {
+    "key": "washX",
+    "label": "暗场中心X",
+    "type": "number",
+    "defaultValue": 350,
+    "min": 0,
+    "max": 2000,
+    "step": 1
+  },
+  {
+    "key": "washY",
+    "label": "暗场中心Y",
+    "type": "number",
+    "defaultValue": 575,
+    "min": 0,
+    "max": 2000,
+    "step": 1
+  },
+  {
+    "key": "washRadiusX",
+    "label": "暗场横向半径",
+    "type": "number",
+    "defaultValue": 1020,
+    "min": 0,
+    "max": 2000,
+    "step": 1
+  },
+  {
+    "key": "washRadiusY",
+    "label": "暗场纵向半径",
+    "type": "number",
+    "defaultValue": 330,
+    "min": 0,
+    "max": 2000,
+    "step": 1
   }
 ]

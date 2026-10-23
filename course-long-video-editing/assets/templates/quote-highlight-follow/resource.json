@@ -9,5 +9,19 @@
   "background": "translucent fade; preserve live instructor",
   "sound": "entrance only; no exit sound",
   "timing": "cues must cover final lines completely with valid ordered finite seconds; fallback is not acceptance",
-  "status": "accepted-style; current-content-and-native-fonts-need-verification"
+  "status": "accepted-style; current-content-and-native-fonts-need-verification",
+  "fontRequirement": "Bundled original MiSans companion files and full license in assets/fonts; receiver registration and native letterform verification required",
+  "defaultMount": "Local defaults support validation mount without props; explicit values including empty text, zero and false override defaults",
+  "layoutControls": [
+    "copyX",
+    "copyY",
+    "copyWidth",
+    "lineGap",
+    "inactiveOpacity",
+    "washX",
+    "washY",
+    "washRadiusX",
+    "washRadiusY"
+  ],
+  "layoutPolicy": "Design coordinates in the local 1440x930 canvas. Reframe each instance using source-frame safety; inspect all final rows after every copy/width/font edit."
 }

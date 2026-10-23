@@ -45,7 +45,9 @@
     "importedAssets": [],
     "instanceId": null,
     "overrides": null,
-    "sourceDigests": []
+    "sourceDigests": [],
+    "effectiveValuesReadback": null,
+    "temporaryOverrideRestored": false
   },
   "verification": {
     "contentFacts": "pending",
@@ -63,5 +65,20 @@
     "viewerComprehensionTest": "not-performed"
   },
   "problemsAndRepairs": [],
-  "historicalVersions": []
+  "historicalVersions": [],
+  "primaryReadingUnits": [],
+  "backgroundAndSurfaces": {
+    "backgroundBehindAllSubjects": null,
+    "opaquePaperDuringDeemphasis": null,
+    "actualCameraInput": null,
+    "dotResponseWeakerThanForeground": null,
+    "haloResponseWeakerThanDots": null
+  },
+  "soundDesign": {
+    "eventsPlannedBeforeProduction": false,
+    "sourceMeasurements": [],
+    "mixedWindowsChecked": [],
+    "listenedRanges": [],
+    "crossSceneRepetitionReviewed": false
+  }
 }

@@ -26,6 +26,7 @@
     </div>
   </div>
   <script type="module">
+    import {defaults} from './defaults.js';
     const clamp = value => Math.max(0, Math.min(1, value));
     const ease = value => 1 - Math.pow(1 - clamp(value), 3);
     export default function mount({root, props}) {
@@ -35,7 +36,7 @@
       const echo = root.querySelector('.signature-mark-echo');
       const name = root.querySelector('.name');
       const identity = root.querySelector('.identity');
-      let values = props;
+      let values = {...defaults,...(props||{})};
       function bind() {
         name.textContent = values.name;
         identity.textContent = values.identity;
@@ -47,7 +48,7 @@
       }
       bind();
       return {
-        update({props}) { values = props; bind(); },
+        update({props}) { values = {...defaults,...(props||{})}; bind(); },
         render({timeSeconds}) {
           const t = Math.max(0, timeSeconds);
           const duration = Math.max(1, Number(values.seconds));

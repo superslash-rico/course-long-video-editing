@@ -174,6 +174,24 @@ def verify(root):
             entry.relative_to(root)
             if not entry.is_file():
                 errors.append(f'missing resource entry: {path.relative_to(root)}')
+            for name in resource.get('copyFiles', []):
+                copied = (path.parent / name).resolve()
+                copied.relative_to(root)
+                if not copied.is_file():
+                    errors.append(f'missing declared source dependency: {path.relative_to(root)}: {name}')
+            if resource.get('type') == 'assembly-example':
+                assembly = json.loads(entry.read_text(encoding='utf-8'))
+                linked = [assembly['config'], assembly['placementBuilder']]
+                for row in assembly['assets']:
+                    linked.append(row['entry'])
+                    if row.get('properties'):
+                        linked.append(row['properties'])
+                linked.extend(row['file'] for row in assembly['audioAssets'])
+                for name in linked:
+                    target = (entry.parent / name).resolve()
+                    target.relative_to(root)
+                    if not target.is_file():
+                        errors.append(f'missing assembly dependency: {path.relative_to(root)}: {name}')
             if resource.get('type') == 'research-only':
                 warnings.append(f'research-only source is NOT production ready: {path.parent.relative_to(root)}')
             properties_path, defaults_path = path.parent / 'properties.json', path.parent / 'defaults.json'
@@ -181,6 +199,11 @@ def verify(root):
                 schema, defaults = json.loads(properties_path.read_text()), json.loads(defaults_path.read_text())
                 if {x['key']: x['defaultValue'] for x in schema} != defaults:
                     errors.append(f'schema/default mismatch: {path.parent.relative_to(root)}')
+                module_path = path.parent / 'defaults.js'
+                if module_path.exists():
+                    module = re.fullmatch(r'\s*export const defaults\s*=\s*(\{.*\})\s*;?\s*', module_path.read_text(encoding='utf-8'), re.S)
+                    if module is None or json.loads(module.group(1)) != defaults:
+                        errors.append(f'runtime default mirror mismatch: {path.parent.relative_to(root)}')
         except (KeyError, ValueError, OSError) as exc:
             errors.append(f'invalid resource metadata: {path.relative_to(root)}: {exc}')
     try:

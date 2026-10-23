@@ -1,9 +1,10 @@
 [
   {
     "key": "seconds",
-    "label": "总时长秒，0表示跟随效果区间",
+    "label": "实际片段秒数（正数兼容验证）",
     "type": "number",
-    "defaultValue": 0
+    "defaultValue": 6,
+    "min": 0.01
   },
   {
     "key": "entranceSeconds",

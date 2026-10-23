@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "key": "strength",
+      "defaultValue": 1
+    },
+    {
+      "key": "transparent",
+      "defaultValue": false
+    }
+  ],
+  "overrides": {
+    "strength": 0
+  },
+  "expected": {
+    "strength": 0,
+    "transparent": false
+  }
+}

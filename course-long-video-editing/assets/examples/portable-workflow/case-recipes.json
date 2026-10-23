@@ -1,0 +1,85 @@
+[
+  {
+    "id": "same-task",
+    "understandingGoal": "同一任务从目标、草稿到检查记录",
+    "sourceNeeds": [
+      "真实任务上下文；本包示范为自制教学内容"
+    ],
+    "whole": "一张工作页上的输入、处理和结果",
+    "visibleChange": "同一张笔记条提起、移动、带着核对结果收合",
+    "camera": "先整体，分别看当前动作，最后回同一工作页",
+    "checks": [
+      "主文本不被浮条压住",
+      "旧字先退，结果纸再出现",
+      "结论保留待查项"
+    ],
+    "implementation": "course-stage/index.html，已经提供实际工程示范"
+  },
+  {
+    "id": "real-evidence",
+    "understandingGoal": "把真实材料中与当前口播有关的证据讲清楚",
+    "sourceNeeds": [
+      "实际打开的来源页/报告/软件界面",
+      "上下文原件、日期/主体、清晰生产裁切"
+    ],
+    "whole": "让观众识别原件是什么以及来源",
+    "visibleChange": "定位原件区域，提取短摘录或图件，再加独立中文解释",
+    "camera": "全貌—定位—主要阅读单元—解释，必要时回原件",
+    "checks": [
+      "真实截图不能由生成图冒充",
+      "原文和概括署名分清",
+      "避免整页英文正文缩得不可读",
+      "主要数字、单位、日期与条件完整"
+    ],
+    "implementation": "使用opaque paper/background/camera组件独立设计；实际图件用接收方新资产绑定"
+  },
+  {
+    "id": "comparison",
+    "understandingGoal": "看出两个对象或前后条件的异同",
+    "sourceNeeds": [
+      "实际可核验对象、条件和图片；示意对象明确标注"
+    ],
+    "whole": "并列但有分组、对齐、重心和适度间距",
+    "visibleChange": "按口播逐项提取或重排同一比较维度",
+    "camera": "整体建立关系后分人/分列大特写，回到比较关系",
+    "checks": [
+      "不要为同时塞入两列而压低所有特写",
+      "人像不压住当前主要条件",
+      "比较的日期/版本/适用范围一致"
+    ],
+    "implementation": "case recipe，使用stage.tsx与每片新内容，非已完成万能模板"
+  },
+  {
+    "id": "timeline",
+    "understandingGoal": "观察真实时间顺序，不把时间密度误读为能力等幅增长",
+    "sourceNeeds": [
+      "当前官方发布时间记录"
+    ],
+    "whole": "按时间尺度与类别组织节点",
+    "visibleChange": "焦点跟随正在讲的节点或阶段，历史身份保持",
+    "camera": "整体定位—当前节点特写—下一节点—回整体",
+    "checks": [
+      "使用真实口播锚点",
+      "日期和型号不被切掉",
+      "不为每个节点都加声音",
+      "不能把示例日期/模型名单带到新片当现时事实"
+    ],
+    "implementation": "复用seconds camera、背景和实心纸面，重新编排节点"
+  },
+  {
+    "id": "archive",
+    "understandingGoal": "看到过程记录怎样积累成可复用作品",
+    "sourceNeeds": [
+      "实际任务材料/修改记录，或明确的教学示意"
+    ],
+    "whole": "资料属于同一个档案，结果有明确整体",
+    "visibleChange": "记录提起、归位、收合，旧墨在遮挡前退让",
+    "camera": "先整体，再分别阅读内容和修改依据，最后收束",
+    "checks": [
+      "收合不透字",
+      "结果不是突然换成陌生构图",
+      "不能只展示完成态"
+    ],
+    "implementation": "复用opaque paper与相机；折页铰链和新内容按具体课设计"
+  }
+]

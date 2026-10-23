@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Rebuild the 46s neutral engineering gallery in a new native project; not a new lecture or verified aesthetic benchmark",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "timelineFpsReadFromNewProject": true,
+  "assets": [
+    {
+      "key": "html",
+      "entry": "../../components/course-stage/index.html",
+      "properties": "../../components/course-stage/properties.json",
+      "naturalSize": [
+        1920,
+        1080
+      ],
+      "capacitySeconds": 24
+    },
+    {
+      "key": "remotion",
+      "entry": "../../components/course-stage/remotion-example.tsx",
+      "properties": "../../components/course-stage/properties.json",
+      "naturalSize": [
+        1920,
+        1080
+      ],
+      "capacitySeconds": 24
+    },
+    {
+      "key": "background",
+      "entry": "gallery.html",
+      "properties": null,
+      "naturalSize": [
+        1920,
+        1080
+      ],
+      "capacitySeconds": 14
+    },
+    {
+      "key": "identity",
+      "entry": "../../templates/identity-slash/speaker.html",
+      "properties": "../../templates/identity-slash/properties.json",
+      "naturalSize": [
+        640,
+        256
+      ],
+      "capacitySeconds": 6
+    },
+    {
+      "key": "quote",
+      "entry": "../../templates/quote-highlight-follow/quote.html",
+      "properties": "../../templates/quote-highlight-follow/properties.json",
+      "naturalSize": [
+        1440,
+        930
+      ],
+      "capacitySeconds": 8
+    }
+  ],
+  "audioAssets": [
+    {
+      "key": "whoosh",
+      "file": "../../audio/soft-whoosh.wav"
+    },
+    {
+      "key": "settle",
+      "file": "../../audio/paper-settle.wav"
+    }
+  ],
+  "tracks": [
+    {
+      "key": "base",
+      "type": "video"
+    },
+    {
+      "key": "overlay",
+      "type": "video"
+    },
+    {
+      "key": "sfx",
+      "type": "audio"
+    }
+  ],
+  "config": "demo-config.json",
+  "placementBuilder": "../../../scripts/build_demo_plan.py",
+  "nativeIds": "Obtain from the receiver own tools, never stored in this package"
+}

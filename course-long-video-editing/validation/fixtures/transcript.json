@@ -1,0 +1,19 @@
+{
+  "tokens": [
+    {
+      "text": "先核对",
+      "start": 0.2,
+      "end": 0.7
+    },
+    {
+      "text": "[0.2 seconds silent]",
+      "start": 0.7,
+      "end": 0.9
+    },
+    {
+      "text": "再判断",
+      "start": 0.9,
+      "end": 1.4
+    }
+  ]
+}

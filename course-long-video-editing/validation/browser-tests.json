@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "check": "opaque-paper-faces",
+      "ok": true,
+      "scope": "ordinary face alpha; reveal opacity checked separately"
+    },
+    {
+      "check": "primary-reading-clearance-5.5",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "check": "primary-reading-clearance-11",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "check": "primary-reading-clearance-21",
+      "ok": true,
+      "issues": []
+    },
+    {
+      "check": "negative-occlusion-regression-detected",
+      "ok": true
+    },
+    {
+      "check": "out-of-order-seek",
+      "ok": true
+    },
+    {
+      "check": "identity-default-mount",
+      "ok": true
+    },
+    {
+      "check": "identity-editable-copy",
+      "ok": true
+    },
+    {
+      "check": "quote-exact-cues",
+      "ok": true
+    },
+    {
+      "check": "presenter-full-first",
+      "ok": true
+    },
+    {
+      "check": "presenter-live-input-changes",
+      "ok": true
+    },
+    {
+      "check": "presenter-restores-current-input",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "scope": "Local Chromium layout/seek/input harness with bundled fonts; native rendering, human listening and physical colleague machines are separate."
+}

@@ -1,0 +1,275 @@
+[
+  {
+    "key": "font",
+    "label": "字体",
+    "type": "font",
+    "defaultValue": "MiSans"
+  },
+  {
+    "key": "accentColor",
+    "label": "强调色",
+    "type": "color",
+    "defaultValue": "#E802F8"
+  },
+  {
+    "key": "secondaryColor",
+    "label": "secondaryColor",
+    "type": "color",
+    "defaultValue": "#F4A6FF"
+  },
+  {
+    "key": "backgroundColor",
+    "label": "深紫黑底",
+    "type": "color",
+    "defaultValue": "#0C0A14"
+  },
+  {
+    "key": "dotColor",
+    "label": "dotColor",
+    "type": "color",
+    "defaultValue": "#B4A7C4"
+  },
+  {
+    "key": "dotOpacity",
+    "label": "点阵不透明度",
+    "type": "number",
+    "defaultValue": 0.42,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  {
+    "key": "dotSpacing",
+    "label": "点阵间距（1080基准）",
+    "type": "number",
+    "defaultValue": 42,
+    "min": 8,
+    "max": 240,
+    "step": 0.01
+  },
+  {
+    "key": "dotRadius",
+    "label": "点半径（1080基准）",
+    "type": "number",
+    "defaultValue": 1.6,
+    "min": 0.25,
+    "max": 8,
+    "step": 0.01
+  },
+  {
+    "key": "dotZoomStrength",
+    "label": "点阵弱缩放",
+    "type": "number",
+    "defaultValue": 0.55,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  {
+    "key": "dotParallaxStrength",
+    "label": "点阵弱位移",
+    "type": "number",
+    "defaultValue": 0.025,
+    "min": 0,
+    "max": 0.1,
+    "step": 0.01
+  },
+  {
+    "key": "haloColor",
+    "label": "haloColor",
+    "type": "color",
+    "defaultValue": "#B989D2"
+  },
+  {
+    "key": "haloOpacity",
+    "label": "横向微光不透明度",
+    "type": "number",
+    "defaultValue": 0.18,
+    "min": 0,
+    "max": 1,
+    "step": 0.01
+  },
+  {
+    "key": "haloHeight",
+    "label": "微光高度（1080基准）",
+    "type": "number",
+    "defaultValue": 220,
+    "min": 20,
+    "max": 600,
+    "step": 0.01
+  },
+  {
+    "key": "transparentBackground",
+    "label": "关闭全屏背景",
+    "type": "boolean",
+    "defaultValue": false
+  },
+  {
+    "key": "readingPushStrength",
+    "label": "停留缩放强度",
+    "type": "number",
+    "defaultValue": 1,
+    "min": 0,
+    "max": 2,
+    "step": 0.01
+  },
+  {
+    "key": "seconds",
+    "label": "片段总秒数",
+    "type": "number",
+    "defaultValue": 24,
+    "min": 0.1,
+    "max": 7200,
+    "step": 0.01
+  },
+  {
+    "key": "cameraJSON",
+    "label": "分镜机位 JSON（秒）",
+    "type": "text",
+    "defaultValue": "[{\"at\": 0, \"until\": 3, \"p\": {\"fx\": 0, \"fy\": 0, \"s\": 0.77, \"rx\": 20, \"rz\": -1}}, {\"at\": 3.36, \"until\": 8.15, \"p\": {\"fx\": -350, \"fy\": 70, \"s\": 1.65, \"rx\": 9, \"rz\": 0}}, {\"at\": 8.51, \"until\": 14.9, \"p\": {\"fx\": 350, \"fy\": 70, \"s\": 1.65, \"rx\": 9, \"rz\": 0}}, {\"at\": 15.26, \"until\": 18.2, \"p\": {\"fx\": 0, \"fy\": 0, \"s\": 0.77, \"rx\": 20, \"rz\": -1}}, {\"at\": 18.56, \"until\": 22.8, \"p\": {\"fx\": -155, \"fy\": 80, \"s\": 1.6, \"rx\": 9, \"rz\": 0}}, {\"at\": 23.16, \"until\": 24, \"p\": {\"fx\": 0, \"fy\": 0, \"s\": 0.77, \"rx\": 20, \"rz\": -1}}]"
+  },
+  {
+    "key": "eyebrow",
+    "label": "eyebrow",
+    "type": "text",
+    "defaultValue": "课程动画工艺示范 · 自制内容"
+  },
+  {
+    "key": "title",
+    "label": "主标题",
+    "type": "text",
+    "defaultValue": "同一份笔记，怎样逐步做完整？"
+  },
+  {
+    "key": "note",
+    "label": "note",
+    "type": "text",
+    "defaultValue": "全景建立关系，特写解释动作"
+  },
+  {
+    "key": "sourceNote",
+    "label": "来源与示意边界",
+    "type": "text",
+    "defaultValue": "本段为自制教学示意，不是软件实测、研究证据或真实讲师录像。"
+  },
+  {
+    "key": "sheetTitle",
+    "label": "sheetTitle",
+    "type": "text",
+    "defaultValue": "从目标到核对的同一份笔记"
+  },
+  {
+    "key": "sheetNote",
+    "label": "sheetNote",
+    "type": "text",
+    "defaultValue": "先看整体，再看每一步怎样改变材料"
+  },
+  {
+    "key": "leftLabel",
+    "label": "leftLabel",
+    "type": "text",
+    "defaultValue": "01 · 目标"
+  },
+  {
+    "key": "leftTitle",
+    "label": "leftTitle",
+    "type": "text",
+    "defaultValue": "先说清要做什么"
+  },
+  {
+    "key": "leftBody",
+    "label": "leftBody",
+    "type": "text",
+    "defaultValue": "整理课堂内容，留下可复习的笔记。"
+  },
+  {
+    "key": "leftDetail",
+    "label": "leftDetail",
+    "type": "text",
+    "defaultValue": "说明用途、读者和核对依据。"
+  },
+  {
+    "key": "rightLabel",
+    "label": "rightLabel",
+    "type": "text",
+    "defaultValue": "02 · 草稿与检查"
+  },
+  {
+    "key": "rightTitle",
+    "label": "rightTitle",
+    "type": "text",
+    "defaultValue": "保留依据和疑问"
+  },
+  {
+    "key": "rightBody",
+    "label": "rightBody",
+    "type": "text",
+    "defaultValue": "整理要点，再对照材料检查。"
+  },
+  {
+    "key": "rightDetail",
+    "label": "rightDetail",
+    "type": "text",
+    "defaultValue": "确认的内容保留，待查内容注明。"
+  },
+  {
+    "key": "ticketLabel",
+    "label": "ticketLabel",
+    "type": "text",
+    "defaultValue": "同一份课堂笔记"
+  },
+  {
+    "key": "ticketA",
+    "label": "ticketA",
+    "type": "text",
+    "defaultValue": "目标：可复习、可核对"
+  },
+  {
+    "key": "ticketB",
+    "label": "ticketB",
+    "type": "text",
+    "defaultValue": "草稿：要点、疑问、依据"
+  },
+  {
+    "key": "moveAt",
+    "label": "moveAt",
+    "type": "number",
+    "defaultValue": 8.15,
+    "min": 0,
+    "max": 7200,
+    "step": 0.01
+  },
+  {
+    "key": "resultAt",
+    "label": "resultAt",
+    "type": "number",
+    "defaultValue": 18.2,
+    "min": 0,
+    "max": 7200,
+    "step": 0.01
+  },
+  {
+    "key": "resultLabel",
+    "label": "resultLabel",
+    "type": "text",
+    "defaultValue": "03 · 整理交付"
+  },
+  {
+    "key": "resultTitle",
+    "label": "resultTitle",
+    "type": "text",
+    "defaultValue": "核对记录，也保留待查项"
+  },
+  {
+    "key": "resultBody",
+    "label": "resultBody",
+    "type": "text",
+    "defaultValue": "读者看得懂，也能找到依据。"
+  },
+  {
+    "key": "resultNote",
+    "label": "resultNote",
+    "type": "text",
+    "defaultValue": "待查内容继续保留，不写成已经证实。"
+  }
+]

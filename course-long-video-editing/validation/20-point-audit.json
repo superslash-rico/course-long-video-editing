@@ -1,0 +1,262 @@
+{
+  "version": "1.4.0",
+  "date": "2026-10-23",
+  "implementationItems": 20,
+  "statusMeaning": "implemented means reusable rules/resources are delivered, not universal quality approval",
+  "items": [
+    {
+      "id": 1,
+      "name": "输入与续作",
+      "implementation": "implemented",
+      "resources": [
+        "references/project-start-and-file-management.md",
+        "scripts/init_course_project.py",
+        "assets/records/project-intake-template.json"
+      ],
+      "change": "保留一课一目录、素材分类、原件及续作；新增授权和当前原生目标记录。",
+      "verification": "既有17项建档测试保留历史范围；本轮异目录复制/不覆盖通过。",
+      "stillRequires": "接收方真实新课程建档及断点续作。"
+    },
+    {
+      "id": 2,
+      "name": "本地与转写",
+      "implementation": "implemented",
+      "resources": [
+        "references/environment-and-portability.md",
+        "references/subtitles.md"
+      ],
+      "change": "优先本地Desktop，读取实时能力，复用已有转写；云上传按当次授权。",
+      "verification": "本机官方原生连接、独立探针工程与原工程路由分别核实。",
+      "stillRequires": "接收方账号、云转写和当前连接，不复制作者配置。"
+    },
+    {
+      "id": 3,
+      "name": "字幕边界",
+      "implementation": "implemented",
+      "resources": [
+        "references/subtitles.md",
+        "scripts/course_checks.py"
+      ],
+      "change": "区分源ASR纠错、真实口误、显示精简与剪声权限；按用户确认。",
+      "verification": "457条真实字幕全量结构复核，改源/多字幕轨/分页反例通过。",
+      "stillRequires": "新课逐句听校、断行、术语和口误确认。"
+    },
+    {
+      "id": 4,
+      "name": "时序与保护",
+      "implementation": "implemented",
+      "resources": [
+        "references/runtime-and-binding.md",
+        "scripts/course_checks.py",
+        "scripts/bind_instance.py"
+      ],
+      "change": "源/正文/成片时间、单位、速率和fps明确；非目标讲话/字幕受保护。",
+      "verification": "真实课程保护及秒/微秒、变速、重叠、意外改声正反例通过。",
+      "stillRequires": "新课的实际包装/粗剪映射和复杂变速。"
+    },
+    {
+      "id": 5,
+      "name": "全文覆盖",
+      "implementation": "implemented",
+      "resources": [
+        "references/production-checkpoints.md",
+        "scripts/course_checks.py"
+      ],
+      "change": "按段列理解任务、表现手段和原因；动画后再选剩余金句，保留跟做。",
+      "verification": "漏段及实际覆盖冲突反例；宽语义窗口不盲删通过。",
+      "stillRequires": "新课完整内容与动画必要性，由实际理解判断。"
+    },
+    {
+      "id": 6,
+      "name": "真实素材",
+      "implementation": "implemented",
+      "resources": [
+        "references/material-research-and-capture.md",
+        "assets/records/visual-materials-template.json",
+        "scripts/course_checks.py"
+      ],
+      "change": "真实截图/操作原件、上下文、生产裁切、导入和实际使用位置逐层记录。",
+      "verification": "采集/参考导入/真实使用状态及缺生产绑定反例通过；真实课经验匿名归档。",
+      "stillRequires": "每课重新打开和截取相关材料，版权/隐私与版本核对。"
+    },
+    {
+      "id": 7,
+      "name": "事实与解释",
+      "implementation": "implemented",
+      "resources": [
+        "references/material-research-and-capture.md",
+        "assets/examples/portable-workflow/case-recipes.json"
+      ],
+      "change": "日期、主体、条件、否定与真实/生成分层；不以示意图冒充证据。",
+      "verification": "生成示意冒充事实、仅导入当实际使用的结构反例通过。",
+      "stillRequires": "新课事实一手来源和语义审核，不能自动判真。"
+    },
+    {
+      "id": 8,
+      "name": "动态参考与代表样段",
+      "implementation": "implemented",
+      "resources": [
+        "references/example-guide.md",
+        "references/quality-rubric.md",
+        "assets/examples/portable-workflow/preview.mp4"
+      ],
+      "change": "按动态分析整体/细节/材质/时序，用带原声与人像的实际样段验收新课。",
+      "verification": "自制46秒原生示范含HTML/Remotion/名签/金句/SFX，12帧查看及完整解码。",
+      "stillRequires": "通用示范无真实讲话；用户整体审美和新课有声代表样段仍需验收。"
+    },
+    {
+      "id": 9,
+      "name": "可见过程与整体",
+      "implementation": "implemented",
+      "resources": [
+        "references/whole-first-design-and-camera.md",
+        "assets/components/course-stage/scene.js"
+      ],
+      "change": "全景先成立，再让同一对象经步骤转为结果；避免完成态巡展。",
+      "verification": "24秒同一笔记过程、全景/细节和结果原生导出并抽帧自查。",
+      "stillRequires": "新课逻辑、全景美感、目标学生能否复述。"
+    },
+    {
+      "id": 10,
+      "name": "背景与图层",
+      "implementation": "implemented",
+      "resources": [
+        "assets/components/course-stage/background.js",
+        "assets/components/course-stage/surface.js",
+        "assets/components/course-stage/stage.tsx"
+      ],
+      "change": "确认的深紫黑、点阵、横向淡紫光实现为HTML/Remotion组件；背景底层，纸面实心。",
+      "verification": "浏览器alpha/遮挡正反例及本机原生整体/配角纸面检查通过。",
+      "stillRequires": "新片所有重叠/反面/极值；接收方GPU和真实字体。"
+    },
+    {
+      "id": 11,
+      "name": "镜头力度与停留",
+      "implementation": "implemented",
+      "resources": [
+        "assets/components/course-stage/camera.js",
+        "scripts/test_camera.mjs"
+      ],
+      "change": "全景/特写有强尺度差、快速转镜与可感知读时缩放；机位可编辑。",
+      "verification": "13项镜头不变量通过；原生示范近景主字放大，改色/4K60片段验证。",
+      "stillRequires": "新课节奏和力度的实际观看，不套固定机位/时长。"
+    },
+    {
+      "id": 12,
+      "name": "阅读单位与大字",
+      "implementation": "implemented",
+      "resources": [
+        "references/whole-first-design-and-camera.md",
+        "scripts/validate_runtime.mjs"
+      ],
+      "change": "特写按主要对象/列/步骤取景，完整保留条件、单位与主要文字。",
+      "verification": "3处主要阅读区实际矩形/遮挡检查；修复纸条盖字并通过反例。",
+      "stillRequires": "新增长标题、中英混排、真实截图细节及字幕/人物安全区。"
+    },
+    {
+      "id": 13,
+      "name": "交接与细节",
+      "implementation": "implemented",
+      "resources": [
+        "references/quality-rubric.md",
+        "assets/examples/portable-workflow/regressions.md",
+        "scripts/validate_runtime.mjs"
+      ],
+      "change": "同对象交接、旧字退出、邻帧/反字/空场/穿透和最大缩放逐项查。",
+      "verification": "寻帧顺序无关、读区无遮挡、故意移回错误位置可检出；原生联系表自查。",
+      "stillRequires": "新内容每处交接邻帧和连续观看。"
+    },
+    {
+      "id": 14,
+      "name": "人像与字幕联动",
+      "implementation": "implemented",
+      "resources": [
+        "assets/components/presenter-circle/effect.html",
+        "scripts/bind_instance.py",
+        "scripts/course_checks.py"
+      ],
+      "change": "处理实时输入，显式绑定实际时长；按人像重设路线，检查关联音频和派生字幕。",
+      "verification": "原生8秒60fps中6.5秒仍圆窗，首尾当前输入恢复；双声反例通过。",
+      "stillRequires": "真实新讲师裁切/运动、所有安全区；无自动人脸追踪。"
+    },
+    {
+      "id": 15,
+      "name": "声音编排与混音",
+      "implementation": "implemented",
+      "resources": [
+        "references/sound-design-and-cues.md",
+        "scripts/measure_sound.py",
+        "assets/audio/generate_candidates.py"
+      ],
+      "change": "分镜就选动作材质/锚点/音色，阅读留静，跨段查重复；只在名签/金句入场响。",
+      "verification": "原创候选配方/示范6事件、音画解码、峰值/静音窗口测量通过。",
+      "stillRequires": "真实原声下贴合、可懂度、重复疲劳与主观试听；候选声未获固定音色认可。"
+    },
+    {
+      "id": 16,
+      "name": "名签与金句排布",
+      "implementation": "implemented",
+      "resources": [
+        "references/identity-and-quotes.md",
+        "assets/templates/identity-slash/",
+        "assets/templates/quote-highlight-follow/"
+      ],
+      "change": "保留已定视觉，新增版位/暗场参数；等专业动画实际覆盖确定后安排。",
+      "verification": "默认无props与修改属性浏览器通过；原生实例和示范有效。",
+      "stillRequires": "新讲师真实身份、运动与字幕避让；不能照搬Rico身份。"
+    },
+    {
+      "id": 17,
+      "name": "真实词级跟读",
+      "implementation": "implemented",
+      "resources": [
+        "scripts/build_quote_cues.py",
+        "scripts/validate_quote.py",
+        "scripts/bind_instance.py"
+      ],
+      "change": "词级唯一锚点、明确单位、静音占位排除、UTF-16全覆盖及退场余量。",
+      "verification": "真实18条金句重建最大差1.91e-13秒；歧义/缺锚/emoji/占位反例通过。",
+      "stillRequires": "每课重新对照真实原声，精简句与锚点关系逐句审核。"
+    },
+    {
+      "id": 18,
+      "name": "原生绑定与还原",
+      "implementation": "implemented",
+      "resources": [
+        "references/runtime-and-binding.md",
+        "scripts/course_checks.py",
+        "assets/examples/portable-workflow/rebuild-demo.md"
+      ],
+      "change": "源/默认+覆盖/实例/当前片一致；保留false/0/空串，试改显式还原。",
+      "verification": "原生强调色改绿后还原紫；3秒4K60片与1080p对照PSNR36.7dB，实例时长回读通过。",
+      "stillRequires": "接收方当前schema及所选控件；新会话技能发现与应用连接。"
+    },
+    {
+      "id": 19,
+      "name": "输出与全片验收",
+      "implementation": "implemented",
+      "resources": [
+        "references/quality-and-handoff.md",
+        "scripts/inspect_media.py",
+        "references/course-companion.md"
+      ],
+      "change": "实际编码/色彩/fps/解码、抽帧、原声保护、连续看听和用户认可分别记录。",
+      "verification": "46秒1080p30、3秒4K60、8秒圆窗完整解码与BT.709实查；真实课程结构保护通过。",
+      "stillRequires": "连续全片视听/最终审美、真实新课标题简介与学员PDF内容对照。"
+    },
+    {
+      "id": 20,
+      "name": "共享复用与维护",
+      "implementation": "implemented",
+      "resources": [
+        "references/learning-and-skill-maintenance.md",
+        "references/colleague-pilot.md",
+        "scripts/install_skill.py",
+        "scripts/verify_package.py"
+      ],
+      "change": "组件/脚本/案例/反例/许可/20项表同步；无私有原片/旧ID，显式备份升级。",
+      "verification": "官方Skill格式、全包/闭合/秘密扫描及独立目录安装测试按validation报告记录。",
+      "stillRequires": "实体第二台电脑、其他系统/Agent版本和同事独立完成一门真实课程。"
+    }
+  ]
+}

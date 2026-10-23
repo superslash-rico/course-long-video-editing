@@ -1,0 +1,54 @@
+{
+  "paragraphs": [
+    {
+      "id": "p1"
+    },
+    {
+      "id": "p2"
+    }
+  ],
+  "decisions": [
+    {
+      "paragraphId": "p1",
+      "treatment": "animation",
+      "reason": "explain the same task moving through review"
+    },
+    {
+      "paragraphId": "p2",
+      "treatment": "presenter",
+      "reason": "retain a reflective question"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "task-demo",
+      "timelineSeconds": [
+        4,
+        28
+      ],
+      "mode": "full-frame",
+      "understandingGoal": "understand a complete checked task",
+      "visibleChange": "the same note moves and keeps evidence",
+      "wholeDesign": "two related parts on one sheet",
+      "shots": [
+        {
+          "at": 0,
+          "until": 3
+        },
+        {
+          "at": 3.36,
+          "until": 8.15
+        }
+      ]
+    }
+  ],
+  "quotes": [
+    {
+      "id": "quote-demo",
+      "timelineSeconds": [
+        29,
+        34
+      ]
+    }
+  ]
+}

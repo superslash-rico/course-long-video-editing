@@ -1,0 +1,15 @@
+{
+  "entry": "assembly.json",
+  "type": "assembly-example",
+  "runtime": "html-and-remotion",
+  "width": 1920,
+  "height": 1080,
+  "exampleDurationSeconds": 46,
+  "status": "engineering gallery; fixed visual language reused; whole audiovisual/aesthetic approval pending",
+  "syntheticCueFixture": true,
+  "humanFootageIncluded": false,
+  "narrationIncluded": false,
+  "sourceModules": "../../components/course-stage/",
+  "rights": "Self-authored workflow example with bundled original-font companion resources",
+  "rebuildInstructions": "rebuild-demo.md"
+}

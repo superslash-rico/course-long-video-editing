@@ -6,11 +6,12 @@
   "height": 256,
   "exampleDurationSeconds": 6,
   "durationPolicy": "set to current introduction duration and recheck start/hold/exit",
-  "fontRequirement": "Acquire original MiSans on receiver, map actual font family; no font binaries included",
+  "fontRequirement": "Bundled original MiSans companion files and full license in assets/fonts; receiver registration and native letterform verification required",
   "identityExampleOnly": {
     "name": "Rico",
     "identity": "超级斜杠创始人"
   },
   "sound": "restrained entrance whoosh; choose local licensed source or bundled original candidate; no exit ding",
-  "status": "accepted-A-visual; portable-font-registration-requires-new-native-check"
+  "status": "accepted-A-visual; portable-font-registration-requires-new-native-check",
+  "defaultMount": "Local defaults support validation mount without props; explicit values including empty text, zero and false override defaults"
 }

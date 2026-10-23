@@ -1,0 +1,1 @@
+export const defaults = {"name": "Rico", "identity": "超级斜杠创始人", "font": "MiSans", "accentColor": "#E802F8", "textColor": "#FFFFFF", "identityColor": "#EEE9F1", "seconds": 6};

@@ -13,5 +13,14 @@
   "transparentBackground": false,
   "seconds": 5.2,
   "leadSize": 64,
-  "mainSize": 92
+  "mainSize": 92,
+  "copyX": 125,
+  "copyY": 370,
+  "copyWidth": 720,
+  "lineGap": 11,
+  "inactiveOpacity": 0.22,
+  "washX": 350,
+  "washY": 575,
+  "washRadiusX": 1020,
+  "washRadiusY": 330
 }

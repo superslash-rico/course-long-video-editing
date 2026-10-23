@@ -3,9 +3,10 @@
   "type": "pixel-effect",
   "runtime": "html",
   "coordinates": "normalized viewport fractions, input source normalized crop",
-  "timing": "seconds; effect timeline supplies duration",
-  "status": "portable derivative;108geometry/mock cases and seek/endpoints checked; receiver native validation required",
+  "timing": "timeSeconds with explicit seconds=actual durationFrames/fps",
+  "status": "portable derivative; local browser and native synthetic 8-second input/restoration checked; receiver native validation required",
   "notFaceTracking": true,
   "source": "authored course live-input morph mechanism, reimplemented for normalized coordinates and seconds",
-  "knownValidation": "Mock draw commands preserve crop/target aspect for landscape/portrait/square; not a real native visual or face-tracking test"
+  "knownValidation": "Historical mock geometry checks plus current local native 8-second 60fps changing-input export: circle persists at 6.5s, first/last restore current source. This does not test face tracking or receiver footage/layout.",
+  "durationPolicy": "Positive 6s defaults support unbound validation only. Production must explicitly bind seconds=actual durationFrames/fps. Rendering depends on timeSeconds, not frame/progress/implicit host-duration assumptions. Test long groups and restoration."
 }

@@ -1,17 +1,18 @@
 {
   "sourceDocument": "整体构图与镜头设计工作法.md",
-  "coreSectionStart": "核心标准与范围",
-  "coreSectionEndExclusive": "提示词吸收结果与本轮产出",
+  "coreSectionStart": "## 核心标准与范围",
+  "coreSectionEndExclusive": "## 参考提示词的吸收与验证边界",
   "originalCoreSha256": "f02fa905f027528431cad7a892e2bb0b8e94a86571c9cd0a01dfc9f2a9c31248",
-  "portableCoreSha256": "f02fa905f027528431cad7a892e2bb0b8e94a86571c9cd0a01dfc9f2a9c31248",
-  "allProductionDetailsVerbatimPreserved": true,
+  "portableCoreSha256": "71b422ec27c1b4ffadc76d6b16cadcdb90d5f4de0076519b2f13f9ca0aedb834",
+  "allProductionDetailsVerbatimPreserved": false,
   "changedSections": [
     "Replace original machine/project lookup with receiver-side discovery and bundled resource links",
     "Replace project-specific ending with portable provenance and validation boundary",
     "v1.0.2 correct reference entrypoints only: remove FDE and mark project-record historical partial craft; no production-core change",
-    "v1.1 add rough-cut/packaging baseline and screen-tutorial applicability before unchanged production core"
+    "v1.1 add rough-cut/packaging baseline and screen-tutorial applicability before unchanged production core",
+    "v1.4 preserve and extend the detailed method with confirmed layering, strong camera, reading and sound rules; current core is intentionally revised, not byte-identical to the old core"
   ],
   "absoluteOriginalPathsCopied": false,
-  "methodImplemented": false,
+  "methodImplemented": true,
   "fullStandardValidatedExampleIncluded": false
 }

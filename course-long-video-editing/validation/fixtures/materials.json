@@ -1,0 +1,16 @@
+{
+  "materials": [
+    {
+      "id": "illustration-a",
+      "source": "self-authored fixture",
+      "identity": "self-authored-illustration",
+      "state": "used",
+      "productionFile": "illustration.svg",
+      "usedIn": [
+        "task-demo"
+      ],
+      "boundary": "not factual research or software evidence",
+      "evidenceClaim": false
+    }
+  ]
+}
