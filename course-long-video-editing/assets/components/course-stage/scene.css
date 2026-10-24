@@ -5,7 +5,7 @@ html,body{margin:0;background:transparent}
 .eyebrow{font-size:24px;line-height:1.3;letter-spacing:2px;color:#F4A6FF}
 .course-chrome h1{font-size:59px;line-height:1.18;font-weight:700;margin:0;overflow-wrap:break-word}
 .course-note{font-size:20px;line-height:1.3;color:#B8A8C7}
-.course-source{position:absolute;left:147px;top:915px;width:1350px;font-size:20px;line-height:1.3;color:#B8A8C7;z-index:30}
+.course-source{position:absolute;left:24px;bottom:18px;max-width:1400px;font-size:14px;line-height:1.3;color:#D7CFDE;background:rgba(12,10,20,.58);padding:4px 7px;border-radius:2px;box-sizing:border-box;overflow-wrap:anywhere;pointer-events:none;z-index:100}
 .sheet-layout{position:absolute;inset:0;padding:38px 46px;display:flex;flex-direction:column;gap:24px}
 .sheet-label{font-size:25px;color:#8A7699;line-height:1.35}
 .sheet-title{font-size:52px;font-weight:700;line-height:1.2}

@@ -1,43 +1,43 @@
 {
   "package": "course-long-video-editing",
-  "version": "1.4.0",
+  "version": "1.6.2",
   "files": [
     {
       "path": "CHANGELOG.md",
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 1191,
-      "sha256": "feb0e858d5e2131ff546b981e6feef10f90ac204bed4d2574fca873272a11c3d"
+      "bytes": 3095,
+      "sha256": "40061448db53626dc5c6f03bf0f76d0da452218328297def7cfef95d7dd7255b"
     },
     {
       "path": "PACKAGE.json",
-      "bytes": 6017,
-      "sha256": "8e71ba7a90d85178a221e54a562a9a21d81eab9c363c97fc46c2227395053733",
+      "bytes": 8665,
+      "sha256": "59813256ea46fbf06720072c08f8c7a7f50833a20fe8e9f24575c837ea5aee02",
       "role": "supporting code/data",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "SKILL.md",
-      "bytes": 15986,
-      "sha256": "d978b54eaf123460b0f61697f47f7a847455dc9233c54acd4b3dab6e57177ccc",
+      "bytes": 7051,
+      "sha256": "7056616b1e03dd465e18c4d9857758d97999ea6d53ed442d9d32804c5b8a2502",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 4107,
-      "sha256": "d8d66e5de67658829e06ba606262321b62562fae14fc0cb31abc3667b0e6e402",
+      "bytes": 4269,
+      "sha256": "f97280d8d54e5d94c8983bd2cbe80ec7afbb2c27b86448d75aab7c592cc903a5",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "agents/openai.yaml",
-      "bytes": 571,
-      "sha256": "ad08bd3d398aa24f8846bb1b5fd7992cc63bd3e9e0913a50a8ffd251d69ecb31",
+      "bytes": 851,
+      "sha256": "3b8cfb9d5d81403beb2260f329e79afb231041a2c9239ea2438a4b8c4ba2a3cb",
       "role": "supporting code/data",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -135,8 +135,8 @@
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 2519,
-      "sha256": "1c0b999256c6686c89fe5ce7bc92226a6e9eb841f57d75169096b501c566cffe"
+      "bytes": 2988,
+      "sha256": "eb29ccc4fd986c56b981bda73a8cf9d9d3db25ad06220b5c2a05ef48f2471936"
     },
     {
       "path": "assets/components/course-stage/defaults.js",
@@ -183,32 +183,32 @@
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 1737,
-      "sha256": "5c012ec74fd98e6a7ec36b60f195e03b34dc35f237152e7c3bfa51653d74cf29"
+      "bytes": 1688,
+      "sha256": "2966466fcb4f6b38195a3656eaef3b9cb2365c1d76b0ef3be2f3a8270a03c41b"
     },
     {
       "path": "assets/components/course-stage/resource.json",
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 1092,
-      "sha256": "b29eb673ce4eafc825fd511ba1a8f4c576c4ad48fd014080a6723ddc8e8aa28f"
+      "bytes": 1609,
+      "sha256": "c51bbfb968569ca57e9dc2d33977c79888c0d28c185b33045f109804522af9b2"
     },
     {
       "path": "assets/components/course-stage/scene.css",
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 1491,
-      "sha256": "ba52293985b48ac9b3a4831ada78398e705065d9bb3a896a5448e51aa62abc58"
+      "bytes": 1626,
+      "sha256": "7dab8a0b711e61fb6505d2e461442fe88e5711b8ae7df7ea63e06c2ff048e140"
     },
     {
       "path": "assets/components/course-stage/scene.js",
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 4437,
-      "sha256": "8762c4db828313f62c7cc2436dabccbd9d42ced9ffdf174a0a6b388d95f6c404"
+      "bytes": 4438,
+      "sha256": "64ad79e904de9254e66b63cd81d76879ebfa9f514511964bc9d09ada093399b3"
     },
     {
       "path": "assets/components/course-stage/shots.json",
@@ -219,20 +219,44 @@
       "sha256": "100fb7b9a399a9efabbc6d5cad3e8ddc5fde3a39a00afa715313516b147eb35a"
     },
     {
+      "path": "assets/components/course-stage/source-credit-layout.js",
+      "role": "Reusable fixed screen-bottom-left source credit component or regression",
+      "rights": "Project-authored reusable implementation; no project, account or author machine dependency",
+      "status": "Scoped native course source-credit visual checks and geometry/evidence regression; not universal aesthetic approval",
+      "bytes": 737,
+      "sha256": "f1a0531f6ba723bc5f46519073463f50ba46cda405b97a7c2d0561598d4c054b"
+    },
+    {
+      "path": "assets/components/course-stage/source-credit.tsx",
+      "role": "Reusable fixed screen-bottom-left source credit component or regression",
+      "rights": "Project-authored reusable implementation; no project, account or author machine dependency",
+      "status": "Scoped native course source-credit visual checks and geometry/evidence regression; not universal aesthetic approval",
+      "bytes": 585,
+      "sha256": "f0f6229d0aeac24ce4552baa7d1fba37e51dc6c139a88b9dcbfc78b1ae8f7194"
+    },
+    {
+      "path": "assets/components/course-stage/source-document.tsx",
+      "role": "Reusable source annotation component",
+      "rights": "Project-authored reusable implementation; no course account or native project dependency",
+      "status": "Scoped local testing; not automatic aesthetic approval or proof of real viewing",
+      "bytes": 2151,
+      "sha256": "9d8abda5da0f539d67c6c3be46866ccfc921f18f8e6b5a9da3346edaad91bd7c"
+    },
+    {
       "path": "assets/components/course-stage/stage.tsx",
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 3470,
-      "sha256": "c31fa766d1990226410eb487a300e6621f3fda2723d2e98fa08fd2523fdca0c4"
+      "bytes": 3906,
+      "sha256": "561c792caddf7758f9bdc85cc9348183e215125ff5ecc7c884be57942d7b1508"
     },
     {
       "path": "assets/components/course-stage/surface.js",
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 2666,
-      "sha256": "55a0fd5f62911533473d293b5f2265bceb62ea6465af99762d7880c2c3e32db8"
+      "bytes": 2612,
+      "sha256": "29a77a735e6b38ea20781fec136c2329dee15e86966158d0c5d746097bf447c2"
     },
     {
       "path": "assets/components/presenter-circle/defaults.js",
@@ -295,8 +319,8 @@
       "role": "Self-authored neutral engineering example, source, reconstruction or regression evidence",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Local native export/contact checks; synthetic timing; no final aesthetic/listening approval",
-      "bytes": 3546,
-      "sha256": "593cf5a6391bad403f499e4b5918147f3ba8bb1cc3f9890c996167802989e1fb"
+      "bytes": 3754,
+      "sha256": "7801199d02497b79de76dc1b413e3414f60125e4ab0a83e218e4597400705998"
     },
     {
       "path": "assets/examples/portable-workflow/circle-contact.jpg",
@@ -481,6 +505,262 @@
       "role": "historical-partial-craft-source",
       "rights": "Apache-2.0 derivative; see THIRD_PARTY_NOTICES and bundled license",
       "status": "selective local craft adaptation only; no final overall composition acceptance; old layout/camera not a template"
+    },
+    {
+      "path": "assets/examples/quality-baseline/anti-patterns/copied-task.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 189271,
+      "sha256": "ffacf2fd13dd5c93139bb0bdfda3cc6524d0623b6b55e0c5ed4210e861743d39"
+    },
+    {
+      "path": "assets/examples/quality-baseline/anti-patterns/independent-number.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 252264,
+      "sha256": "dc164da3de8f11f7408adff5cd205b2533c6b28f009efbeebac845f7dff5c11a"
+    },
+    {
+      "path": "assets/examples/quality-baseline/clips/E01.mp4",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 27132597,
+      "sha256": "bc86c572e2988eadbf3b0f03f02a641c547739f197f6c84b7f716fc3bf4f39a2"
+    },
+    {
+      "path": "assets/examples/quality-baseline/clips/E02.mp4",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 15226927,
+      "sha256": "98ad077d8d27506265671fc8daa8e401e2e7995afeb8cef03f813ab1928738f1"
+    },
+    {
+      "path": "assets/examples/quality-baseline/clips/E03.mp4",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 10355134,
+      "sha256": "44c7e969d8b6cbaab8baeb1567992c962b9f54a663e91edfd672a2312dfbe22c"
+    },
+    {
+      "path": "assets/examples/quality-baseline/clips/E04.mp4",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 10197461,
+      "sha256": "9ce7b73494ce4fd2a203ca5a08895c72c2d2784a1455e23743c5ee84aa43fb73"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E01-contact.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 426899,
+      "sha256": "ac84127661807b1d234f6d5a823ddd69a73f1dd27febaec04ef008cce61bc79f"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E01-detail.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 221066,
+      "sha256": "905aec79d668534ff9cc10ad72fe2a015acceefd4efe945a0814cdc39a3a5c8a"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E01-hold_end.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 215678,
+      "sha256": "23ff2a1495f4d9c31aa1fcb9690654c194c4b8e70474fb19e226da8530bbcf53"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E01-return.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 209051,
+      "sha256": "826cca26dc2b71075ce333579cc2ed091e76638b37f36faffcff5627b01de979"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E01-whole.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 202117,
+      "sha256": "e8e7a049af271c6158fc73ee36635c72ae9cd2923dab7d0e32e0c5a1d17ceca8"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E02-contact.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 309165,
+      "sha256": "e5d6edf5abdc0bf0cb1492577370172c12aa56ee735b83d220ace1ef6a9d79fd"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E02-detail.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 131226,
+      "sha256": "b7a23947253df18f139d10d809d2e7cfe4e56b0368963e76d447c3cdac34441a"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E02-hold_end.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 119575,
+      "sha256": "4be6902de40f9aa6d9308724a62c96ac66e361e6aa9b97812576aa59f8ec5fc8"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E02-return.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 177249,
+      "sha256": "80bc579d38dd8e1c4d138e9ecccc5a24970499934e896f1bec147ce612d469d6"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E02-whole.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 183519,
+      "sha256": "40066fc1f57686e36209249c7b1cbd8de2be0c2f2cd766493b4e0d7d033c040c"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E03-contact.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 317342,
+      "sha256": "df111731fb107c9248e1b3904435f97cc7b8c7f0647b86cc63ba89bd28c7b578"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E03-detail.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 146069,
+      "sha256": "2f98e26be02ef2a89da0c3399aeb2cce6f7f3e8c5b1acec364239bd9539e9e68"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E03-hold_end.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 142110,
+      "sha256": "6079bab8e61f771f2cb52ea24cdeeac7e6f0e22f8a12e37f05f91fda9c82895d"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E03-return.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 167109,
+      "sha256": "b02c89638e8bb0d1cde46b230485705044962fca8850c2feed3f520aaa44f0be"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E03-whole.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 156002,
+      "sha256": "b6b166b30531f9c1bdf2f9d78d15c3fd35c74e24d84b1df4fb8cc1dc0bf68817"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E04-contact.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 310542,
+      "sha256": "69ffe29d0260fe23d8cf8b675a30abf1d0e9f14768e0f6dd772a15c2525c0d28"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E04-detail.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 147152,
+      "sha256": "5cf79f532f7a2f6d28a768a0186e22e8b09916e9f2c67e1cf7b5a97113f2a241"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E04-hold_end.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 146294,
+      "sha256": "06b8c858dac44dfd4e54f4e1a34b0c77abcc1667618a2b61c758e79c289dd3a2"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E04-return.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 153657,
+      "sha256": "39717035c510df8fd5254b8ae67891906dd2574910177e26634eeacb9031f518"
+    },
+    {
+      "path": "assets/examples/quality-baseline/frames/E04-whole.jpg",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 128980,
+      "sha256": "2947fa2186315e1f3d5dbf15a547d25ed91b65d753ccf39d6229ab2c1b6a4752"
+    },
+    {
+      "path": "assets/examples/quality-baseline/gallery.css",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 1429,
+      "sha256": "22b6e4bdd3428f46662c28cc1e1bab20a5cfc5effca4baa2eee7cba73fa07a54"
+    },
+    {
+      "path": "assets/examples/quality-baseline/gallery.html",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 6279,
+      "sha256": "3bc7efe1e6b2352f7e2c5d8f50175e6d637230de8a03c8036ba2e9c875aec468"
+    },
+    {
+      "path": "assets/examples/quality-baseline/gallery.js",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 654,
+      "sha256": "31c97cd4b6a8691ad0fbaec81ea4c9df5c04c8660fcee2950c0b76cc19a4b4f7"
+    },
+    {
+      "path": "assets/examples/quality-baseline/manifest.json",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 9697,
+      "sha256": "9aa46b2cdca1b9bbad65c10687224650c96dd3298f00e33973012b357033b451"
+    },
+    {
+      "path": "assets/examples/quality-baseline/resource.json",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 1130,
+      "sha256": "cbe959945f67ecdce5ff5809384269449a41d2052873205497a5d334c554ce31"
+    },
+    {
+      "path": "assets/examples/quality-baseline/rights.md",
+      "role": "Public visual-quality reference media or guide; study only, not new-course footage",
+      "rights": "User explicitly authorizes selected lecture samples for public reference sharing; third-party excerpts retain publisher rights; see quality-baseline/rights.md",
+      "status": "Four extracted reference films and actual state frames; selected reference scope, not full-course or receiver acceptance",
+      "bytes": 1925,
+      "sha256": "b6cd49767c9e224489ba6d41fd7ecaa5968ab6fc948e3ec63ce70db7d5ea08ba"
     },
     {
       "path": "assets/fonts/MiSans-Bold.ttf",
@@ -740,16 +1020,16 @@
     },
     {
       "path": "references/animation-production.md",
-      "bytes": 21914,
-      "sha256": "77b5f70adde2a37c2bf990e57e0699044d3125b6c9e14a378979943f628d1ba8",
+      "bytes": 6134,
+      "sha256": "b976a3311ca524063f40dee48cd7560ef6fdb1181c934179e9711f3ebe800985",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/brand-and-assets.md",
-      "bytes": 3925,
-      "sha256": "e112fe8c31020df1537099ae738d515d4e5d70b6d4e229537de71a0e0ea9e5a6",
+      "bytes": 4002,
+      "sha256": "32c23261e9c0b9551e3dfa31d338360cd20d5a8e5d40aed2bc38488f0754e480",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -767,8 +1047,8 @@
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 6170,
-      "sha256": "df71551dc961ce9c19bc179c3116f3ef297118168b260e23ca6f78942c84979d"
+      "bytes": 8549,
+      "sha256": "2ea2121b8b775f9896dd584b3535ce85326553db63b769e7994bf3f4a26f6752"
     },
     {
       "path": "references/colleague-pilot.md",
@@ -796,32 +1076,32 @@
     },
     {
       "path": "references/environment-and-portability.md",
-      "bytes": 17895,
-      "sha256": "8f149fc7348fb868db0fccb8013d8cfc6ffff63081f783520b67f08b72bdd96d",
+      "bytes": 20503,
+      "sha256": "4cf2cdddb3bf749512cc15e9353a78c9d36504421d00e7a72d1cdb0541c559e5",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/example-guide.md",
-      "bytes": 2332,
-      "sha256": "35848089277c7e650a1baf8831b4696d4c29db95ec7341436694e33c95f508a4",
+      "bytes": 4230,
+      "sha256": "14db07db61a8fc496238827a8ff8e4c15e5a7b30fb14deedeb44f00f2ca6188d",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/failure-patterns.md",
-      "bytes": 13992,
-      "sha256": "2d075c0a952370dfa4525952b7e94abb97655e123f0da01c969859086a05493d",
+      "bytes": 15317,
+      "sha256": "a5d2179647c2fed8eabc0b2f6610ff3b63ace4103780e47b4556d020eb36acdc",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/identity-and-quotes.md",
-      "bytes": 16529,
-      "sha256": "2f00df15b569b85ded8b68bff4ddf2ad2c5538024dc12091945d3733b5042c5b",
+      "bytes": 17402,
+      "sha256": "e6a8abf8b456a5915542dfc6dc060856c58c57db63ffc2fc8785783ca9a3766e",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -836,8 +1116,8 @@
     },
     {
       "path": "references/learning-and-skill-maintenance.md",
-      "bytes": 5692,
-      "sha256": "fe9825cee51cd64812357c91666ff9ee76b94528b78e1741b4c9b4d3371b84f3",
+      "bytes": 7305,
+      "sha256": "4a17a88f23caad1cda7f1cd57a907de9a343de0ec69d1613a80e17d692d8cbbf",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -847,8 +1127,8 @@
       "role": "workflow/reference",
       "rights": "Project-authored reusable course workflow resource",
       "status": "Portable guidance; apply and verify with actual new course",
-      "bytes": 7819,
-      "sha256": "999259c3e67433085ed1c27778d6e5989c916776adf83bb600ff08e9e0903592"
+      "bytes": 8068,
+      "sha256": "6bf1e2e74c337222799225fdce896d6cb0278e70453e616fd7497b490cec562f"
     },
     {
       "path": "references/partial-inputs-and-design-previews.md",
@@ -863,8 +1143,8 @@
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 3772,
-      "sha256": "534eec5eca9c55e1a4b9253f4ac47db50cee3b1c59be913b773705c8d1ce68eb"
+      "bytes": 4023,
+      "sha256": "adb9e4d3d8e55be367fe6f725616e3f7f967501c2178a52f5231fb0f6419e3a3"
     },
     {
       "path": "references/project-start-and-file-management.md",
@@ -876,16 +1156,16 @@
     },
     {
       "path": "references/provenance-and-validation.md",
-      "bytes": 2172,
-      "sha256": "8d2fe475426da9daeda58e517f2ce1bd24719aca6320cf544cfaef11802bb00b",
+      "bytes": 2550,
+      "sha256": "bd0362db23b2f546a65a024055f0b4557a42a3d2edfbf47bff0bdffbcdfc1aca",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/quality-and-handoff.md",
-      "bytes": 6894,
-      "sha256": "a7c89aa08846437203a5fdc7e7c2108b71f8e70501bbe099b142ab21e8170455",
+      "bytes": 7875,
+      "sha256": "6956d98c9fb655ab62234c0f27396880dcf5e7bf2206b414907cc56608841f93",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -895,8 +1175,8 @@
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 2694,
-      "sha256": "af1afc8053e5bc050bb1d03abc262b3028f11f21d099cf22aba166d6fc2d44f6"
+      "bytes": 3109,
+      "sha256": "92d040488ca7e4f66317c154f2948ac2b3211997aedbc670449505678d633181"
     },
     {
       "path": "references/resource-links.md",
@@ -911,8 +1191,8 @@
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 5398,
-      "sha256": "9c546ee02cf32d4d24f23d31a93dcd63ad39a5ced80f6da68fa95d459530a064"
+      "bytes": 6336,
+      "sha256": "7c126406bfb5eb4cc74f18face5d05d1cc48c7a32ff93e531cb334088057f1aa"
     },
     {
       "path": "references/runtime-and-binding.md",
@@ -924,8 +1204,8 @@
     },
     {
       "path": "references/screen-tutorial.md",
-      "bytes": 3337,
-      "sha256": "2b783fe8b2ff080a20ab1ec95dee467d8ee8d5a5e91cc82f8cdb299d766af6f6",
+      "bytes": 5133,
+      "sha256": "afed6471bedebea8d410eb50ec34b29eeccb7fab8c382b4ea44e138360787004",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -939,17 +1219,25 @@
       "sha256": "6a58ca35dfcd3d4762dfab8060282d868f67fa985453ca04856929e9cecca64e"
     },
     {
+      "path": "references/source-annotation-and-camera-acceptance.md",
+      "role": "workflow/reference for authentic source annotation and applied camera verification",
+      "rights": "Self-authored reusable workflow requirements for authorized course editing",
+      "status": "User-confirmed requirements; implementation and aesthetic acceptance remain separately verified per course",
+      "bytes": 5560,
+      "sha256": "f068aa220340f75a96123ca862687d9b4eb7dc1e1a52e90f111c9a9e209fe651"
+    },
+    {
       "path": "references/subtitles.md",
-      "bytes": 10313,
-      "sha256": "0006df0d2d847188792b67ddf64de52ba3930922c24a64b7de9ae1570d3e0f17",
+      "bytes": 11848,
+      "sha256": "c76bd7cd49da5268252cfc3d42ea94cf95217d4b91d3e33f6a463c8835b44ac9",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/whole-first-design-and-camera.md",
-      "bytes": 18461,
-      "sha256": "d3c1ce3cf12e8ef2c0c37ce3c9f836bb6ec257b6fd99a6cc0c558b01ca2e4169",
+      "bytes": 18909,
+      "sha256": "94b5941610ab61fde84a177beb1c5ed419904b728f032402b78d8a21e2a1ad16",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -999,8 +1287,8 @@
       "role": "Reusable workflow helper or meaningful regression",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Local scoped tests recorded in validation/report.json",
-      "bytes": 2427,
-      "sha256": "a7d73e463c819260a91c98c6e328b82a308257c5bcc1776322143f694951270a"
+      "bytes": 2633,
+      "sha256": "b77dba30148380246aa6e02a9c66a5a440eef23d14b6130c0bc1e5f27e8d6a69"
     },
     {
       "path": "scripts/init_course_project.py",
@@ -1043,6 +1331,14 @@
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
+      "path": "scripts/reference_preview.py",
+      "role": "Stage routing, preview, evidence comparison or regression helper",
+      "rights": "Project-authored reusable implementation; no course account or native project dependency",
+      "status": "Scoped local testing; not automatic aesthetic approval or proof of real viewing",
+      "bytes": 2050,
+      "sha256": "0b273b930b9fe719b9d277992906664a7cc2e288770596b907cea319d87abfad"
+    },
+    {
       "path": "scripts/render_course_companion.py",
       "role": "portable course PDF and text renderer",
       "rights": "Project-authored reusable course workflow resource",
@@ -1063,8 +1359,24 @@
       "role": "Reusable workflow helper or meaningful regression",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Local scoped tests recorded in validation/report.json",
-      "bytes": 2414,
-      "sha256": "7389e96b2ff9efe7fcaa66bf2ac02b1b0cbc606aeddfe3b855750f9ea7f0d620"
+      "bytes": 3299,
+      "sha256": "f45d10cc7f70d2f6c274a1b9b1e42cf544770932f68d0fe9ab9b882c2b32cf6c"
+    },
+    {
+      "path": "scripts/test_source_credit.mjs",
+      "role": "Reusable fixed screen-bottom-left source credit component or regression",
+      "rights": "Project-authored reusable implementation; no project, account or author machine dependency",
+      "status": "Scoped native course source-credit visual checks and geometry/evidence regression; not universal aesthetic approval",
+      "bytes": 960,
+      "sha256": "37da857b3d4d8bbc9efdcee734a799ecefe9804dd8a0c5e57f81315fea73d5f7"
+    },
+    {
+      "path": "scripts/test_workflow_gate.py",
+      "role": "Stage routing, preview, evidence comparison or regression helper",
+      "rights": "Project-authored reusable implementation; no course account or native project dependency",
+      "status": "Scoped local testing; not automatic aesthetic approval or proof of real viewing",
+      "bytes": 10979,
+      "sha256": "ebc72095946a9a904407bc811ec39debb846e6093e91ac1821bea756f9e8be00"
     },
     {
       "path": "scripts/validate_covers.py",
@@ -1099,20 +1411,28 @@
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
+      "path": "scripts/workflow_gate.py",
+      "role": "Stage routing, preview, evidence comparison or regression helper",
+      "rights": "Project-authored reusable implementation; no course account or native project dependency",
+      "status": "Scoped local testing; not automatic aesthetic approval or proof of real viewing",
+      "bytes": 18130,
+      "sha256": "568c79d0e1b69213b51c10a17fd0854cea3245b2aec56bbc9165981932668f24"
+    },
+    {
       "path": "validation/20-point-audit.json",
       "role": "Sanitized scoped test report or synthetic fixture",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Scope and pending checks explicitly recorded",
-      "bytes": 11737,
-      "sha256": "93755ab82b514f76701b792cd1ed229e4266035efe6adb18196113a2b7e2c92a"
+      "bytes": 12417,
+      "sha256": "5e7836726433696335dc9d961fd03b19e825c6d93bf19dbabb6116cbc51eb9a1"
     },
     {
       "path": "validation/20-point-audit.md",
       "role": "Sanitized scoped test report or synthetic fixture",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Scope and pending checks explicitly recorded",
-      "bytes": 8651,
-      "sha256": "b4a14a038fd9bad4c0517bce6c5763e48c46fa37604fe24314298f17f7b67858"
+      "bytes": 6563,
+      "sha256": "acc901c3b38ed9ba78bfb315c084b2f31e1190cba60afd7047b1fbff79663e56"
     },
     {
       "path": "validation/browser-tests.json",
@@ -1220,16 +1540,16 @@
     },
     {
       "path": "validation/report.json",
-      "bytes": 19416,
-      "sha256": "ef0ee26d12fe9baeb8826b3c9558f8d16f907c4f732bb243025f2f43758e0c08",
+      "bytes": 30684,
+      "sha256": "c8aaebf3676e1daf6051bb6cf314c8c4bca9be065fa56a8f6630042b2a61bd78",
       "role": "supporting code/data",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "开始使用.md",
-      "bytes": 2856,
-      "sha256": "f60bfb55d0eb90587026ddc4c0bf73dcdced81c1fac7a8e4a795c887edc527a0",
+      "bytes": 4061,
+      "sha256": "9b1981db621b5c02348a9275425ff1e4dec685bc34f6357c4601f6cad936a6b7",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"

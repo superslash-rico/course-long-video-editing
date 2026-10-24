@@ -1,8 +1,8 @@
 {
   "name": "course-long-video-editing",
   "displayName": "课程长视频剪辑",
-  "version": "1.4.0",
-  "edition": "portable-production-kit-and-twenty-point-validation",
+  "version": "1.6.2",
+  "edition": "reference-baseline-stage-routing-and-regression-gates",
   "createdDate": "2026-10-22",
   "coreStages": [
     "course_title_and_dated_project_directory",
@@ -12,6 +12,7 @@
     "subtitles",
     "real_material_research_and_capture",
     "mode_adaptive_animation",
+    "animation_user_review_gate",
     "provided_cover_handoff",
     "course_title_intro_and_branded_student_pdf",
     "quality_handoff",
@@ -23,7 +24,7 @@
   "requiresReceiverOwnProject": true,
   "validation": "validation/report.json",
   "manifest": "assets/manifest.json",
-  "updatedDate": "2026-10-23",
+  "updatedDate": "2026-10-24",
   "professionalAnimationStatus": {
     "wholeFirstMethodImplemented": true,
     "fullStandardValidatedExampleIncluded": false,
@@ -130,7 +131,14 @@
     "backgroundStack": "behind every foreground animation object; opaque surfaces remain opaque when deemphasized",
     "camera": "visible whole-to-detail contrast; close typography; decisive travel; perceptible reading push",
     "sound": "action-appropriate varied families; no excessive or unsuitable repeated cues",
-    "status": "confirmed requirements implemented in reusable components; current complete audiovisual aesthetic/listening review remains pending"
+    "status": "confirmed requirements implemented in reusable components; current complete audiovisual aesthetic/listening review remains pending",
+    "stepNavigation": "complete-at-actual-transitions; distinguish recap and spoken correction",
+    "knowledgeNotes": "identified summaries use whole readable text; verbatim quotes retain real word cues",
+    "sourceAnnotation": "direct-on-source circles/frames/highlights/underlines; shared source coordinates; no duplicated standalone evidence cards",
+    "cameraExecution": "foreground camera binding and native wide-arrival-hold-end comparison required",
+    "referenceFirst": true,
+    "allSourceInstances": "Includes main examples, recaps, exercises and closing references",
+    "sourceCredit": "Fixed screen-space bottom-left, quiet small type, caption/presenter clearance; SourceCredit default component and actual frame evidence"
   },
   "nativeWorkflowPilot": {
     "realCourseStages": [
@@ -155,17 +163,57 @@
     "quoteLayoutControls": true,
     "realWordCueBuilder": true,
     "normalizedChecks": true,
-    "personalPreviewMediaIncluded": false,
+    "personalPreviewMediaIncluded": true,
     "nativeProjectIdsIncluded": false,
     "independentDirectoryInstallTestedOnSameMac": true,
-    "physicalColleagueCompleteCourse": "pending"
+    "physicalColleagueCompleteCourse": "pending",
+    "personalPreviewMediaScope": "Four user-authorized public reference clips and limited counterexample frames; no full lecture or native project"
   },
   "upgradePolicy": {
     "acceptedPreviousManifestSHA256": [
       "c3d46ef294d3032f039dda6ed7cb56a557e186a9200f4aeb2355fabade17c3f3",
-      "7a9d6ed9fce6ac356443748d42468043a3516c490d7d34d7adbbd7f5649cbc07"
+      "7a9d6ed9fce6ac356443748d42468043a3516c490d7d34d7adbbd7f5649cbc07",
+      "2d6378300e13e587654d447b737786a1b635ce6a9bad47abbb5135227b9988c9",
+      "bb033f8ae24aced782d8e38bba72741836ad65c16afa9f9fbf4ac4fce58dce5b",
+      "5e6a52846f1492bb8977762ce10b15c59570a85862a35b722bb9b634a7696fc0",
+      "a6add9a714247b34018923a7b400926c5f045d540700bee2c0b710db5a8afbb0",
+      "0c4b5d3ede788292bdef56b0fb2ad51713e8078642fd403e4df7b0f9852efae6",
+      "90f6ba162ad7b1b499ccba767a62b4c0da60df42f1fc5283371ed7b1137d6320"
     ],
     "unknownOrModifiedInstallation": "preserve-and-report-for-review",
     "requiresExplicitUpgradeFlagAndBackupRoot": true
+  },
+  "animationReviewPolicy": {
+    "default": "user-review-before-downstream-finalization",
+    "reviewIncludes": [
+      "real-speech",
+      "ordinary-captions",
+      "entry-hold-exit",
+      "current-source-version"
+    ],
+    "silenceOrTimeoutIsApproval": false,
+    "existingExplicitApprovalRespected": true
+  },
+  "screenQuotePolicy": {
+    "basis": "actual-local-screen-background-and-safe-space-through-each-span",
+    "fixedTalkingHeadDarkFog": false,
+    "automaticPixelDetectionClaimed": false,
+    "newScreenVisualTemplateApproval": "pending"
+  },
+  "publicReferenceBaseline": {
+    "manifest": "assets/examples/quality-baseline/manifest.json",
+    "permission": "User explicitly authorized these case samples for public sharing",
+    "exampleCount": 4,
+    "referenceOnly": true,
+    "wholeCourseAestheticApproval": "not-implied",
+    "machinePathsAndNativeProjectIDsIncluded": false,
+    "sourceCreditRevision": "1.6.1; all four actual clips/keyframes refreshed with lower-left credits"
+  },
+  "stageRouting": {
+    "entry": "scripts/workflow_gate.py prepare",
+    "fullLibraryAlwaysLoaded": false,
+    "referenceComparison": "scripts/workflow_gate.py compare",
+    "evidenceCheck": "scripts/workflow_gate.py check",
+    "scriptCheckIsAestheticApproval": false
   }
 }

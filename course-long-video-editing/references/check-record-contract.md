@@ -49,3 +49,21 @@ sourceAudioEnabled等规范化字段是检查语义，并非保证可写的原�
 
 
 画面条目的sourceAudioEnabled=false只说明它本身没有嵌入音轨，仍可能有已创建的关联音频条目。新圆窗副本的规范化记录必须包含linkedAudibleAudioKeys，已核实无可听关联声才填空数组；未检查不填空。保护器拒绝overlay/subtitle阶段新增voice。结合实际audioItems、links、静音/增益与完整字幕轨核对，不能凭单个布尔值断言没有双声。
+
+## 阶段版本与样片实画对照（1.6）
+
+`workflow_gate.py prepare --stage animation --profile ... --output ...`生成stage-lock.json与review.json。版本锁包含当前阶段必读文件、样片清单和相机/原件组件摘要；输出是尚未观看的准备记录，不是自动批准。按example-guide实际播放与看四状态后，填写referenceObservations的referenceId、viewingStatus=motion-and-frames、evidenceFile、具体observation/application。受限只看静帧时如实保持未完成动态检查。
+
+scenes逐项填id、understandingGoal、usesRealSource（显式true/false）、referenceIds、representative。代表段实际导出后运行compare：
+
+```sh
+python3 scripts/workflow_gate.py compare --session 本课/stage-lock.json --reference E01 --scene 本课场景ID --video 当前代表段.mp4 --times 全景秒 抵达秒 停留末秒 返回秒 --sources 当前入口.tsx 当前支持文件.tsx 当前参数.json --output 本课/对照-新版本
+```
+
+时间是该导出视频的局部秒，读取实际fps，不是原素材微秒或旧课时间。也可用`--frames`提供四张实际原生捕获的PNG/JPEG。输出对照HTML及comparison.json；源文件和图/视频摘要改变后不能沿用旧对照。声明本片实际依赖和已保存参数，不能只列一个未绑定的壳文件。
+
+查看对照和当前动态后，在comparisons填file（comparison.json路径）、verdict=pass/needs-repair、具体findings。每个真实材料引用实例在sourceInstances记录id、sceneId、sourceAvailable、annotationOnOriginal；不可得原件另记limitation，不伪造已标注。讲解、回顾和练习均登记。
+
+`check review.json --phase before-batch`检查参考观察、代表段与版本链；`--phase review`另外要求每场景audited、实际auditEvidence、每引用audited及finalOutput的file/sha256。检查不替代既有原声/字幕保护器，不检查美感，不证明观看行为真实；缺证据/待修复/未测必须保留，而非凑齐字段。
+
+每场景增加sourceCredit记录：present显式true/false。存在来源说明时填anchor=screen-bottom-left、coordinateSpace=screen；交审核还需audited=true和实际auditEvidence。自制方法的身份说明若显示，也归入此记录。脚本只核对声明与证据完整性，来源实际位置/可读性/遮挡须看真实画面。

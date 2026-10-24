@@ -1,67 +1,80 @@
 # 课程长视频剪辑 Skill
 
-当前版本 **v1.4.0**，包含完整工作法、可复用动画组件、检查脚本、案例、原版 MiSans 配套字体与许可、品牌学员 PDF 模板，共 **155 个技能文件**。使用本机 ChatCut Desktop 处理人像口播、录屏教学和混合课程。
+当前版本 **v1.6.2**。面向人像口播、录屏教学及混合课程，包含完整制作方法、默认组件、四段实际动态样片、原版MiSans与许可、学员资料模板及检查脚本。
 
-## 直接安装
+## 安装
 
-在 Codex 对话中把下面这段话交给 Agent：
+把下面这段话交给Codex或支持本地Skill的Agent：
 
 ```text
-请使用 skill-installer 安装这个完整的课程长视频剪辑 Skill：
-https://github.com/superslash-rico/course-long-video-editing/tree/v1.4.0/course-long-video-editing
-请核对完整资源；如已有旧版，先保留本机改动、备份并按随包说明升级。
+请使用skill-installer安装完整课程剪辑技能：
+https://github.com/superslash-rico/course-long-video-editing/tree/v1.6.2/course-long-video-editing
+已有旧版先核对本机改动并完整备份，再按随包安装器升级，不能覆盖自定义资料。
 ```
 
-这是固定的 v1.4.0 安装入口。安装后在下一轮或新会话确认技能已加载，再说“我要剪辑一个课程长视频”，提供课程标题、素材位置和粗剪状态即可。Agent 按已知信息继续，不让用户填写分镜或动画参数表。
-
-也可下载 [v1.4.0 完整安装包](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.4.0/course-long-video-editing-v1.4.0.zip)及 [SHA256](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.4.0/course-long-video-editing-v1.4.0.sha256)，解压后将完整 `course-long-video-editing/` 目录交给 Agent，按[开始使用](course-long-video-editing/开始使用.md)安装。保留全部相对目录。
-
-开发者也可运行：
+也可下载[完整ZIP](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.6.2/course-long-video-editing-v1.6.2.zip)和[SHA256](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.6.2/course-long-video-editing-v1.6.2.sha256)。完整解压后按[开始使用](course-long-video-editing/开始使用.md)安装，保留相对目录。安装后下一轮或新会话读取实际目录的版本。
 
 ```sh
-git clone --branch v1.4.0 https://github.com/superslash-rico/course-long-video-editing.git
+git clone --branch v1.6.2 https://github.com/superslash-rico/course-long-video-editing.git
 cd course-long-video-editing
 python3 course-long-video-editing/scripts/verify_package.py
 python3 course-long-video-editing/scripts/install_skill.py
 ```
 
-默认安装到当前 Codex 技能根；其他 Agent 可用 `--target-root` 指向其支持的技能目录。Python 只是辅助工具，Windows 可用 `py -3`。已有已识别且未修改的旧版可显式加 `--upgrade --backup-root "备份目录"`；未知或已修改版本会保留，需先检查合并。
+已识别且未修改的旧包可显式使用`--upgrade --backup-root "备份目录"`。未知或改过的安装保留并检查合并，不覆盖整个Agent配置。
 
-## 可复用资源
+## 先看实际样片，再制作新课
 
-| 资源 | 能力与入口 |
-| --- | --- |
-| 确认的动画背景 | 深紫黑 `#0C0A14`、可见简约点阵、中部横向淡紫光；位于全部主体后，随实际镜头弱联动；[组件说明](course-long-video-editing/references/reusable-production-kit.md) |
-| 教学动画舞台 | HTML / Remotion 共用背景、实心纸面、厚度阴影和秒驱动镜头；全景—特写强反差、利落转镜、读时缓慢推进 |
-| 名牌、金句、实时圆窗 | 可编辑参数、版位控制、真实词级跟读；圆窗按实际时长和当前输入恢复，按新人物重设裁切和路线 |
-| 检查器 | 全文覆盖、真实材料状态、时间映射、字幕全量分页、原声保护、有效参数、UTF-16 cues、媒体与声音信号；[检查契约](course-long-video-editing/references/check-record-contract.md) |
-| 案例与反例 | [46秒自制原生示范](course-long-video-editing/assets/examples/portable-workflow/preview.mp4)、[重建说明](course-long-video-editing/assets/examples/portable-workflow/rebuild-demo.md)、[挡字等反例](course-long-video-editing/assets/examples/portable-workflow/regressions.md)、[纯背景实测图](course-long-video-editing/assets/examples/portable-workflow/background-native.png) |
-| 学员资料 | 原版字体、官方品牌资源、可编辑资料模板和 PDF 生成器；[模板说明](course-long-video-editing/assets/templates/course-companion/使用说明.md) |
+[样片导览与观察说明](course-long-video-editing/references/example-guide.md)是当前视觉基线。四段均附全景、细节抵达、停留末端、返回四状态帧。先看动态，再把机制用于自己的内容。
 
-新课先复制组件到本课源码目录，再根据实际讲解设计全景、过程、读时、机位、人物和声音。背景及工艺直接复用，示范时间码和布局仅服务示范内容。
+| 样片 | 动态文件 | 观察重点 |
+|---|---|---|
+| E01 报告原页与数字特写 | [40秒MP4](course-long-video-editing/assets/examples/quality-baseline/clips/E01.mp4) | 原页圈选/高亮，大幅推近，读时慢推与口径回收 |
+| E02 岗位条件与验证条款 | [37秒MP4](course-long-video-editing/assets/examples/quality-baseline/clips/E02.mp4) | 企业匿名，条件在原文里阅读，保留验证要求 |
+| E03 项目记录的纵深与归组 | [24秒MP4](course-long-video-editing/assets/examples/quality-baseline/clips/E03.mp4) | 厚度、遮挡、透视、特写与整体收拢 |
+| E04 练习段中的原文任务 | [34秒MP4](course-long-video-editing/assets/examples/quality-baseline/clips/E04.mp4) | 回顾/课后练习也在原件里划线、高亮 |
 
-## 剪辑流程与使用条件
+![E01四状态实际帧](course-long-video-editing/assets/examples/quality-baseline/frames/E01-contact.jpg)
 
-确认标题 → 建立 `YYYYMMDD-课程标题/`，归类原片/片头/片尾/封面/参考资料 → 按需自然教学粗剪 → 使用用户首尾并制作两处转场 → 校对字幕 → 理解全课、主动采集真实来源与画面 → 教学动画 → 未覆盖内容的名牌/金句 → 整片核查 → 成片标题、简介和品牌学员 PDF → 复盘。
+本机播放页：
 
-已有粗剪可直接进入字幕；局部任务遵循指定范围。录屏保持真实操作可看清、可跟做。片头片尾及封面由用户提供，不默认新做。事实截图和软件运行结果使用真实材料，生成插画明确标为示意。优先本地 ChatCut Desktop，云转写等外部服务按当次需要与授权，已有转写不重复做。
+```sh
+python3 course-long-video-editing/scripts/reference_preview.py
+```
 
-接收方需要自己的 ChatCut Desktop、可用 Agent 集成和课程素材；从当前工具读取工程、schema、画幅/fps并重新绑定资产，使用自己的合法素材与服务。安装 Skill 不会复制作者账号或注册系统字体；视频端按[字体说明](course-long-video-editing/assets/fonts/acquisition.md)核对实际原生字形。PDF 生成器另需 ReportLab/Pillow 或等价工具。
+脚本打印本机地址，播放页支持跳到四个观察状态。视频和图片随包提供，不依赖原作者电脑、账号或原生工程。[公开范围与出处](course-long-video-editing/assets/examples/quality-baseline/rights.md)保留第三方摘录权利。用户明确授权这四段精选课程成片作为公开参考；不包含整课、原片、账号或完整工程，也不把Rico口播直接用作别人的新课。
 
-## 已验证和仍需验证
+## 下次执行时的质量要求
 
-本机已运行 Python 46 项、镜头 13 项、浏览器 12 项、安装 15 项、包损坏反例 4 项；实际原生 HTML/Remotion 导入、强调色修改与还原、1080p30 / 4K60 导出及完整解码、8秒实时圆窗恢复、独立目录冷安装后背景原生导出均有分项记录。开发所用真实课程另外复核了18条词级金句、457条字幕及非目标源保护。
+- 按本次阶段读取文件，记录实际版本、规则和适用样片摘要；不用历史聊天或旧备份猜当前标准。
+- 网页、报告和招聘事实直接在真实原件中圈框、高亮、划线，图像和标记共享源坐标；不再抄成独立证据卡。
+- `CourseWorld`让背景和前景共用相机；全景到特写有强尺度差，细节尽量大且完整，阅读时保持缓慢运动。
+- `SourceCredit`把来源说明自动固定在屏幕左下小字层；原件批注继续随原件移动。局部动画的来源层也按整幅输出画面定位。
+- 先做当前课程代表段，与适用样片生成实际画面对照，修复后再扩展。版本、源码、参数或输出变更后，旧证据失效。
+- 交审核前检查全课全部来源引用，包括回顾、练习和结尾；用户动画审核通过后再进入正式成片和课程资料。
 
-[20项逐项落实表](course-long-video-editing/validation/20-point-audit.md)说明每项实现、证据和待验证内容；[验证报告](course-long-video-editing/validation/report.json)保留封包时快照。该快照中的 GitHub 发布未做项描述封包时状态，本次发布状态以 [Release](https://github.com/superslash-rico/course-long-video-editing/releases/tag/v1.4.0)、提交和 Actions 为准。
+```sh
+python3 course-long-video-editing/scripts/workflow_gate.py prepare --stage animation --profile mixed --output "本课/工作文件/质量会话-v1"
+```
 
-仍需由接收方验证：实体第二台电脑、新会话技能发现与当前原生连接、自己的真实有声样段与完整一课、连续视听与最终审美、学生理解，以及真实课程配套资料内容。其他系统/Agent/ChatCut版本和未测画幅按实际结果记录。通用示范无真实讲师口播，金句节奏为合成输入，未宣称为用户最终审美标杆。
+`prepare`仅生成必读路径与版本锁，不代表已看过。实际导出后按[检查契约](course-long-video-editing/references/check-record-contract.md)生成双行四状态对照并记录真实观察。检查脚本不证明观看行为、美感、事实真伪或听感。
 
-同事首次使用执行[接收验收流程](course-long-video-editing/references/colleague-pilot.md)。GitHub Actions 自动检查完整资源、相对依赖、字体摘要、字幕/保护等正反例、镜头不变量与隔离安装；实际视听与审美在本地完成。
+## 完整流程与条件
+
+确认标题、建档归类 → 按需粗剪 → 用户片头片尾衔接 → 字幕 → 真实材料 → 专业解释动画 → 适用的名签/金句 → 审核 → 成片、标题简介、品牌学员PDF → 复盘。
+
+已粗剪直接进入后续环节，保护原声与自然教学节奏。录屏保留真实点击—状态—结果，便于跟做。用户封面及首尾素材沿用原件，不默认重做。AI图片只能是明确示意，不能伪装成真实证据。
+
+接收方需要自己的ChatCut Desktop、当前Agent集成、课程素材和合法服务；按当前schema/画幅/fps重新绑定资产。安装Skill不等于注册系统字体。学员PDF生成另需ReportLab/Pillow或等价工具。详细入口：[SKILL.md](course-long-video-editing/SKILL.md)、[组件说明](course-long-video-editing/references/reusable-production-kit.md)、[同事首次验收](course-long-video-editing/references/colleague-pilot.md)。
+
+## 验证与边界
+
+[验证报告](course-long-video-editing/validation/report.json)和[20项落实表](course-long-video-editing/validation/20-point-audit.md)保留分项范围。当前代码包含版本/证据门禁29项、既有合成保护46项、相机17项及来源布局检查。实际样片解码、原生位置与共享相机另有本机验证；独立新上下文试跑已检验样片路径的使用及未测状态的保留。
+
+GitHub Actions核对资源/字体、相对依赖、保护规则、镜头、来源位置、阶段证据及隔离安装。它不代替真实新课的原声合成、连续观看/听审、用户审美或第二台电脑验收。旧中性工程示范保留技术研究用途，不能取代E01—E04作为当前效果参考。每一新课仍需实际代表段对照与全课检查。
 
 ## 资源与维护
 
-全部资源按[来源与使用说明](course-long-video-editing/THIRD_PARTY_NOTICES.md)和[逐文件清单](course-long-video-editing/assets/manifest.json)使用，未对所有文件统一授予 MIT 等许可。Apache 衍生代码、MiSans 原版字体/完整许可、超级斜杠品牌分别保留自身权利边界。
+逐项资源遵守[来源与使用说明](course-long-video-editing/THIRD_PARTY_NOTICES.md)及[文件清单](course-long-video-editing/assets/manifest.json)，没有对字体、品牌、第三方摘录或所有代码统一授予MIT等许可。未经公开授权的课程、客户资料和账号仍留项目；本次明确授权的精选样片按权利说明公开。
 
-本版分享包采用自制工艺示范，不含当前课程人像/口播、第三方裸音效、私人日志、旧工程 UUID、登录配置或私有 MotionGit 包。原创候选音效附配方，实际音色仍需选择和试听。已公开旧版本保持历史记录，各旧版资源按其当时的说明使用。
-
-通用经验按用户授权维护本机 Skill；向 GitHub 发布按当次明确授权执行。变更见 [CHANGELOG](course-long-video-editing/CHANGELOG.md)，入口见 [SKILL.md](course-long-video-editing/SKILL.md)。
+通用经验维护本机Skill；GitHub发布按用户当次授权执行。[变更记录](course-long-video-editing/CHANGELOG.md)。

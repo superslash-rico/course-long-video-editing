@@ -1,6 +1,8 @@
 import React from 'react';
 import {AbsoluteFill,useVideoConfig} from 'remotion';
 import {backgroundDefaults} from './background';
+import {cameraTransform} from './camera';
+import {SourceCredit} from './source-credit';
 
 export function CourseBackground({camera,values={},id='course-background'}:any){
  const {width,height}=useVideoConfig(),p={...backgroundDefaults,...values},u=height/1080;
@@ -14,9 +16,12 @@ export function CourseBackground({camera,values={},id='course-background'}:any){
 
 export function CameraStage({camera,children,x=755,y=540}:any){
  const {height}=useVideoConfig(),unit=height/1080;
- return <AbsoluteFill style={{zIndex:10,isolation:'isolate'}}><div style={{position:'absolute',inset:0,transform:`scale(${unit})`,transformOrigin:'0 0'}}><div style={{position:'absolute',left:x,top:y,width:1,height:1,perspective:2500,perspectiveOrigin:'0 0',transformStyle:'preserve-3d'}}><div style={{position:'absolute',width:1,height:1,transformOrigin:'0 0',transformStyle:'preserve-3d',transform:`scale(${camera.s}) rotateX(${camera.rx??0}deg) rotateY(${camera.ry??0}deg) rotateZ(${camera.rz??0}deg) translate(${-camera.fx}px,${-camera.fy}px)`}}>{children}</div></div></div></AbsoluteFill>;
+ return <AbsoluteFill style={{zIndex:10,isolation:'isolate'}}><div style={{position:'absolute',inset:0,transform:`scale(${unit})`,transformOrigin:'0 0'}}><div style={{position:'absolute',left:x,top:y,width:1,height:1,perspective:2500,perspectiveOrigin:'0 0',transformStyle:'preserve-3d'}}><div style={{position:'absolute',width:1,height:1,transformOrigin:'0 0',transformStyle:'preserve-3d',transform:cameraTransform(camera)}}>{children}</div></div></div></AbsoluteFill>;
 }
 
 export function OpaquePaper({children,x=0,y=0,z=0,width=600,height=500,rotation=0,tone=1,contentOpacity=1,reveal=1,paperColor='#FBF7FD',inkColor='#24182D'}:any){
  return <div style={{position:'absolute',left:x-width/2,top:y-height/2,width,height,transformStyle:'preserve-3d',transform:`translateZ(${z}px) rotateZ(${rotation}deg)`,opacity:reveal}}><div style={{position:'absolute',inset:-5,borderRadius:8,background:'rgba(25,10,34,.50)',filter:'blur(15px)',transform:'translate3d(7px,10px,-18px)'}}/>{[9,6,3].map((d,i)=><div key={d} style={{position:'absolute',inset:0,borderRadius:6,background:['#CBB7D8','#DDD0E5','#EEE5F3'][i],transform:`translate3d(${-i}px,${i}px,${-d}px)`}}/>)}<div style={{position:'absolute',inset:0,background:paperColor,color:inkColor,borderRadius:6,backfaceVisibility:'hidden',boxShadow:'inset 0 0 0 1px #E0D3E8',filter:tone<1?`brightness(${Math.max(.1,tone)})`:undefined}}><div style={{position:'absolute',inset:0,opacity:contentOpacity}}>{children}</div></div></div>;
 }
+
+// Preferred root: the exact same camera drives the backdrop AND foreground.
+export function CourseWorld({camera,values={},children,x=755,y=540,id='course-world',sourceNote,sourceCreditOpacity=1}:any){return <AbsoluteFill><CourseBackground camera={camera} values={values} id={id}/><CameraStage camera={camera} x={x} y={y}>{children}</CameraStage><SourceCredit text={sourceNote??values.sourceNote} fontFamily={values.font} opacity={sourceCreditOpacity}/></AbsoluteFill>;}

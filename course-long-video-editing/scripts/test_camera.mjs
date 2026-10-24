@@ -16,4 +16,9 @@ check('bad-angle-is-rejected',()=>assert.throws(()=>validateShots([{at:0,until:1
 check('unmarked-zero-time-motion-is-rejected',()=>assert.throws(()=>validateShots([{at:0,until:1,p:{fx:0,fy:0,s:1}},{at:1,until:2,p:{fx:2,fy:0,s:2}}],2)));
 check('explicit-cut-has-defined-boundary',()=>{const q=validateShots([{at:0,until:1,p:{fx:0,fy:0,s:1}},{at:1,until:2,p:{fx:2,fy:0,s:2},cut:true}],2);assert.equal(cameraAt(1,q).fx,2);});
 check('zero-reading-hold-has-no-extra-jump',()=>{const q=validateShots([{at:0,until:0,p:{fx:0,fy:0,s:1}},{at:.36,until:1,p:{fx:1,fy:0,s:2}}],1);assert(Math.abs(cameraAt(1e-9,q).s-1)<1e-8);});
+const depth=validateShots([{at:0,until:2,p:{fx:0,fy:0,fz:0,s:.8,ry:-12},orbit:3},{at:2.5,until:5,p:{fx:200,fy:30,fz:96,s:3.6,ry:5},orbit:1.3}],5);
+check('depth-focus-arrives-without-jump',()=>{assert.equal(cameraAt(2.5,depth).fz,96);assert(cameraAt(2.25,depth).fz>0&&cameraAt(2.25,depth).fz<96);for(const t of [2,2.5])assert(Math.abs(cameraAt(t-1e-7,depth).fz-cameraAt(t+1e-7,depth).fz)<.001);});
+check('reading-orbit-is-deterministic-and-strength-aware',()=>{assert.equal(cameraAt(5,depth).ry,6.3);assert.equal(cameraAt(5,depth,0).ry,5);const before=cameraAt(3,depth);cameraAt(0,depth);assert.deepEqual(cameraAt(3,depth),before);});
+check('invalid-depth-focus-is-rejected',()=>assert.throws(()=>validateShots([{at:0,until:1,p:{fx:0,fy:0,fz:Infinity,s:1}}],1)));
+check('excessive-orbit-is-rejected',()=>assert.throws(()=>validateShots([{at:0,until:1,p:{fx:0,fy:0,s:1},orbit:16}],1)));
 console.log(JSON.stringify({ok:true,checks,scope:'Pure camera invariants and seconds/fps reconstruction. Does not establish native geometry or visual taste.'},null,2));

@@ -7,7 +7,7 @@
   "exampleDurationSeconds": 24,
   "status": "confirmed-background-language; reusable engineering demonstration; new-complete-scene-aesthetic-review-pending",
   "aspectPolicy": "16:9 design units; 1080p and 4K scaled placements; other aspect ratios require new layout",
-  "purpose": "self-contained background, layered opaque paper, deterministic strong camera and same-object teaching example",
+  "purpose": "Reusable background, shared foreground camera transform, opaque objects and source-local annotations; content/camera routes must be authored for each lesson",
   "rights": "Self-authored adaptation for this workflow and authorized colleagues; no third-party lesson media",
   "dependencyPolicy": "relative modules only; original MiSans companion fonts require receiver registration",
   "copyFiles": [
@@ -26,6 +26,19 @@
     "background-only.js",
     "background-properties.json",
     "remotion-example.tsx",
-    "package.json"
-  ]
+    "package.json",
+    "source-document.tsx",
+    "source-credit.tsx",
+    "source-credit-layout.js"
+  ],
+  "preferredRoot": "CourseWorld",
+  "sourceEvidenceComponent": "source-document.tsx / SourceDocument",
+  "sourceCreditComponent": "SourceCredit; CourseWorld auto-renders values.sourceNote in screen space",
+  "sourceCreditPolicy": {
+    "anchor": "screen-bottom-left",
+    "fontSizeDesign1080": 14,
+    "leftDesign1080": 24,
+    "bottomDesign1080": 18,
+    "cameraIndependent": true
+  }
 }

@@ -25,6 +25,12 @@ jobs:
         run: python3 course-long-video-editing/scripts/selftest.py
       - name: Check seconds-based camera invariants
         run: node course-long-video-editing/scripts/test_camera.mjs
+      - name: Check stage and reference evidence regressions
+        run: python3 course-long-video-editing/scripts/test_workflow_gate.py
+      - name: Check fixed source credit layout
+        run: node course-long-video-editing/scripts/test_source_credit.mjs
+      - name: Resolve all four public references from the installed package
+        run: python3 course-long-video-editing/scripts/workflow_gate.py prepare --stage animation --profile mixed --references E01 E02 E03 E04 --output "${RUNNER_TEMP}/course-reference-check"
       - name: Preview installation into an isolated location
         run: python3 course-long-video-editing/scripts/install_skill.py --target-root "${RUNNER_TEMP}/course-skill-check" --dry-run
       - name: Install complete package and verify installed files

@@ -1,6 +1,6 @@
 {
-  "version": "1.4.0",
-  "date": "2026-10-23",
+  "version": "1.6.2",
+  "date": "2026-10-24",
   "implementationItems": 20,
   "statusMeaning": "implemented means reusable rules/resources are delivered, not universal quality approval",
   "items": [
@@ -98,11 +98,12 @@
       "resources": [
         "references/example-guide.md",
         "references/quality-rubric.md",
-        "assets/examples/portable-workflow/preview.mp4"
+        "assets/examples/quality-baseline/manifest.json",
+        "scripts/workflow_gate.py"
       ],
-      "change": "按动态分析整体/细节/材质/时序，用带原声与人像的实际样段验收新课。",
-      "verification": "自制46秒原生示范含HTML/Remotion/名签/金句/SFX，12帧查看及完整解码。",
-      "stillRequires": "通用示范无真实讲话；用户整体审美和新课有声代表样段仍需验收。"
+      "change": "四段实际成片为当前基线；先播放、看四状态，再渲染本课代表段并生成实画对照。",
+      "verification": "四段公开样片及16张关键帧已同步为左下来源说明，全解码通过；历史新任务试跑保留1.6.0范围。",
+      "stillRequires": "每一新课的实际观看、内容适配、带声代表段与用户审美。"
     },
     {
       "id": 9,
@@ -123,10 +124,13 @@
       "resources": [
         "assets/components/course-stage/background.js",
         "assets/components/course-stage/surface.js",
-        "assets/components/course-stage/stage.tsx"
+        "assets/components/course-stage/stage.tsx",
+        "assets/components/course-stage/source-document.tsx",
+        "assets/components/course-stage/source-credit.tsx",
+        "assets/components/course-stage/source-credit-layout.js"
       ],
-      "change": "确认的深紫黑、点阵、横向淡紫光实现为HTML/Remotion组件；背景底层，纸面实心。",
-      "verification": "浏览器alpha/遮挡正反例及本机原生整体/配角纸面检查通过。",
+      "change": "CourseWorld让背景及前景共用相机；SourceDocument让原图和原像素批注共用平面。 来源说明条自动放在屏幕左下，不进入相机容器。",
+      "verification": "第四课39段原生位置抽查，FDE全景/近景/极值复查；原声编码数据和384条字幕保持一致。",
       "stillRequires": "新片所有重叠/反面/极值；接收方GPU和真实字体。"
     },
     {
@@ -137,8 +141,8 @@
         "assets/components/course-stage/camera.js",
         "scripts/test_camera.mjs"
       ],
-      "change": "全景/特写有强尺度差、快速转镜与可感知读时缩放；机位可编辑。",
-      "verification": "13项镜头不变量通过；原生示范近景主字放大，改色/4K60片段验证。",
+      "change": "共用实际前景相机，增加焦点深度与缓慢摆动；强全景/特写、读时缩放及返回整体。",
+      "verification": "17项纯相机回归通过；20秒真实原文隔离段原生导出，检查全景、大特写、停留末端与返回。",
       "stillRequires": "新课节奏和力度的实际观看，不套固定机位/时长。"
     },
     {
@@ -254,9 +258,10 @@
         "scripts/install_skill.py",
         "scripts/verify_package.py"
       ],
-      "change": "组件/脚本/案例/反例/许可/20项表同步；无私有原片/旧ID，显式备份升级。",
-      "verification": "官方Skill格式、全包/闭合/秘密扫描及独立目录安装测试按validation报告记录。",
-      "stillRequires": "实体第二台电脑、其他系统/Agent版本和同事独立完成一门真实课程。"
+      "change": "用户授权四段真实样片公开随包；阶段必读、版本摘要、正反例、代表段和全部原件引用实例检查。",
+      "verification": "当前位置回归和证据门禁通过；公开参考与默认实现同步，旧规则/旧位置记录不能沿用。安装及包完整性另记录。",
+      "stillRequires": "实体第二台电脑、其他系统/Agent版本与同事独立完成一门真实课程；每课实际审美检查。"
     }
-  ]
+  ],
+  "historicalVerificationScope": "Unchanged item verification describes the earlier recorded trial; current checks are in validation/report.json."
 }

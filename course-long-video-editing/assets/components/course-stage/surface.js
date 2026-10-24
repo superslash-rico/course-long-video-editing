@@ -1,3 +1,4 @@
+import {cameraTransform} from './camera.js';
 // The 2D stacking boundary is outside the preserve-3d world. Ordinary paper
 // remains opaque when dimmed; opacity is reserved for intentional reveal/exit.
 export function createStage(root,{x=755,y=540,perspective=2500}={}){
@@ -6,7 +7,7 @@ export function createStage(root,{x=755,y=540,perspective=2500}={}){
  Object.assign(lens.style,{position:'absolute',left:x+'px',top:y+'px',width:'1px',height:'1px',perspective:perspective+'px',perspectiveOrigin:'0px 0px',transformStyle:'preserve-3d'});
  Object.assign(world.style,{position:'absolute',width:'1px',height:'1px',transformStyle:'preserve-3d',transformOrigin:'0px 0px'});
  layer.append(lens);lens.append(world);root.append(layer);
- return{element:layer,world,render(p){world.style.transform=`scale(${p.s}) rotateX(${p.rx??0}deg) rotateY(${p.ry??0}deg) rotateZ(${p.rz??0}deg) translate(${-p.fx}px,${-p.fy}px)`;},dispose(){layer.remove();}};
+ return{element:layer,world,render(p){world.style.transform=cameraTransform(p);},dispose(){layer.remove();}};
 }
 export function createPaper(parent,{x=0,y=0,z=0,width=600,height=500,rotation=0,color='#FBF7FD',ink='#24182D'}={}){
  const doc=parent.ownerDocument,outer=doc.createElement('div'),shadow=doc.createElement('div');outer.className='course-paper';

@@ -32,7 +32,7 @@ export default async function mount({root,props,timeline}){
  await doc.fonts.load(`700 60px "${p.font}"`);bind();
  return{update({props}){p={...defaults,...(props||{})};bind();},render({timeSeconds}){
   const t=Math.max(0,timeSeconds),cam=cameraAt(t,shots,p.readingPushStrength),move=phase(t,p.moveAt,p.moveAt+.42),result=phase(t,p.resultAt,p.resultAt+.46),oldInk=1-phase(t,p.resultAt-.18,p.resultAt+.16);
-  bg.render(p,cam,.77);stage.render(cam);chrome.style.opacity=String(phase(t,.08,.5)*(1-phase(cam.s,.87,.96)));footer.style.opacity=chrome.style.opacity;
+  bg.render(p,cam,.77);stage.render(cam);chrome.style.opacity=String(phase(t,.08,.5)*(1-phase(cam.s,.87,.96)));footer.style.opacity=String(phase(t,.6,1));
   left.set({tone:1-.28*move,contentOpacity:1-.35*move});right.set({tone:1,contentOpacity:.38+.62*move});
   ticket.set({pose:`translate3d(${mix(0,700,move)}px,0,${130+result*20}px) rotateZ(${mix(-1.3,1.3,move)}deg)`,reveal:1-result});ticketBody.textContent=move>.5?p.ticketB:p.ticketA;
   a.layout.style.opacity=String(oldInk);b.layout.style.opacity=String(oldInk);finalSheet.set({reveal:result});finish.style.opacity=String(phase(t,p.resultAt+.30,p.resultAt+.65));

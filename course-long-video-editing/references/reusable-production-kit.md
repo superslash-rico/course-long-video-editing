@@ -1,6 +1,6 @@
 # 可复用组件、导入与新课适配
 
-先读本课实际画面、完整口播和既定设计，再选择组件。用户已确定本系列方向时延续；其他讲师/品牌按其当前规范。组件解决已验证的技术工艺，每段的理解目标、全景、事实、文字、时序与声音仍由助手设计。
+先按[样片导览](example-guide.md)看适用实际动态，再读本课画面、完整口播和既定设计，选择组件。用户已确定本系列方向时延续；其他讲师/品牌按其当前规范。组件解决已验证的技术工艺，每段的理解目标、全景、事实、文字、时序与声音仍由助手设计。
 
 ## 背景与专业动画舞台
 
@@ -12,6 +12,7 @@
 | `background-only.html` | 独立完整画幅背景，适合放在所有主体之后 | 使用background-properties.json；实际相机尺度/焦点以当前前景为准 |
 | `surface.js` / OpaquePaper | 独立前景堆叠、实心纸面、厚度、阴影、内容弱化和表面明度 | 配角退让用tone/contentOpacity；reveal仅用于有意入退场，不把整纸变透明 |
 | `camera.js` | 秒驱动短转镜、连续阅读缩放、随机寻帧、相机/物体独立 | 每个主要阅读单位的取景、抵达/停留/离开；示范机位和时刻不是通用剧情 |
+| `CourseWorld` / `source-document.tsx` | 背景与前景同一相机状态；SourceDocument将真实原件与圈框/高亮/划线放在同一源图像素坐标系 | 绑定接收方本课真实素材、尺寸与标记，逐段重做主要阅读单位与镜头；不抄证据卡 |
 | `index.html` / `remotion-example.tsx` | 自制的全景—特写—同对象结果示范 | 新片文字、可见变化、纸面布局及相机，不能只换标题就视为已适配 |
 
 参数以1920×1080设计坐标为示例。背景模块按画幅高度缩放点距/半径；Remotion舞台从当前useVideoConfig取尺寸，HTML组件按自然画布在项目放置缩放。默认整体示范为16:9；9:16、1:1或很长文本需重新设计，未声明为已自动适配。
@@ -21,6 +22,10 @@ python3 scripts/create_scene.py --output "本课/工作文件/动画/新场景" 
 ```
 
 路径相对当前工作区，仅作调用示例。助手从已确认课程信息推导路径和内容，不把此命令变成要求用户填写的表单。`--kind remotion`选择TSX示例，`--kind background`选择纯背景。脚本拒绝覆盖已有目录或写入安装包，输出scene-record.json说明下一步。对专业场景，读取并重写shots/content/seconds后再导入；纯背景没有独立自动播放时钟。
+
+真实证据段优先使用SourceDocument；原件的src/sourceWidth/sourceHeight来自本课实际绑定。x/y是物件中心，width为设计坐标宽；marks使用源图像素rect及局部秒，父层CourseWorld实际包装所有主体。相机fz与物件z可用于不同深度的阅读落点，HTML/Remotion共享cameraTransform。
+
+SourceCredit统一固定来源说明在屏幕左下小字层。CourseWorld自动显示values.sourceNote；自定义根布局需把SourceCredit放在CameraStage外同级，不能再另画来源条。原件批注仍在SourceDocument内，二者采用不同坐标层。
 
 原生导入：当前工具读取工程/主线及schema，push_asset指向本课源入口，提交对应properties与实际资产容量；再edit_item放置，使用新返回ID。背景独立作为资产时其轨道在全部主体后。导入后inspect_asset、inspect_item核对有效值，再查实际合成和当前导出。不要重放原作者请求/UUID。
 

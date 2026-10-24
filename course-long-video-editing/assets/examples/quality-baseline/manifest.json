@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "baselineVersion": "1.6.1",
+  "title": "真实原件与空间镜头质量参考",
+  "selectionBasis": "User requested these course-case shots as reusable and publicly shareable references on 2026-10-23; selection does not certify the entire course or every future edit.",
+  "sourceVideoSHA256": "5c5f35d4778afcc5018406bab74443f58b6bd1c7df28961a80f4f67ba0be89a7",
+  "nativeProjectOrAbsolutePathsIncluded": false,
+  "roles": {
+    "evidence": [
+      "E01"
+    ],
+    "concept": [
+      "E03"
+    ],
+    "exercise": [
+      "E04"
+    ],
+    "mixed": [
+      "E01",
+      "E03"
+    ]
+  },
+  "examples": [
+    {
+      "id": "E01",
+      "name": "原件全貌到数字特写",
+      "roles": [
+        "evidence",
+        "report",
+        "chart",
+        "camera"
+      ],
+      "goals": [
+        "识别同一份真实报告及原页，不把截图退成背景。",
+        "在原页印出的数字上圈选并大幅推近。",
+        "比较抵达与停留末端，观察同一原文持续慢推。",
+        "回到原页与统计口径，保留年份、范围及限制。",
+        "来源说明条固定在屏幕左下角的小字层，运镜时位置和大小保持稳定。"
+      ],
+      "sourceNote": "原页摘录：PwC《2026全球人工智能就业晴雨表》中国内地报告第13页。数字是案例中的历史招聘发布样本，不是未来课程默认事实。",
+      "file": "clips/E01.mp4",
+      "sha256": "bc86c572e2988eadbf3b0f03f02a641c547739f197f6c84b7f716fc3bf4f39a2",
+      "bytes": 27132597,
+      "durationFrames": 2400,
+      "fps": 60,
+      "durationSeconds": 40.0,
+      "width": 1920,
+      "height": 1080,
+      "phases": [
+        {
+          "phase": "whole",
+          "timeSeconds": 7.6,
+          "file": "frames/E01-whole.jpg",
+          "sha256": "e8e7a049af271c6158fc73ee36635c72ae9cd2923dab7d0e32e0c5a1d17ceca8"
+        },
+        {
+          "phase": "detail",
+          "timeSeconds": 18.7,
+          "file": "frames/E01-detail.jpg",
+          "sha256": "905aec79d668534ff9cc10ad72fe2a015acceefd4efe945a0814cdc39a3a5c8a"
+        },
+        {
+          "phase": "hold_end",
+          "timeSeconds": 19.58,
+          "file": "frames/E01-hold_end.jpg",
+          "sha256": "23ff2a1495f4d9c31aa1fcb9690654c194c4b8e70474fb19e226da8530bbcf53"
+        },
+        {
+          "phase": "return",
+          "timeSeconds": 39.2,
+          "file": "frames/E01-return.jpg",
+          "sha256": "826cca26dc2b71075ce333579cc2ed091e76638b37f36faffcff5627b01de979"
+        }
+      ],
+      "status": "user-requested-public-reference-baseline; technical-checks-passed",
+      "referenceOnly": true,
+      "insertIntoNewLesson": false,
+      "contactSheet": "frames/E01-contact.jpg"
+    },
+    {
+      "id": "E02",
+      "name": "岗位条件与验证条款",
+      "roles": [
+        "evidence",
+        "recruitment",
+        "qualifier",
+        "camera"
+      ],
+      "goals": [
+        "先建立匿名岗位原件、日期和条件的上下文。",
+        "在真实句子中高亮AI辅助，用红圈定位验证要求。",
+        "主要阅读单位完整；必要条件随原文保持可见。",
+        "推拉和摇移服务于职责与条件的解释，回到材料关系。",
+        "来源说明条固定在屏幕左下角的小字层，运镜时位置和大小保持稳定。"
+      ],
+      "sourceNote": "高校就业网公开历史岗位的匿名教学摘录；保留必要日期、学历与验证条款，不分发可反查企业身份的原始招聘链接。",
+      "file": "clips/E02.mp4",
+      "sha256": "98ad077d8d27506265671fc8daa8e401e2e7995afeb8cef03f813ab1928738f1",
+      "bytes": 15226927,
+      "durationFrames": 2233,
+      "fps": 60,
+      "durationSeconds": 37.21666666666667,
+      "width": 1920,
+      "height": 1080,
+      "phases": [
+        {
+          "phase": "whole",
+          "timeSeconds": 1.3,
+          "file": "frames/E02-whole.jpg",
+          "sha256": "40066fc1f57686e36209249c7b1cbd8de2be0c2f2cd766493b4e0d7d033c040c"
+        },
+        {
+          "phase": "detail",
+          "timeSeconds": 22.6,
+          "file": "frames/E02-detail.jpg",
+          "sha256": "b7a23947253df18f139d10d809d2e7cfe4e56b0368963e76d447c3cdac34441a"
+        },
+        {
+          "phase": "hold_end",
+          "timeSeconds": 26.2,
+          "file": "frames/E02-hold_end.jpg",
+          "sha256": "4be6902de40f9aa6d9308724a62c96ac66e361e6aa9b97812576aa59f8ec5fc8"
+        },
+        {
+          "phase": "return",
+          "timeSeconds": 36.6,
+          "file": "frames/E02-return.jpg",
+          "sha256": "80bc579d38dd8e1c4d138e9ecccc5a24970499934e896f1bec147ce612d469d6"
+        }
+      ],
+      "status": "user-requested-public-reference-baseline; technical-checks-passed",
+      "referenceOnly": true,
+      "insertIntoNewLesson": false,
+      "contactSheet": "frames/E02-contact.jpg"
+    },
+    {
+      "id": "E03",
+      "name": "项目记录的纵深与归组",
+      "roles": [
+        "concept",
+        "process",
+        "depth",
+        "authored"
+      ],
+      "goals": [
+        "先把五份记录看作同一个整体。",
+        "通过厚度、遮挡、层级和镜头移动进入当前记录。",
+        "阅读时持续运动；配角退让但纸面保持实心。",
+        "回到事先设计的整体；学习机制，不复制五张卡的数量和编排。",
+        "来源说明条固定在屏幕左下角的小字层，运镜时位置和大小保持稳定。"
+      ],
+      "sourceNote": "讲师自制教学图解，不是报告或岗位截图；适用于抽象方法与过程说明。",
+      "file": "clips/E03.mp4",
+      "sha256": "44c7e969d8b6cbaab8baeb1567992c962b9f54a663e91edfd672a2312dfbe22c",
+      "bytes": 10355134,
+      "durationFrames": 1446,
+      "fps": 60,
+      "durationSeconds": 24.1,
+      "width": 1920,
+      "height": 1080,
+      "phases": [
+        {
+          "phase": "whole",
+          "timeSeconds": 1.233333,
+          "file": "frames/E03-whole.jpg",
+          "sha256": "b6b166b30531f9c1bdf2f9d78d15c3fd35c74e24d84b1df4fb8cc1dc0bf68817"
+        },
+        {
+          "phase": "detail",
+          "timeSeconds": 2.733333,
+          "file": "frames/E03-detail.jpg",
+          "sha256": "2f98e26be02ef2a89da0c3399aeb2cce6f7f3e8c5b1acec364239bd9539e9e68"
+        },
+        {
+          "phase": "hold_end",
+          "timeSeconds": 3.933333,
+          "file": "frames/E03-hold_end.jpg",
+          "sha256": "6079bab8e61f771f2cb52ea24cdeeac7e6f0e22f8a12e37f05f91fda9c82895d"
+        },
+        {
+          "phase": "return",
+          "timeSeconds": 23.133333,
+          "file": "frames/E03-return.jpg",
+          "sha256": "b02c89638e8bb0d1cde46b230485705044962fca8850c2feed3f520aaa44f0be"
+        }
+      ],
+      "status": "user-requested-public-reference-baseline; technical-checks-passed",
+      "referenceOnly": true,
+      "insertIntoNewLesson": false,
+      "contactSheet": "frames/E03-contact.jpg"
+    },
+    {
+      "id": "E04",
+      "name": "课后练习中的原文任务",
+      "roles": [
+        "evidence",
+        "exercise",
+        "recap",
+        "late-reference"
+      ],
+      "goals": [
+        "先建立课后任务与三份岗位材料的关系。",
+        "直接在职责截图内部标出工作任务。",
+        "原文与标记一起放大和移动，完整保留当前短语。",
+        "末尾练习和回顾中的引用同样检查，不漏掉后段的独立摘抄卡。",
+        "来源说明条固定在屏幕左下角的小字层，运镜时位置和大小保持稳定。"
+      ],
+      "sourceNote": "匿名历史招聘截图与讲师自制练习结构；招聘职责用原图高亮和下划线，3/2/1是教学结构。",
+      "file": "clips/E04.mp4",
+      "sha256": "9ce7b73494ce4fd2a203ca5a08895c72c2d2784a1455e23743c5ee84aa43fb73",
+      "bytes": 10197461,
+      "durationFrames": 2010,
+      "fps": 60,
+      "durationSeconds": 33.5,
+      "width": 1920,
+      "height": 1080,
+      "phases": [
+        {
+          "phase": "whole",
+          "timeSeconds": 1.516667,
+          "file": "frames/E04-whole.jpg",
+          "sha256": "2947fa2186315e1f3d5dbf15a547d25ed91b65d753ccf39d6229ab2c1b6a4752"
+        },
+        {
+          "phase": "detail",
+          "timeSeconds": 18.016667,
+          "file": "frames/E04-detail.jpg",
+          "sha256": "5cf79f532f7a2f6d28a768a0186e22e8b09916e9f2c67e1cf7b5a97113f2a241"
+        },
+        {
+          "phase": "hold_end",
+          "timeSeconds": 24.816667,
+          "file": "frames/E04-hold_end.jpg",
+          "sha256": "06b8c858dac44dfd4e54f4e1a34b0c77abcc1667618a2b61c758e79c289dd3a2"
+        },
+        {
+          "phase": "return",
+          "timeSeconds": 31.916667,
+          "file": "frames/E04-return.jpg",
+          "sha256": "39717035c510df8fd5254b8ae67891906dd2574910177e26634eeacb9031f518"
+        }
+      ],
+      "status": "user-requested-public-reference-baseline; technical-checks-passed",
+      "referenceOnly": true,
+      "insertIntoNewLesson": false,
+      "contactSheet": "frames/E04-contact.jpg"
+    }
+  ],
+  "antiPatterns": [
+    {
+      "id": "N01",
+      "file": "anti-patterns/independent-number.jpg",
+      "meaning": "反例：把原件当背景，再抄一个独立数字；不用作正向设计模板。"
+    },
+    {
+      "id": "N02",
+      "file": "anti-patterns/copied-task.jpg",
+      "meaning": "反例：在练习段另做原文任务卡；也要回到职责原图直接标注。"
+    }
+  ],
+  "rightsFile": "rights.md",
+  "scope": "Reference films and contact frames demonstrate chosen mechanisms; each new lesson still requires actual source verification, a new scene design and composed comparison."
+}

@@ -17,7 +17,7 @@
 
 ## 课程资料品牌资源
 
-[课程资料模板](../assets/templates/course-companion/使用说明.md)使用`superslash-brand`的A4阅读规范、原始浅底/深底Logo和当前已有MiSans四字重；配置不含私人联系信息、二维码或旧课程事实。专业动画的真实视觉材料按[素材调研](material-research-and-capture.md)在每个新项目取得，不把这些课程专属素材自动放进全局或公开包。
+[课程资料模板](../assets/templates/course-companion/使用说明.md)使用`superslash-brand`的A4阅读规范、原始浅底/深底Logo和当前已有MiSans四字重；配置不含私人联系信息、二维码或旧课程事实。专业动画的真实视觉材料按[素材调研](material-research-and-capture.md)在每个新项目取得，不把课程专属素材自动放进全局或公开包；本次明确授权的精选样片按quality-baseline/rights.md作为有限例外。
 
 ## 资源使用顺序
 
