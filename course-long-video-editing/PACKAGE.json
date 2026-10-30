@@ -1,14 +1,15 @@
 {
   "name": "course-long-video-editing",
   "displayName": "课程长视频剪辑",
-  "version": "1.6.2",
-  "edition": "reference-baseline-stage-routing-and-regression-gates",
+  "version": "1.8.0",
+  "edition": "real-first-transparent-png-materials-and-spatial-mg",
   "createdDate": "2026-10-22",
   "coreStages": [
     "course_title_and_dated_project_directory",
     "intake_and_mode",
     "optional_rough_cut",
     "provided_intro_outro_and_boundary_transitions",
+    "lesson_content_and_learning_objectives_overview",
     "subtitles",
     "real_material_research_and_capture",
     "mode_adaptive_animation",
@@ -22,9 +23,9 @@
   "fontsIncluded": true,
   "nativeAppIncluded": false,
   "requiresReceiverOwnProject": true,
-  "validation": "validation/report.json",
+  "validation": "validation/iteration-v1.8.0.json",
   "manifest": "assets/manifest.json",
-  "updatedDate": "2026-10-24",
+  "updatedDate": "2026-10-30",
   "professionalAnimationStatus": {
     "wholeFirstMethodImplemented": true,
     "fullStandardValidatedExampleIncluded": false,
@@ -49,8 +50,9 @@
     "creativeGeneration": false,
     "styleSelectionRequired": false,
     "transitionBoundaries": [
-      "intro-to-course",
-      "course-to-outro"
+      "intro-to-lesson-overview",
+      "lesson-overview-to-body",
+      "body-to-outro"
     ],
     "automaticChapterCards": false,
     "missingAssets": "record-pending-and-request-needed-input; continue-independent-work; do-not-create-replacements"
@@ -77,9 +79,26 @@
     "userMaterialsOptional": true,
     "researchOriginalSources": true,
     "actualCapturePreferredForFactualVisuals": true,
-    "generatedImages": "optional-illustration-only; never-fabricated-evidence",
+    "generatedImages": "second-tier explanatory transparent PNG cutouts; actual-alpha and visual review; never evidence",
     "fixedRealMaterialPercentage": null,
-    "perCourseAssetsRemainProjectSpecific": true
+    "perCourseAssetsRemainProjectSpecific": true,
+    "priorityOrder": [
+      "real-online-and-provided-media",
+      "generated-refined-transparent-png-illustration",
+      "code-logic-relations-and-labels"
+    ],
+    "activeOnlineResearchBeforeCode": true,
+    "conceptProfileDoesNotSkipResearch": true,
+    "codeForMGCompositionIsNotThirdTierContent": true,
+    "materialPlanGate": true,
+    "unifiedMGCameraDesign": [
+      "shot-purpose",
+      "foreground-perspective",
+      "depth-and-parallax",
+      "real-video-clock",
+      "reading-hold",
+      "context-return"
+    ]
   },
   "courseCompanionPolicy": {
     "basis": "final-edited-course-content",
@@ -131,14 +150,20 @@
     "backgroundStack": "behind every foreground animation object; opaque surfaces remain opaque when deemphasized",
     "camera": "visible whole-to-detail contrast; close typography; decisive travel; perceptible reading push",
     "sound": "action-appropriate varied families; no excessive or unsuitable repeated cues",
-    "status": "confirmed requirements implemented in reusable components; current complete audiovisual aesthetic/listening review remains pending",
+    "status": "user-confirmed persistent standard; new mechanisms tested per validation scope; future lesson native aesthetic review required",
     "stepNavigation": "complete-at-actual-transitions; distinguish recap and spoken correction",
     "knowledgeNotes": "identified summaries use whole readable text; verbatim quotes retain real word cues",
-    "sourceAnnotation": "direct-on-source circles/frames/highlights/underlines; shared source coordinates; no duplicated standalone evidence cards",
+    "sourceAnnotation": "source-local deterministic human highlighter/marker strokes; screenshot and auxiliary-card reading",
     "cameraExecution": "foreground camera binding and native wide-arrival-hold-end comparison required",
     "referenceFirst": true,
     "allSourceInstances": "Includes main examples, recaps, exercises and closing references",
-    "sourceCredit": "Fixed screen-space bottom-left, quiet small type, caption/presenter clearance; SourceCredit default component and actual frame evidence"
+    "sourceCredit": "Fixed screen-space bottom-left, quiet small type, caption/presenter clearance; SourceCredit default component and actual frame evidence",
+    "fullCanvas": "no-fixed-occluding-bands-or-avatar-gutter",
+    "background": "visible-dot-grid-with-foreground-driven-parallax; current-output-evidence-required",
+    "logo": "main-composition-subject-at-platform-introduction; authentic-colors-and-aspect",
+    "material": "real sources and authored renderable documents before placeholder cards",
+    "presenter": "content-aware live-circle routing; few purposeful full-screen AI-presenter beats",
+    "cameraVariety": "authored-per-scene purpose and cross-scene fatigue review"
   },
   "nativeWorkflowPilot": {
     "realCourseStages": [
@@ -178,7 +203,10 @@
       "5e6a52846f1492bb8977762ce10b15c59570a85862a35b722bb9b634a7696fc0",
       "a6add9a714247b34018923a7b400926c5f045d540700bee2c0b710db5a8afbb0",
       "0c4b5d3ede788292bdef56b0fb2ad51713e8078642fd403e4df7b0f9852efae6",
-      "90f6ba162ad7b1b499ccba767a62b4c0da60df42f1fc5283371ed7b1137d6320"
+      "90f6ba162ad7b1b499ccba767a62b4c0da60df42f1fc5283371ed7b1137d6320",
+      "67f3726c83b83182a83b934002521beb4f9c384cb864eb811513d453077011cf",
+      "54392c4850f1075870ac14e6af4201cdb3456b29ecfdb52244ad05467ef30d0b",
+      "0674e5e1739080911249fc79b3dfb9e71bea5cc84300827a9a12fed328b7ea36"
     ],
     "unknownOrModifiedInstallation": "preserve-and-report-for-review",
     "requiresExplicitUpgradeFlagAndBackupRoot": true
@@ -214,6 +242,29 @@
     "fullLibraryAlwaysLoaded": false,
     "referenceComparison": "scripts/workflow_gate.py compare",
     "evidenceCheck": "scripts/workflow_gate.py check",
-    "scriptCheckIsAestheticApproval": false
+    "scriptCheckIsAestheticApproval": false,
+    "lessonPackagingCheck": "scripts/workflow_gate.py check; lessonOverview required for complete packaging/review"
+  },
+  "lessonOverviewPolicy": {
+    "requiredForEveryLesson": true,
+    "placement": "after-user-intro-before-body",
+    "content": [
+      "this-lesson-content",
+      "observable-learning-objectives"
+    ],
+    "defaultMaxSeconds": 10,
+    "defaultNarration": false,
+    "typewriterAndSFX": true,
+    "aiProductionDisclosureIsUniversal": false,
+    "explicitUserOverrideRespected": true,
+    "mappingAndCaptionEndpointsProtected": true
+  },
+  "backgroundMusicPolicy": {
+    "completeCourseDefault": true,
+    "style": "light-electronic-instrumental-without-lyrics",
+    "underSpeech": "lower-and-listening-verified",
+    "partialStageAddsWholeCourseBGM": false,
+    "copyHistoricalTrackOrDb": false,
+    "explicitCurrentUserPreferenceWins": true
   }
 }

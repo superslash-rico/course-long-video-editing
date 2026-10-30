@@ -27,6 +27,12 @@ jobs:
         run: node course-long-video-editing/scripts/test_camera.mjs
       - name: Check stage and reference evidence regressions
         run: python3 course-long-video-editing/scripts/test_workflow_gate.py
+      - name: Check material priority and actual PNG alpha regressions
+        run: python3 course-long-video-editing/scripts/test_material_priority.py
+      - name: Check lesson overview and visual evidence contract
+        run: python3 course-long-video-editing/scripts/test_lesson_standard.py
+      - name: Check source-local human annotation geometry
+        run: node course-long-video-editing/scripts/test_hand_marks.mjs
       - name: Check fixed source credit layout
         run: node course-long-video-editing/scripts/test_source_credit.mjs
       - name: Resolve all four public references from the installed package

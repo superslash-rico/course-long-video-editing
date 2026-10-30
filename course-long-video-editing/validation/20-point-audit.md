@@ -1,6 +1,6 @@
 # 20项工艺落实与验证范围
 
-当前包版本：1.6.2。implemented表示规则或组件已交付，不表示任何新课自动达到审美要求。
+历史检查版本：1.6.2；本次1.7.0迭代范围见iteration-v1.7.0.json。implemented表示规则或组件已交付，不表示任何新课自动达到审美要求。
 
 Unchanged item verification describes the earlier recorded trial; current checks are in validation/report.json.
 

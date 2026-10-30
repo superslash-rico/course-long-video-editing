@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 2,
+  "researchReceipts": [],
+  "assets": [],
+  "scenes": [],
+  "receiptShape": {
+    "id": null,
+    "query": null,
+    "sourceUrl": null,
+    "accessedDate": null,
+    "result": "collected|unavailable|unsuitable",
+    "evidence": {
+      "file": null,
+      "sha256": null
+    }
+  },
+  "assetShape": {
+    "id": null,
+    "tier": "real|generated|code",
+    "role": "evidence|illustration|logic|label|relation",
+    "file": null,
+    "sha256": null,
+    "sourceUrl": null,
+    "rightsAndBoundary": null,
+    "generationRecord": null,
+    "visualReview": null,
+    "fullBackgroundException": null
+  },
+  "sceneShape": {
+    "id": null,
+    "goal": null,
+    "researchIds": [],
+    "assetIds": [],
+    "realAssessment": null,
+    "generatedAssessment": null,
+    "codeReason": null,
+    "cameraPlan": {
+      "opening": null,
+      "detail": null,
+      "hold": null,
+      "return": null,
+      "perspectiveAndDepth": null,
+      "motionPurpose": null
+    }
+  },
+  "scope": "Assistant fills actual records. Template fields are not evidence, aesthetic approval or a required generation quota."
+}

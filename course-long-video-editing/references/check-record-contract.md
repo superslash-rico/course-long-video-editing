@@ -67,3 +67,7 @@ python3 scripts/workflow_gate.py compare --session 本课/stage-lock.json --refe
 `check review.json --phase before-batch`检查参考观察、代表段与版本链；`--phase review`另外要求每场景audited、实际auditEvidence、每引用audited及finalOutput的file/sha256。检查不替代既有原声/字幕保护器，不检查美感，不证明观看行为真实；缺证据/待修复/未测必须保留，而非凑齐字段。
 
 每场景增加sourceCredit记录：present显式true/false。存在来源说明时填anchor=screen-bottom-left、coordinateSpace=screen；交审核还需audited=true和实际auditEvidence。自制方法的身份说明若显示，也归入此记录。脚本只核对声明与证据完整性，来源实际位置/可读性/遮挡须看真实画面。
+
+## 动画素材优先级记录（1.8.0起的新制作）
+
+`review.json.materialPlan`使用{file,sha256}指向本课material-plan.json；其scenes覆盖当前review场景。模板与检查语义由[素材规则](material-research-and-capture.md)和`material_priority.py`唯一维护。历史已审课不伪写补采素材；若本轮重做动画则以新计划和新产物接受检查。技术关卡不声称自动验证美观、来源真实性或使用许可。

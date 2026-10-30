@@ -1,7 +1,7 @@
 import {cameraTransform} from './camera.js';
 // The 2D stacking boundary is outside the preserve-3d world. Ordinary paper
 // remains opaque when dimmed; opacity is reserved for intentional reveal/exit.
-export function createStage(root,{x=755,y=540,perspective=2500}={}){
+export function createStage(root,{x=960,y=540,perspective=2500}={}){
  const doc=root.ownerDocument,layer=doc.createElement('div'),lens=doc.createElement('div'),world=doc.createElement('div');
  Object.assign(layer.style,{position:'absolute',inset:'0',zIndex:'10',isolation:'isolate'});
  Object.assign(lens.style,{position:'absolute',left:x+'px',top:y+'px',width:'1px',height:'1px',perspective:perspective+'px',perspectiveOrigin:'0px 0px',transformStyle:'preserve-3d'});

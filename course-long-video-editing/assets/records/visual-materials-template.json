@@ -1,6 +1,6 @@
 {
   "templateOnly": true,
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "items": [],
   "entryTemplate": {
     "sourceId": null,
@@ -25,7 +25,13 @@
     "plannedAnimationUse": null,
     "currentProjectBinding": null,
     "usableForStudentHandout": null,
-    "checked": false
+    "checked": false,
+    "priorityTier": null,
+    "contentRole": null,
+    "actualAvailability": null,
+    "researchReceiptIds": [],
+    "alphaAuditIfGenerated": null,
+    "cameraRole": null
   },
   "originKinds": [
     "user-original",
@@ -37,5 +43,10 @@
     "explicit-diagram"
   ],
   "readiness": "pending-course-and-material-research",
-  "note": "Create records only for actual inputs/captures/generations. Source publication and public access do not establish reuse permission. Private raw records stay in the project."
+  "note": "Create records only for actual inputs/captures/generations. Source publication and public access do not establish reuse permission. Private raw records stay in the project.",
+  "priorityOrder": [
+    "real",
+    "generated",
+    "code"
+  ]
 }

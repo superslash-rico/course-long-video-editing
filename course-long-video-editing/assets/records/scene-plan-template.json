@@ -80,5 +80,27 @@
     "mixedWindowsChecked": [],
     "listenedRanges": [],
     "crossSceneRepetitionReviewed": false
+  },
+  "visualDesign": {
+    "fullCanvas": null,
+    "readingUnitComplete": null,
+    "foregroundCamera": null,
+    "backgroundMode": null,
+    "backgroundReason": null,
+    "cameraFamily": null,
+    "cameraPurpose": null,
+    "materialTreatment": null,
+    "materialReason": null,
+    "presenterMode": null,
+    "presenterReason": null
+  },
+  "visualChecks": {
+    "canvas-clear": null,
+    "dot-parallax": null,
+    "spatial-camera": null,
+    "human-marks": null,
+    "logo-main-subject": null,
+    "real-materials": null,
+    "presenter-clearance": null
   }
 }

@@ -6,3 +6,4 @@
 *.ttf binary
 *.pdf binary
 *.wav binary
+*.md whitespace=-blank-at-eol

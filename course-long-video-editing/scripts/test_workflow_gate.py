@@ -11,10 +11,10 @@ def png(path,color):
 class Gate(unittest.TestCase):
  def setUp(self):
   self.tmp=tempfile.TemporaryDirectory();self.t=Path(self.tmp.name);self.old=(w.ROOT,w.BASE);self.root=self.t/'skill';self.root.mkdir();w.ROOT=self.root;w.BASE=self.root/'assets/examples/quality-baseline';w.BASE.mkdir(parents=True)
-  files={'SKILL.md'}|{p for paths in w.STAGES.values() for p in paths}|{'references/source-annotation-and-camera-acceptance.md','assets/components/course-stage/camera.js','assets/components/course-stage/stage.tsx','assets/components/course-stage/source-document.tsx'}
+  files={'SKILL.md'}|{p for paths in w.STAGES.values() for p in paths}|{'scripts/material_priority.py','scripts/lesson_standard.py','references/source-annotation-and-camera-acceptance.md','assets/components/course-stage/hand-marks.js','assets/components/course-stage/background.js','assets/components/course-stage/surface.js','assets/components/course-stage/camera.js','assets/components/course-stage/stage.tsx','assets/components/course-stage/source-document.tsx'}
   files|={'assets/components/course-stage/source-credit.tsx','assets/components/course-stage/source-credit-layout.js','assets/components/course-stage/scene.css','assets/components/course-stage/scene.js'}
   for name in files:p=self.root/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_text('Synthetic fixture '+name)
-  w.write(self.root/'PACKAGE.json',{'version':'1.6.0-test'})
+  w.write(self.root/'PACKAGE.json',{'version':'1.7.0-test'})
   examples=[]
   for index,rid in enumerate(['E01','E03','E04']):
    clip=w.BASE/(rid+'.mp4');clip.write_bytes(('synthetic hash-only clip '+rid).encode());phases=[]
@@ -31,12 +31,26 @@ class Gate(unittest.TestCase):
   review['referenceObservations']=[{'referenceId':r['id'],'viewingStatus':'motion-and-frames','evidenceFile':self.current[0],'observation':'Synthetic observation for contract testing only','application':'Synthetic application for contract testing only'} for r in session['references']]
   review['scenes']=[{'id':'source','understandingGoal':'read a real paragraph','usesRealSource':True,'referenceIds':['E01'],'representative':True,'audited':True,'auditEvidence':self.current[0]},{'id':'method','understandingGoal':'explain a process','usesRealSource':False,'referenceIds':['E03'],'representative':True,'audited':True,'auditEvidence':self.current[1]}]
   for scene in review['scenes']:scene['sourceCredit']={'present':True,'anchor':'screen-bottom-left','coordinateSpace':'screen','audited':True,'auditEvidence':self.current[0]}
-  review['sourceInstances']=[{'id':'source-1','sceneId':'source','sourceAvailable':True,'annotationOnOriginal':True,'audited':True}]
+  for scene in review['scenes']:
+   scene['visualDesign']={'fullCanvas':True,'readingUnitComplete':True,'foregroundCamera':True,'backgroundMode':'dot-parallax','cameraFamily':scene['id'],'cameraPurpose':'Synthetic contract fixture','materialTreatment':'real-source' if scene['usesRealSource'] else 'concept-diagram','materialReason':'Synthetic fixture only','presenterMode':'none','presenterReason':'No presenter input in the fixture'}
+   scene['visualChecks']={key:{'status':'pass','finding':'Synthetic evidence identity only','evidence':{'file':self.current[0],'sha256':w.sha(self.current[0])}} for key in __import__('lesson_standard').VISUAL_CHECKS}
+  review['visualSummary']={key:{'status':'pass','finding':'Synthetic contract fixture','evidence':{'file':self.current[0],'sha256':w.sha(self.current[0])}} for key in __import__('lesson_standard').SUMMARY_CHECKS}
+  review['sourceInstances']=[{'useKind':'reading','annotationStyle':'marker-underline','coordinateSpace':'source-pixels','id':'source-1','sceneId':'source','sourceAvailable':True,'annotationOnOriginal':True,'audited':True}]
   for sid,rid in [('source','E01'),('method','E03')]:
    c=w.comparison(self.lock,rid,self.t/('compare-'+sid),sid,[str(self.source)],frames=self.current)
    review['comparisons'].append({'file':c['comparison'],'verdict':'pass','findings':'Synthetic contract result, no aesthetic claim'})
   out=self.t/'output.bin';out.write_bytes(b'Synthetic output identity only');review['finalOutput']={'file':str(out),'sha256':w.sha(out)}
+  plan={'schemaVersion':2,'researchReceipts':[{'id':'r','query':'Synthetic real-material search','sourceUrl':'https://example.test/original','accessedDate':'2026-10-30','result':'collected','evidence':{'file':str(self.source),'sha256':w.sha(self.source)}}],
+   'assets':[{'id':'a','tier':'real','role':'evidence','sourceUrl':'https://example.test/original','rightsAndBoundary':'Synthetic fixture only','file':str(self.source),'sha256':w.sha(self.source)}],
+   'scenes':[{'id':sid,'goal':'Synthetic goal','researchIds':['r'],'assetIds':['a'],'realAssessment':'Actual-search fixture','generatedAssessment':'No illustration needed in fixture','cameraPlan':{key:'Synthetic purposeful camera plan' for key in ['opening','detail','hold','return','perspectiveAndDepth','motionPurpose']}} for sid in ['source','method']]}
+  plan_path=self.t/'session/material-plan.json';w.write(plan_path,plan);review['materialPlan']={'file':str(plan_path),'sha256':w.sha(plan_path)}
   w.write(self.review,review);return review
+ def test_material_link_required_even_with_valid_visual_evidence(self):
+  d=self.good();del d['materialPlan'];w.write(self.review,d);self.assertFalse(w.check(self.review,'before-batch')['ok'])
+ def test_concept_prepare_also_requires_material_research(self):
+  r=w.prepare('animation','concept',self.t/'concept');self.assertTrue(any(p.endswith('material-research-and-capture.md') for p in r['requiredReading']));self.assertTrue((self.t/'concept/material-plan.json').is_file())
+ def test_material_change_invalidates_visual_review(self):
+  d=self.good();Path(d['materialPlan']['file']).write_text('{}');self.assertFalse(w.check(self.review,'review')['ok'])
  def test_subtitles_prepare_without_any_reference_library(self):
   (w.BASE/'manifest.json').unlink();r=w.prepare('subtitles','mixed',self.t/'subtitles');self.assertEqual(r['references'],[]);self.assertFalse(any('animation-production' in p for p in r['requiredReading']))
  def test_prepared_session_is_not_viewed_or_passed(self):
@@ -100,6 +114,29 @@ class Gate(unittest.TestCase):
   d=self.good();d['scenes'][1]['sourceCredit']={'present':False};w.write(self.review,d);self.assertTrue(w.check(self.review,'review')['ok'])
  def test_changed_source_credit_defaults_invalidates_old_review(self):
   self.good();(self.root/'assets/components/course-stage/source-credit-layout.js').write_text('changed credit defaults');self.assertFalse(w.check(self.review,'before-batch')['ok'])
+
+ def test_packaging_prepare_requires_overview_reading_and_pending_task(self):
+  r=w.prepare('packaging','mixed',self.t/'packaging')
+  self.assertTrue(any(p.endswith('lesson-overview.md') for p in r['requiredReading']))
+  d=w.read(self.t/'packaging/review.json');self.assertEqual(d['lessonOverview']['status'],'pending')
+  self.assertFalse(w.check(self.t/'packaging/review.json','review')['ok'])
+ def test_final_review_does_not_inherit_old_ai_disclosure_as_overview(self):
+  w.prepare('review','mixed',self.t/'final')
+  d=w.read(self.t/'final/review.json');d['lessonOverview']={'status':'included','displayText':'The voice and picture were made by AI'}
+  w.write(self.t/'final/review.json',d);r=w.check(self.t/'final/review.json','review')
+  self.assertFalse(r['ok']);self.assertTrue(any('learningObjectives' in e for e in r['errors']))
+ def test_changed_visual_gate_invalidates_old_policy_lock(self):
+  self.good();(self.root/'scripts/lesson_standard.py').write_text('changed gate')
+  self.assertFalse(w.check(self.review,'review')['ok'])
+ def test_identity_logo_does_not_need_unmotivated_reading_marks(self):
+  d=self.good();d['sourceInstances'][0].update(useKind='identity',identityPlacement='main-subject',annotationOnOriginal=False)
+  w.write(self.review,d);self.assertTrue(w.check(self.review,'review')['ok'])
+ def test_new_visual_contract_cannot_be_skipped_by_old_review(self):
+  d=self.good();del d['scenes'][0]['visualDesign'];w.write(self.review,d)
+  self.assertFalse(w.check(self.review,'before-batch')['ok'])
+ def test_changed_hand_mark_mechanism_invalidates_actual_comparison(self):
+  self.good();(self.root/'assets/components/course-stage/hand-marks.js').write_text('new pen mechanism')
+  self.assertFalse(w.check(self.review,'review')['ok'])
 
 def main():
  stream=io.StringIO();r=unittest.TextTestRunner(stream=stream).run(unittest.defaultTestLoader.loadTestsFromTestCase(Gate));out={'ok':r.wasSuccessful(),'testsRun':r.testsRun,'failures':[str(t)+': '+s for t,s in r.failures+r.errors],'scope':'Synthetic filesystem/identity fixtures only. No real playback, visual taste, decoding or user approval claim.'};print(json.dumps(out,ensure_ascii=False,indent=2));return 0 if out['ok'] else 2

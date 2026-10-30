@@ -1,0 +1,77 @@
+{
+  "packageVersion": "1.8.0",
+  "date": "2026-10-30",
+  "status": "Local persistent requirements implemented; no external publication",
+  "requirements": {
+    "priorityOrder": [
+      "real online and provided material",
+      "refined transparent PNG conceptual supplements",
+      "code logic relations and exact labels"
+    ],
+    "scope": "Understand actual lesson first; concept profile cannot bypass real-material research; keep existing speech/caption/packaging permissions",
+    "composition": "Unify actual media and generated cutouts in MG using purposeful foreground camera, perspective/depth/parallax and true video clocks; code compositing itself is not third-tier content"
+  },
+  "checks": [
+    {
+      "script": "scripts/test_material_priority.py",
+      "ok": true,
+      "count": 14,
+      "scope": "Synthetic positive and negative provenance/alpha/exception/scene fixtures, no aesthetics"
+    },
+    {
+      "script": "scripts/test_workflow_gate.py",
+      "ok": true,
+      "count": 38,
+      "scope": "Synthetic current policy and material-plan freshness routing, not actual viewing"
+    },
+    {
+      "script": "scripts/test_lesson_standard.py",
+      "ok": true,
+      "count": 30,
+      "scope": "Unchanged standard/timing/protection regression"
+    },
+    {
+      "script": "scripts/selftest.py",
+      "ok": true,
+      "count": 46,
+      "scope": "Synthetic legacy protection/record regressions"
+    },
+    {
+      "script": "official skill-creator quick_validate.py",
+      "ok": true,
+      "scope": "Frontmatter/name/description validation"
+    }
+  ],
+  "independentFreshContextTrial": {
+    "status": "completed offline planning and empty-evidence refusal",
+    "expectedAnswersSupplied": false,
+    "stages": [
+      "animation/mixed",
+      "subtitles",
+      "maintenance"
+    ],
+    "nativeOrExternalActions": false,
+    "emptyMaterialPlanRejected": true,
+    "emptyAnimationReviewRejected": true,
+    "findingsAddressed": [
+      "Read/verify transcript before real-material research",
+      "Four observed states are not a mandatory wide-zoom-return choreography",
+      "Explicit user full-background exception has a request-evidence contract",
+      "Local caption revision is not full-course modification authorization"
+    ],
+    "limitation": "Does not prove real research quality, beautiful media, native output, listening or user aesthetic acceptance"
+  },
+  "installationTrial": {
+    "coldInstallFromOtherCwd": "passed with all files matching",
+    "recognizedUnchanged170Upgrade": "passed with versioned backup and readback",
+    "inventory": "206 files / 205 declared entries verified",
+    "newSessionDiscovery": "offline fresh context prepared/read candidate 1.8.0; native product catalog refresh not asserted",
+    "physicalSecondMachine": false
+  },
+  "aestheticValidation": {
+    "newStandardWholeLessonUserApproved": false,
+    "physicalSecondComputer": false,
+    "legacyCraftReferences": "Remain applicable only to their stated camera/annotation mechanisms, not a license for code-first content"
+  },
+  "publication": "not authorized or performed"
+}

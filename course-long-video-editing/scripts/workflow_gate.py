@@ -6,24 +6,26 @@ watched a film. It refuses incomplete/stale evidence instead of calling it passe
 import argparse,hashlib,json,shutil,subprocess,sys,struct
 from pathlib import Path
 from html import escape
+from material_priority import template as material_template, linked_plan
+from lesson_standard import animation_checks, overview_checks, overview_template, checked_file, digest, music_template, music_checks
 sys.dont_write_bytecode=True
 
 ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'assets/examples/quality-baseline'
 STAGES={
  'intake':['references/project-start-and-file-management.md','references/intake-and-rough-cut.md'],
- 'packaging':['references/branding-intro-outro-transitions.md'],
+ 'packaging':['references/branding-intro-outro-transitions.md','references/lesson-overview.md'],
  'subtitles':['references/subtitles.md'],
  'materials':['references/material-research-and-capture.md'],
- 'animation':['references/animation-production.md','references/whole-first-design-and-camera.md','references/example-guide.md','references/runtime-and-binding.md'],
+ 'animation':['references/material-research-and-capture.md','references/lesson-visual-standard.md','references/animation-production.md','references/whole-first-design-and-camera.md','references/example-guide.md','references/runtime-and-binding.md'],
  'emphasis':['references/screen-tutorial.md','references/identity-and-quotes.md'],
- 'review':['references/quality-and-handoff.md'],
+ 'review':['references/quality-and-handoff.md','references/lesson-overview.md'],
  'maintenance':['references/learning-and-skill-maintenance.md']}
 
 def read(p):return json.loads(Path(p).read_text(encoding='utf-8'))
 def write(p,data):Path(p).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 def sha(p):
- with Path(p).open('rb') as f:return hashlib.file_digest(f,'sha256').hexdigest()
+ return digest(p)
 def in_root(name,root):
  p=(root/name).resolve();p.relative_to(root.resolve())
  if not p.is_file():raise ValueError('Missing packaged file: '+str(name))
@@ -36,13 +38,15 @@ def target_dir(path):
  p.mkdir(parents=True);return p
 def standard(stage,profile='mixed'):
  files=['SKILL.md']+STAGES[stage]
+ if stage in {'animation','packaging','review'}:files+=['scripts/lesson_standard.py']
+ if stage in {'materials','animation','review'}:files+=['scripts/material_priority.py','references/material-research-and-capture.md']
  if stage=='animation' and profile!='concept':files+=['references/source-annotation-and-camera-acceptance.md']
  rows=[{'file':n,'sha256':sha(in_root(n,ROOT)),'characters':len(in_root(n,ROOT).read_text(encoding='utf-8'))} for n in files]
  package=read(ROOT/'PACKAGE.json')
  payload={'skillVersion':package['version'],'stage':stage,'profile':profile,'readings':rows}
  if stage=='animation':
   payload['benchmarkManifestSHA256']=sha(BASE/'manifest.json')
-  payload['mechanisms']=[{'file':n,'sha256':sha(in_root(n,ROOT))} for n in ['assets/components/course-stage/camera.js','assets/components/course-stage/stage.tsx','assets/components/course-stage/source-document.tsx','assets/components/course-stage/source-credit.tsx','assets/components/course-stage/source-credit-layout.js','assets/components/course-stage/scene.css','assets/components/course-stage/scene.js']]
+  payload['mechanisms']=[{'file':n,'sha256':sha(in_root(n,ROOT))} for n in ['assets/components/course-stage/camera.js','assets/components/course-stage/stage.tsx','assets/components/course-stage/source-document.tsx','assets/components/course-stage/source-credit.tsx','assets/components/course-stage/source-credit-layout.js','assets/components/course-stage/scene.css','assets/components/course-stage/scene.js','assets/components/course-stage/surface.js','assets/components/course-stage/background.js','assets/components/course-stage/hand-marks.js']]
  payload['policyHash']=hashlib.sha256(json.dumps(payload,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
  return payload
 def prepare(stage,profile,output,ids=None):
@@ -64,8 +68,13 @@ def prepare(stage,profile,output,ids=None):
  lock={'schemaVersion':1,'standard':s,'references':refs,'state':'prepared-not-viewed','scope':'Paths/hashes are verified, not actual viewing or aesthetic approval.'}
  write(out/'stage-lock.json',lock)
  review={'schemaVersion':1,'session':'stage-lock.json','referenceObservations':[{'referenceId':r['id'],'viewingStatus':'pending','evidenceFile':None,'observation':'','application':''} for r in refs],'scenes':[],'comparisons':[],'sourceInstances':[],'finalOutput':None,'userAestheticApproval':'pending'}
+ if stage in {'packaging','review'}:
+  review['lessonOverview']=overview_template();review['courseMusic']=music_template()
+ if stage=='animation':review['visualSummary']={'camera-variety':None,'presenter-routing':None,'animation-coverage':None}
+ if stage in {'materials','animation'}:
+  write(out/'material-plan.json',material_template());review['materialPlan']={'file':'material-plan.json','sha256':None}
  write(out/'review.json',review)
- return {'ok':True,'skillVersion':s['skillVersion'],'stage':stage,'policyHash':s['policyHash'],'session':str(out/'stage-lock.json'),'requiredReading':[str(ROOT/r['file']) for r in s['readings']],'readingCharacters':sum(r['characters'] for r in s['readings']),'references':refs,'next':'Actually play the selected films and inspect the four states. Record specific observations; render this lesson, compare current pixels, then check. A prepared session is not a visual pass.'}
+ return {'ok':True,'skillVersion':s['skillVersion'],'stage':stage,'policyHash':s['policyHash'],'session':str(out/'stage-lock.json'),'requiredReading':[str(ROOT/r['file']) for r in s['readings']],'readingCharacters':sum(r['characters'] for r in s['readings']),'references':refs,'next':('Actually play the selected films and inspect the four states. Record observations; render this lesson, compare current pixels, then check. Prepared is not viewed.' if stage=='animation' else 'Write this lesson content and learning objectives; insert the overview and record final timing/current output before the complete-lesson check.' if stage in {'packaging','review'} else 'Read the listed current-stage files and continue the authorized scope; prepared is not completed.')}
 
 def video_info(p):
  tool=shutil.which('ffprobe')
@@ -109,7 +118,7 @@ def comparison(session,ref_id,output,scene,sources,video=None,times=None,frames=
    f=out/f'current-{i+1}.jpg';subprocess.run([tool,'-v','error','-ss',str(t),'-i',str(video),'-frames:v','1','-q:v','2',str(f)],check=True,capture_output=True);current.append(f)
   media={'file':str(video),'sha256':sha(video),**meta,'timesClipLocalSeconds':times}
  else:
-  if not frames or len(frames)!=4:raise ValueError('Provide four actual native frame files in whole/detail/hold-end/return order')
+  if not frames or len(frames)!=4:raise ValueError('Provide four actual native frame files in opening/detail/hold-end/context-or-result order')
   current=[]
   for i,p in enumerate(frames):
    p=Path(p).resolve()
@@ -119,7 +128,7 @@ def comparison(session,ref_id,output,scene,sources,video=None,times=None,frames=
  if len(set(sizes))!=1 or any(min(x)<360 or max(x)<640 for x in sizes):raise ValueError('Use consistent, readable actual capture sizes; thumbnails are not sufficient')
  if len({sha(p) for p in current})<3:raise ValueError('Four timestamps do not provide enough distinct scene states; inspect the actual views and reading motion')
  if {sha(p) for p in current} & {q['sha256'] for q in ref['phases']}:raise ValueError('Reference frames cannot stand in for new lesson captures')
- labels=['whole','detail','hold_end','return'];reference=[]
+ labels=['opening','detail','hold_end','context_or_result'];reference=[]
  for i,q in enumerate(ref['phases']):
   src=Path(q['absoluteFile']);f=out/f'reference-{i+1}{src.suffix}'
   if sha(src)!=q['sha256']:raise ValueError('Reference frame differs from the prepared session')
@@ -135,7 +144,14 @@ def comparison(session,ref_id,output,scene,sources,video=None,times=None,frames=
 
 def check(review_path,phase):
  review_path=Path(review_path).resolve();d=read(review_path);lock_path=(review_path.parent/d['session']).resolve();lock=read(lock_path);s=lock['standard'];errors=[]
- if s['stage']!='animation':errors.append('Animation check requires an animation session')
+ if s['stage'] in {'packaging','review'}:
+  if standard(s['stage'],s['profile'])['policyHash']!=s['policyHash']:errors.append('Stage rules changed; review applies to an older standard')
+  if phase!='review':errors.append('Complete packaging/lesson overview checks use --phase review')
+  errors+=overview_checks(d,review_path.parent)+music_checks(d,review_path.parent)
+  checked_file(d.get('finalOutput'),review_path.parent,errors,'current-final-output')
+  return {'ok':not errors,'errors':errors,'stage':s['stage'],'evidenceComplete':not errors,'aestheticApproval':'not-determined-by-script','scope':'Packaging timing, content declarations and versioned evidence only; inspect actual text, reading time, playback and current user approval.'}
+ if s['stage']=='animation':errors+=linked_plan(d.get('materialPlan'),review_path.parent,[r.get('id') for r in d.get('scenes',[])])
+ if s['stage']!='animation':errors.append('Use animation, packaging or review session for this check')
  if standard(s['stage'],s['profile'])['policyHash']!=s['policyHash']:errors.append('Stage rules changed; review applies to an older standard')
  refs={r['id']:r for r in lock['references']};observations={r.get('referenceId'):r for r in d.get('referenceObservations',[])}
  for rid,r in refs.items():
@@ -183,12 +199,13 @@ def check(review_path,phase):
   if scene.get('usesRealSource') is True and not any(i.get('sceneId')==scene['id'] for i in source_instances):errors.append('Real-source use inventory missing: '+scene['id'])
  for i in source_instances:
   if i.get('sceneId') not in by:errors.append('Unknown source instance scene')
-  if i.get('sourceAvailable') is not False and i.get('annotationOnOriginal') is not True:errors.append('Available source is not annotated in place: '+str(i.get('id')))
+  if i.get('sourceAvailable') is not False and i.get('useKind','reading')!='identity' and i.get('annotationOnOriginal') is not True:errors.append('Available source is not annotated in place: '+str(i.get('id')))
   if i.get('sourceAvailable') is False and not i.get('limitation'):errors.append('Unavailable source lacks honest limitation')
   if phase=='review' and i.get('audited') is not True:errors.append('Source instance not audited: '+str(i.get('id')))
  if phase=='review':
   out=d.get('finalOutput') or {}
   if not out.get('file') or not Path(out.get('file','')).is_file() or sha(out['file'])!=out.get('sha256'):errors.append('Current final review output missing/changed')
+ errors+=animation_checks(d,review_path.parent,phase)
  return {'ok':not errors,'errors':errors,'phase':phase,'sceneCount':len(scenes),'sourceInstanceCount':len(source_instances),'evidenceComplete':not errors,'aestheticApproval':'not-determined-by-script','scope':'Checks version/evidence completeness and declared review results. It cannot prove viewing, good taste, camera strength, source truth or listening quality; inspect real frames and clips.'}
 
 def main():

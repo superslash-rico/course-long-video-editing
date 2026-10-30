@@ -55,6 +55,26 @@ try{
  await page.evaluate(()=>window.contentRoot.querySelector('[data-primary-id="ticket"]').closest('.course-paper').style.top=window.savedTicketTop);await page.screenshot({path:path.join(out,'regression-occlusion-after.png')});
  await render(10);const first=await page.screenshot();await render(2);await render(10);const second=await page.screenshot();checks.push({check:'out-of-order-seek',ok:first.equals(second)});
  const metrics=await page.evaluate(()=>[...window.contentRoot.querySelectorAll('.sheet-title,.sheet-body,.sheet-detail,.card-body')].map(n=>({text:n.textContent,rect:(r=>({x:r.x,y:r.y,width:r.width,height:r.height}))(n.getBoundingClientRect())})));fs.writeFileSync(path.join(out,'layout-metrics.json'),JSON.stringify(metrics,null,2));
+
+ // Synthetic document/pen geometry only: real course readability and native
+ // SourceDocument composition remain separate. Uses the shipped path generator.
+ await page.evaluate(async(base)=>{
+  window.activeComponent?.dispose();window.testHost.replaceChildren();
+  const ns='http://www.w3.org/2000/svg',paper=document.createElement('div');
+  Object.assign(paper.style,{position:'absolute',left:'350px',top:'120px',width:'1220px',height:'780px',background:'#FBF7FD',color:'#24182D',transform:'perspective(2400px) rotateY(-7deg)',transformOrigin:'50% 50%'});
+  paper.innerHTML='<div style="position:absolute;left:100px;top:60px;font:700 48px MiSans">自制教学笔迹测试 · 不是外部软件截图</div><div style="position:absolute;left:100px;top:190px;font:40px/2 MiSans">课程内容：从实际任务出发，安排步骤。<br>学习目标：核对条件，说明人工检查环节。</div><div style="position:absolute;left:100px;top:470px;font:36px MiSans">标记与文字在同一原件坐标平面移动。</div>';
+  const svg=document.createElementNS(ns,'svg');svg.setAttribute('viewBox','0 0 1220 780');Object.assign(svg.style,{position:'absolute',inset:'0',width:'100%',height:'100%'});paper.append(svg);window.testHost.append(paper);
+  const {handMarkLayers}=await import(base+'/assets/components/course-stage/hand-marks.js');
+  const marks=[{type:'highlight',rect:[90,200,925,58]},{type:'underline',rect:[480,280,540,80]},{type:'circle',rect:[80,455,980,90]},{type:'bracket',rect:[60,175,1040,200]},{type:'check',rect:[1050,420,105,105]}];
+  window.penPaths=[];for(const mark of marks)for(const q of handMarkLayers(mark,1220,780)){
+   const n=document.createElementNS(ns,'path');for(const[k,v]of Object.entries({d:q.d,fill:'none',stroke:q.color,'stroke-width':q.strokeWidth,'stroke-linecap':mark.type==='highlight'?'butt':'round','stroke-linejoin':'round',pathLength:1,'stroke-dasharray':1,opacity:q.opacity,transform:`translate(${q.offsetX??0} ${q.offsetY??0})`}))n.setAttribute(k,String(v));if(q.blend)n.style.mixBlendMode=q.blend;svg.append(n);window.penPaths.push(n);
+  }
+  window.renderPen=t=>{for(const n of window.penPaths)n.setAttribute('stroke-dashoffset',String(1-Math.max(0,Math.min(1,t))));};window.renderPen(0);
+ },base);
+ const penEmpty=await page.screenshot();await page.evaluate(()=>window.renderPen(.45));await page.screenshot({path:path.join(out,'pen-mid-stroke.png')});await page.evaluate(()=>window.renderPen(1));const penFull=await page.screenshot();await page.screenshot({path:path.join(out,'pen-complete.png')});
+ checks.push({check:'human-pen-marks-actually-reveal',ok:!penEmpty.equals(penFull)});
+ await page.evaluate(()=>window.renderPen(.45));const penBefore=await page.screenshot();await page.evaluate(()=>{window.renderPen(1);window.renderPen(0);window.renderPen(.45);});const penAfter=await page.screenshot();checks.push({check:'human-pen-out-of-order-seek',ok:penBefore.equals(penAfter)});
+ const markGeometry=await page.evaluate(()=>({paths:window.penPaths.length,invalid:window.penPaths.some(n=>!Number.isFinite(n.getTotalLength())||n.getTotalLength()<=0)}));checks.push({check:'source-local-pen-paths-decode',ok:markGeometry.paths===10&&!markGeometry.invalid});
  await load('assets/templates/identity-slash/speaker.html');await render(1.2);checks.push({check:'identity-default-mount',ok:await page.locator('.name').textContent()==='Rico'});
  await page.evaluate(()=>window.activeComponent.update({props:{name:'示范讲师',identity:'已确认身份',seconds:6}}));await render(2);checks.push({check:'identity-editable-copy',ok:await page.locator('.name').textContent()==='示范讲师'});await page.screenshot({path:path.join(out,'identity.png')});
  const q=JSON.parse(fs.readFileSync(path.join(skillRoot,'assets/templates/quote-highlight-follow/defaults.json'),'utf8'));await load('assets/templates/quote-highlight-follow/quote.html',q,5.2);await render(4.5);checks.push({check:'quote-exact-cues',ok:await page.locator('.q-hybrid').getAttribute('data-cue-status')==='exact'});await page.screenshot({path:path.join(out,'quote.png')});

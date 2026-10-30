@@ -1,27 +1,27 @@
 {
   "package": "course-long-video-editing",
-  "version": "1.6.2",
+  "version": "1.8.0",
   "files": [
     {
       "path": "CHANGELOG.md",
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 3095,
-      "sha256": "40061448db53626dc5c6f03bf0f76d0da452218328297def7cfef95d7dd7255b"
+      "bytes": 5033,
+      "sha256": "1e5f59db14048d7f78d845f3a763a7e31dd9a63311c2b065f916df547aae2c88"
     },
     {
       "path": "PACKAGE.json",
-      "bytes": 8665,
-      "sha256": "59813256ea46fbf06720072c08f8c7a7f50833a20fe8e9f24575c837ea5aee02",
+      "bytes": 10939,
+      "sha256": "95570b00ecc54af2018a6edb77a17197bf31db5259354afdcacd05e0fc4d2c97",
       "role": "supporting code/data",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "SKILL.md",
-      "bytes": 7051,
-      "sha256": "7056616b1e03dd465e18c4d9857758d97999ea6d53ed442d9d32804c5b8a2502",
+      "bytes": 8638,
+      "sha256": "3a1fad61d0d845b721de01d5040996c8ed8fa52c61becc715b3ec095074035e2",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -36,8 +36,8 @@
     },
     {
       "path": "agents/openai.yaml",
-      "bytes": 851,
-      "sha256": "3b8cfb9d5d81403beb2260f329e79afb231041a2c9239ea2438a4b8c4ba2a3cb",
+      "bytes": 521,
+      "sha256": "adef399d590b93e33261ec9f19b12962225c0aa0cdf46ba82d90081ed768bf46",
       "role": "supporting code/data",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -155,6 +155,14 @@
       "sha256": "1b3cfdbab0e15693bc5bf2f442c6f57395251aaca8778213249f7568a6556ba0"
     },
     {
+      "path": "assets/components/course-stage/hand-marks.js",
+      "role": "deterministic source-local pen mechanism",
+      "rights": "Self-authored generalized workflow resource; no course media, accounts, customer data or project bindings",
+      "status": "current confirmed requirement and locally tested implementation; native aesthetic review remains per lesson",
+      "bytes": 2422,
+      "sha256": "35e4dcc16535c0ba0669e9cdc0f0e3f617e613416308ac937fb8049ad4804111"
+    },
+    {
       "path": "assets/components/course-stage/index.html",
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
@@ -191,8 +199,8 @@
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 1609,
-      "sha256": "c51bbfb968569ca57e9dc2d33977c79888c0d28c185b33045f109804522af9b2"
+      "bytes": 1934,
+      "sha256": "6887ccca3104ca48939bc7b65f796bd979815851a4ab62af276074328b2fb783"
     },
     {
       "path": "assets/components/course-stage/scene.css",
@@ -239,16 +247,16 @@
       "role": "Reusable source annotation component",
       "rights": "Project-authored reusable implementation; no course account or native project dependency",
       "status": "Scoped local testing; not automatic aesthetic approval or proof of real viewing",
-      "bytes": 2151,
-      "sha256": "9d8abda5da0f539d67c6c3be46866ccfc921f18f8e6b5a9da3346edaad91bd7c"
+      "bytes": 1555,
+      "sha256": "0eab8a39c92d7a07f7ec002ebf82a4b0e31f24f2c2d353927527745510bbf65c"
     },
     {
       "path": "assets/components/course-stage/stage.tsx",
       "role": "Self-authored reusable visual engineering component or default adapter",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
-      "bytes": 3906,
-      "sha256": "561c792caddf7758f9bdc85cc9348183e215125ff5ecc7c884be57942d7b1508"
+      "bytes": 3929,
+      "sha256": "acde4b2486bdeebe7fa1ccbcfcf5177a7980984bc8e2ec82acb1020b0eb925db"
     },
     {
       "path": "assets/components/course-stage/surface.js",
@@ -256,7 +264,7 @@
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Native/browser scoped component tests; new content and receiver adaptation required",
       "bytes": 2612,
-      "sha256": "29a77a735e6b38ea20781fec136c2329dee15e86966158d0c5d746097bf447c2"
+      "sha256": "23a3d7a17738f3b5d65d48bbb69487e0dab848f5c045a7c832a423b123b12a7a"
     },
     {
       "path": "assets/components/presenter-circle/defaults.js",
@@ -843,9 +851,17 @@
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
+      "path": "assets/records/material-plan-template.json",
+      "role": "Empty portable material-plan schema template",
+      "rights": "Self-authored generalized workflow resource; no project media, credentials, source URLs with access tokens or private course bindings",
+      "status": "Validated for stated local/synthetic scope in iteration-v1.8.0; actual lesson aesthetics require current review",
+      "bytes": 1115,
+      "sha256": "0710b0e7762cae17b3dd7bff0dd7969f5fb2932ab15bb2b6fade82deae0a040b"
+    },
+    {
       "path": "assets/records/project-intake-template.json",
-      "bytes": 3145,
-      "sha256": "26da513e92f8470e0d3ec08fc3b249fb4e77af64da1a7f7a97c75749e381acab",
+      "bytes": 3825,
+      "sha256": "72ee0846ec8540acf73c3ca1ab032e4bdff23eb83556b9b55986052c4f1622a1",
       "role": "supporting code/data",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -860,8 +876,8 @@
     },
     {
       "path": "assets/records/scene-plan-template.json",
-      "bytes": 2214,
-      "sha256": "25814594f6b077d1177986b82fc1f6993b25bd46178ffcea9218ae2d01395433",
+      "bytes": 2772,
+      "sha256": "b08f1687e10b98561146a509791ad85c37d74f64d4491649c30987ea5dc15a50",
       "role": "supporting code/data",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -879,8 +895,8 @@
       "role": "per-project material ledger template",
       "rights": "Project-authored reusable course workflow resource",
       "status": "Empty template only; no captures or source clearance asserted",
-      "bytes": 1202,
-      "sha256": "343455bbbf3c199b300ea0cc468b19aa794c7dcd17ce4334821b0b6b472d2723"
+      "bytes": 1440,
+      "sha256": "d08567e087affaab322b96a38a78101342e68e3e1b343e5979415ad4d381712c"
     },
     {
       "path": "assets/records/whole-first-portability.json",
@@ -1020,24 +1036,24 @@
     },
     {
       "path": "references/animation-production.md",
-      "bytes": 6134,
-      "sha256": "b976a3311ca524063f40dee48cd7560ef6fdb1181c934179e9711f3ebe800985",
+      "bytes": 6900,
+      "sha256": "79d101be77bf1f1625d4519d1f9ffed43b10034031c00dfd4d7a6eecb2a21f06",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/brand-and-assets.md",
-      "bytes": 4002,
-      "sha256": "32c23261e9c0b9551e3dfa31d338360cd20d5a8e5d40aed2bc38488f0754e480",
+      "bytes": 4041,
+      "sha256": "2e217e6ebe55af001ab8a2a6871ad39b985734dfa8af5d20a73951c698254ac0",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/branding-intro-outro-transitions.md",
-      "bytes": 3440,
-      "sha256": "b22d8cc6afa8ac4686430b348b13c7cd740a1370359fb2f95fecf18f3691f8c1",
+      "bytes": 3726,
+      "sha256": "fbf7f8dc99ec6a613ed0bb058c46740bca0a648a4a6db5b126356320795a224f",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -1047,8 +1063,8 @@
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 8549,
-      "sha256": "2ea2121b8b775f9896dd584b3535ce85326553db63b769e7994bf3f4a26f6752"
+      "bytes": 9012,
+      "sha256": "e43eddffbe087dd4e776ed6c1f9204d00505d8e3c85ae7e3f17ea5e7450ec811"
     },
     {
       "path": "references/colleague-pilot.md",
@@ -1084,51 +1100,67 @@
     },
     {
       "path": "references/example-guide.md",
-      "bytes": 4230,
-      "sha256": "14db07db61a8fc496238827a8ff8e4c15e5a7b30fb14deedeb44f00f2ca6188d",
+      "bytes": 4446,
+      "sha256": "cc08b88a4f699de8ab239d0ff23e667228827333cc868426ef47ded09843231f",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/failure-patterns.md",
-      "bytes": 15317,
-      "sha256": "a5d2179647c2fed8eabc0b2f6610ff3b63ace4103780e47b4556d020eb36acdc",
+      "bytes": 15350,
+      "sha256": "fbffefc7a26106a22fcd27b77ce90b5388de5bc737c8220ed8541a945de2a176",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/identity-and-quotes.md",
-      "bytes": 17402,
-      "sha256": "e6a8abf8b456a5915542dfc6dc060856c58c57db63ffc2fc8785783ca9a3766e",
+      "bytes": 17438,
+      "sha256": "b6ce35d7a5ee30f494aa697519ab79df345164bad68775bf48df608f32a4a854",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/intake-and-rough-cut.md",
-      "bytes": 5281,
-      "sha256": "3ed5c9ebf405aa9640e226b6a66ea2f451ce42e1ab15dc73d79e8a4f869f2d32",
+      "bytes": 5323,
+      "sha256": "c358b23ce2c1443d7863717d85f4bb88b94a7bda449a0878cbe3212fd18a793a",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/learning-and-skill-maintenance.md",
-      "bytes": 7305,
-      "sha256": "4a17a88f23caad1cda7f1cd57a907de9a343de0ec69d1613a80e17d692d8cbbf",
+      "bytes": 7634,
+      "sha256": "ce8f1824ea5bf70b88bf27835c4c0eaafde6e61808185a8fb4b4556ca8b72577",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
+    },
+    {
+      "path": "references/lesson-overview.md",
+      "role": "workflow reference",
+      "rights": "Self-authored generalized workflow resource; no course media, accounts, customer data or project bindings",
+      "status": "current confirmed requirement and locally tested implementation; native aesthetic review remains per lesson",
+      "bytes": 3913,
+      "sha256": "dd42a6403db1aa275f5cc84fc65370f5da9365b6c14d5c2e78d35e8eda0bc69d"
+    },
+    {
+      "path": "references/lesson-visual-standard.md",
+      "role": "workflow reference",
+      "rights": "Self-authored generalized workflow resource; no course media, accounts, customer data or project bindings",
+      "status": "current confirmed requirement and locally tested implementation; native aesthetic review remains per lesson",
+      "bytes": 8021,
+      "sha256": "4fcc3d0f2d80c6dcefe069381262de6d9b2a218d40c073259e0611248e38ae98"
     },
     {
       "path": "references/material-research-and-capture.md",
       "role": "workflow/reference",
       "rights": "Project-authored reusable course workflow resource",
       "status": "Portable guidance; apply and verify with actual new course",
-      "bytes": 8068,
-      "sha256": "6bf1e2e74c337222799225fdce896d6cb0278e70453e616fd7497b490cec562f"
+      "bytes": 12967,
+      "sha256": "e8d195b6a5efd6eb639556fa741de41673ee3b8522e60ab91be838295eeb87c4"
     },
     {
       "path": "references/partial-inputs-and-design-previews.md",
@@ -1143,8 +1175,8 @@
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 4023,
-      "sha256": "adb9e4d3d8e55be367fe6f725616e3f7f967501c2178a52f5231fb0f6419e3a3"
+      "bytes": 4177,
+      "sha256": "b51ff9ccae6411df9438d9858d51fd038718b2d0db91bc8801b870341850eab6"
     },
     {
       "path": "references/project-start-and-file-management.md",
@@ -1156,16 +1188,16 @@
     },
     {
       "path": "references/provenance-and-validation.md",
-      "bytes": 2550,
-      "sha256": "bd0362db23b2f546a65a024055f0b4557a42a3d2edfbf47bff0bdffbcdfc1aca",
+      "bytes": 2645,
+      "sha256": "c3abb85a6096818089b821692521dfe6fbb082c0d1b5895395207d1d1ea06a61",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/quality-and-handoff.md",
-      "bytes": 7875,
-      "sha256": "6956d98c9fb655ab62234c0f27396880dcf5e7bf2206b414907cc56608841f93",
+      "bytes": 8197,
+      "sha256": "760351fbc99c6e7463a2b4351f315b9a09e333cc00bfaf19d38b9b0bdd18a488",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -1191,8 +1223,8 @@
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 6336,
-      "sha256": "7c126406bfb5eb4cc74f18face5d05d1cc48c7a32ff93e531cb334088057f1aa"
+      "bytes": 6913,
+      "sha256": "e7e6133e33f47d68b7d2c13cce0127ccc77a7e720f4316f25e59223f52d273f2"
     },
     {
       "path": "references/runtime-and-binding.md",
@@ -1204,8 +1236,8 @@
     },
     {
       "path": "references/screen-tutorial.md",
-      "bytes": 5133,
-      "sha256": "afed6471bedebea8d410eb50ec34b29eeccb7fab8c382b4ea44e138360787004",
+      "bytes": 5172,
+      "sha256": "dda843015c349ce89729cfd6650395d4529cb59a52d81d07d84885234772afd4",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -1215,29 +1247,29 @@
       "role": "Reusable workflow documentation",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Updated for v1.4.0 and reviewed for scope",
-      "bytes": 2178,
-      "sha256": "6a58ca35dfcd3d4762dfab8060282d868f67fa985453ca04856929e9cecca64e"
+      "bytes": 2335,
+      "sha256": "f88c95100d47934d8077e544072ab9f088d1ed472778c9ace98333871bb95167"
     },
     {
       "path": "references/source-annotation-and-camera-acceptance.md",
       "role": "workflow/reference for authentic source annotation and applied camera verification",
       "rights": "Self-authored reusable workflow requirements for authorized course editing",
       "status": "User-confirmed requirements; implementation and aesthetic acceptance remain separately verified per course",
-      "bytes": 5560,
-      "sha256": "f068aa220340f75a96123ca862687d9b4eb7dc1e1a52e90f111c9a9e209fe651"
+      "bytes": 6032,
+      "sha256": "312852c468fef9f369cb6877646fb61ca5c2806b535c23868ca057f3026a92a7"
     },
     {
       "path": "references/subtitles.md",
-      "bytes": 11848,
-      "sha256": "c76bd7cd49da5268252cfc3d42ea94cf95217d4b91d3e33f6a463c8835b44ac9",
+      "bytes": 12060,
+      "sha256": "a4b468a635a7841552e2b700c1f596b6ab5eb23ff219134f3e4962732d319dda",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
       "path": "references/whole-first-design-and-camera.md",
-      "bytes": 18909,
-      "sha256": "94b5941610ab61fde84a177beb1c5ed419904b728f032402b78d8a21e2a1ad16",
+      "bytes": 19034,
+      "sha256": "330155be29746c2bfdc18a1057c5c28a8f3b4a28bc8f04eb72537f166099e1a8",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"
@@ -1315,6 +1347,22 @@
       "status": "portable resource; receiver native validation required where applicable"
     },
     {
+      "path": "scripts/lesson_standard.py",
+      "role": "evidence contract/helper regression",
+      "rights": "Self-authored generalized workflow resource; no course media, accounts, customer data or project bindings",
+      "status": "current confirmed requirement and locally tested implementation; native aesthetic review remains per lesson",
+      "bytes": 13044,
+      "sha256": "f61df7dcd47d5edf306bc000090d5a64bf51b4531769aca9006f6fc0e91e78ea"
+    },
+    {
+      "path": "scripts/material_priority.py",
+      "role": "Actual material-plan provenance and PNG alpha readiness gate",
+      "rights": "Self-authored generalized workflow resource; no project media, credentials, source URLs with access tokens or private course bindings",
+      "status": "Validated for stated local/synthetic scope in iteration-v1.8.0; actual lesson aesthetics require current review",
+      "bytes": 8442,
+      "sha256": "69fc67db2bc8cf9e2f5f9518ab203a5aeb756eed146a83c66b3491608d824c2e"
+    },
+    {
       "path": "scripts/measure_sound.py",
       "role": "Reusable workflow helper or meaningful regression",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
@@ -1363,6 +1411,30 @@
       "sha256": "f45d10cc7f70d2f6c274a1b9b1e42cf544770932f68d0fe9ab9b882c2b32cf6c"
     },
     {
+      "path": "scripts/test_hand_marks.mjs",
+      "role": "evidence contract/helper regression",
+      "rights": "Self-authored generalized workflow resource; no course media, accounts, customer data or project bindings",
+      "status": "current confirmed requirement and locally tested implementation; native aesthetic review remains per lesson",
+      "bytes": 1828,
+      "sha256": "094eadbac4e6ab04e841fc001e9649afa8cc5300ec3e89b6ad67852310d51f20"
+    },
+    {
+      "path": "scripts/test_lesson_standard.py",
+      "role": "evidence contract/helper regression",
+      "rights": "Self-authored generalized workflow resource; no course media, accounts, customer data or project bindings",
+      "status": "current confirmed requirement and locally tested implementation; native aesthetic review remains per lesson",
+      "bytes": 11613,
+      "sha256": "f2905e627101f0049d87e2261ed017986bf418453d0dbbc6f383e7dcb3d6df0b"
+    },
+    {
+      "path": "scripts/test_material_priority.py",
+      "role": "Synthetic positive/negative readiness regressions",
+      "rights": "Self-authored generalized workflow resource; no project media, credentials, source URLs with access tokens or private course bindings",
+      "status": "Validated for stated local/synthetic scope in iteration-v1.8.0; actual lesson aesthetics require current review",
+      "bytes": 4169,
+      "sha256": "9b26b0a5f53147dda7fec0089e05c41ea244d0c1d4e59a6a31f96e3c8c9ef982"
+    },
+    {
       "path": "scripts/test_source_credit.mjs",
       "role": "Reusable fixed screen-bottom-left source credit component or regression",
       "rights": "Project-authored reusable implementation; no project, account or author machine dependency",
@@ -1375,8 +1447,8 @@
       "role": "Stage routing, preview, evidence comparison or regression helper",
       "rights": "Project-authored reusable implementation; no course account or native project dependency",
       "status": "Scoped local testing; not automatic aesthetic approval or proof of real viewing",
-      "bytes": 10979,
-      "sha256": "ebc72095946a9a904407bc811ec39debb846e6093e91ac1821bea756f9e8be00"
+      "bytes": 15504,
+      "sha256": "97bbb7bbc5d031eda45ef1f93ac79a04c98098d2b56575d988f022464bf7f126"
     },
     {
       "path": "scripts/validate_covers.py",
@@ -1399,8 +1471,8 @@
       "role": "Reusable workflow helper or meaningful regression",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Local scoped tests recorded in validation/report.json",
-      "bytes": 10583,
-      "sha256": "d0748290f12974b687a2747ddd80cdf44cef045eb84f2faa4b7d629859957257"
+      "bytes": 13799,
+      "sha256": "bfc877c0060307e7a434fac378e7c430f1a144f6b22db514c20009feb09968ad"
     },
     {
       "path": "scripts/verify_package.py",
@@ -1415,8 +1487,8 @@
       "role": "Stage routing, preview, evidence comparison or regression helper",
       "rights": "Project-authored reusable implementation; no course account or native project dependency",
       "status": "Scoped local testing; not automatic aesthetic approval or proof of real viewing",
-      "bytes": 18130,
-      "sha256": "568c79d0e1b69213b51c10a17fd0854cea3245b2aec56bbc9165981932668f24"
+      "bytes": 20484,
+      "sha256": "91ac9dfc3ccd4ffe5a91a15904aa4ffa4282304cf6bf18685cd61c5b68a8bdf3"
     },
     {
       "path": "validation/20-point-audit.json",
@@ -1431,8 +1503,8 @@
       "role": "Sanitized scoped test report or synthetic fixture",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
       "status": "Scope and pending checks explicitly recorded",
-      "bytes": 6563,
-      "sha256": "acc901c3b38ed9ba78bfb315c084b2f31e1190cba60afd7047b1fbff79663e56"
+      "bytes": 6616,
+      "sha256": "2fcfb389b353cdca1236ce4f432372060f10a59cc9f5f6efb5907f61f3301e6d"
     },
     {
       "path": "validation/browser-tests.json",
@@ -1507,6 +1579,22 @@
       "sha256": "70947671be11d3754c5632582fd38d9868735e8dfdaf6f44327666bcbe744d2c"
     },
     {
+      "path": "validation/iteration-v1.7.0.json",
+      "role": "validation scope record",
+      "rights": "Self-authored generalized workflow resource; no course media, accounts, customer data or project bindings",
+      "status": "current confirmed requirement and locally tested implementation; native aesthetic review remains per lesson",
+      "bytes": 4504,
+      "sha256": "1dbb216e048ea0565ccd4f863cf33647354e0cda4156b09e8f939cf12d0ff2aa"
+    },
+    {
+      "path": "validation/iteration-v1.8.0.json",
+      "role": "Scoped validation and independent offline trial record",
+      "rights": "Self-authored generalized workflow resource; no project media, credentials, source URLs with access tokens or private course bindings",
+      "status": "Validated for stated local/synthetic scope in iteration-v1.8.0; actual lesson aesthetics require current review",
+      "bytes": 3109,
+      "sha256": "61ffb5315632e44b2e30a9b3631c588c430d3daf5f33b2d8837baa6b135569a7"
+    },
+    {
       "path": "validation/native-media.json",
       "role": "Sanitized scoped test report or synthetic fixture",
       "rights": "Self-authored workflow adaptation for user and authorized colleagues; original fonts/brand/upstream resources retain their own attached notices",
@@ -1548,8 +1636,8 @@
     },
     {
       "path": "开始使用.md",
-      "bytes": 4061,
-      "sha256": "9b1981db621b5c02348a9275425ff1e4dec685bc34f6357c4601f6cad936a6b7",
+      "bytes": 4833,
+      "sha256": "233a9070a03900e5eb7de821e2caea5b5c2eba609d00d09b6ede98bb28573114",
       "role": "workflow/reference",
       "rights": "Project-authored workflow resource for authorized course work and colleague testing",
       "status": "portable resource; receiver native validation required where applicable"

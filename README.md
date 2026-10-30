@@ -1,6 +1,6 @@
 # 课程长视频剪辑 Skill
 
-当前版本 **v1.6.2**。面向人像口播、录屏教学及混合课程，包含完整制作方法、默认组件、四段实际动态样片、原版MiSans与许可、学员资料模板及检查脚本。
+当前 `main` 版本 **v1.8.0**。面向人像口播、录屏教学及混合课程，包含完整制作方法、默认组件、四段实际动态样片、原版MiSans与许可、学员资料模板及检查脚本。
 
 ## 安装
 
@@ -8,20 +8,30 @@
 
 ```text
 请使用skill-installer安装完整课程剪辑技能：
-https://github.com/superslash-rico/course-long-video-editing/tree/v1.6.2/course-long-video-editing
+https://github.com/superslash-rico/course-long-video-editing/tree/main/course-long-video-editing
 已有旧版先核对本机改动并完整备份，再按随包安装器升级，不能覆盖自定义资料。
 ```
 
-也可下载[完整ZIP](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.6.2/course-long-video-editing-v1.6.2.zip)和[SHA256](https://github.com/superslash-rico/course-long-video-editing/releases/download/v1.6.2/course-long-video-editing-v1.6.2.sha256)。完整解压后按[开始使用](course-long-video-editing/开始使用.md)安装，保留相对目录。安装后下一轮或新会话读取实际目录的版本。
+安装后按[开始使用](course-long-video-editing/开始使用.md)核对实际版本与文件清单。指定历史版本时可从[Releases](https://github.com/superslash-rico/course-long-video-editing/releases)选择对应版本；当前新流程从上述main目录安装。
 
 ```sh
-git clone --branch v1.6.2 https://github.com/superslash-rico/course-long-video-editing.git
+git clone --branch main https://github.com/superslash-rico/course-long-video-editing.git
 cd course-long-video-editing
 python3 course-long-video-editing/scripts/verify_package.py
 python3 course-long-video-editing/scripts/install_skill.py
 ```
 
 已识别且未修改的旧包可显式使用`--upgrade --backup-root "备份目录"`。未知或改过的安装保留并检查合并，不覆盖整个Agent配置。
+
+## 先备素材，再设计MG
+
+1. 先理解真实课程与校对字幕，优先寻找相关真实视频、音频、照片、原图和软件功能截图，并复用已给材料。
+2. 真实材料不足时，用生图技能补帮助理解、美观精致的透明PNG；检查实际alpha、主体与光向。
+3. 最后使用代码表达准确文字、逻辑和关系。代码合成/相机本身不是第三级内容。
+
+素材统一进入MG呈现，按当前语音设计前景镜头、透视、前后深度、视差、视频时钟与阅读停留。概念段也先评估，真实与生成身份明确，来源固定左下；不以代码卡片代替可取得的真实对象。
+
+素材计划绑定当前审核记录，`material_priority.py`与`workflow_gate.py check`检查实际文件、透明PNG、来源与场景覆盖。详见[素材准备](course-long-video-editing/references/material-research-and-capture.md)。每课沿用用户首尾封面，片头后加入内容与学习目标页；完整课程默认轻量电子纯音乐并保护讲话。
 
 ## 先看实际样片，再制作新课
 
@@ -69,7 +79,7 @@ python3 course-long-video-editing/scripts/workflow_gate.py prepare --stage anima
 
 ## 验证与边界
 
-[验证报告](course-long-video-editing/validation/report.json)和[20项落实表](course-long-video-editing/validation/20-point-audit.md)保留分项范围。当前代码包含版本/证据门禁29项、既有合成保护46项、相机17项及来源布局检查。实际样片解码、原生位置与共享相机另有本机验证；独立新上下文试跑已检验样片路径的使用及未测状态的保留。
+[验证报告](course-long-video-editing/validation/report.json)和[20项落实表](course-long-video-editing/validation/20-point-audit.md)保留分项范围。当前代码覆盖阶段证据、素材/PNG、学习目标/音乐、既有合成保护、秒数相机、原件笔迹和来源布局的正反例；[1.8.0验证范围](course-long-video-editing/validation/iteration-v1.8.0.json)明确区分离线测试、安装与实际审美。实际样片解码、原生位置与共享相机另有本机验证；独立新上下文试跑已检验样片路径的使用及未测状态的保留。
 
 GitHub Actions核对资源/字体、相对依赖、保护规则、镜头、来源位置、阶段证据及隔离安装。它不代替真实新课的原声合成、连续观看/听审、用户审美或第二台电脑验收。旧中性工程示范保留技术研究用途，不能取代E01—E04作为当前效果参考。每一新课仍需实际代表段对照与全课检查。
 

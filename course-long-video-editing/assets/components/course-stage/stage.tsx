@@ -14,9 +14,9 @@ export function CourseBackground({camera,values={},id='course-background'}:any){
  </svg></AbsoluteFill>;
 }
 
-export function CameraStage({camera,children,x=755,y=540}:any){
- const {height}=useVideoConfig(),unit=height/1080;
- return <AbsoluteFill style={{zIndex:10,isolation:'isolate'}}><div style={{position:'absolute',inset:0,transform:`scale(${unit})`,transformOrigin:'0 0'}}><div style={{position:'absolute',left:x,top:y,width:1,height:1,perspective:2500,perspectiveOrigin:'0 0',transformStyle:'preserve-3d'}}><div style={{position:'absolute',width:1,height:1,transformOrigin:'0 0',transformStyle:'preserve-3d',transform:cameraTransform(camera)}}>{children}</div></div></div></AbsoluteFill>;
+export function CameraStage({camera,children,x,y}:any){
+ const {width,height}=useVideoConfig(),unit=height/1080,cx=x??width/(2*unit),cy=y??540;
+ return <AbsoluteFill style={{zIndex:10,isolation:'isolate'}}><div style={{position:'absolute',inset:0,transform:`scale(${unit})`,transformOrigin:'0 0'}}><div style={{position:'absolute',left:cx,top:cy,width:1,height:1,perspective:2500,perspectiveOrigin:'0 0',transformStyle:'preserve-3d'}}><div style={{position:'absolute',width:1,height:1,transformOrigin:'0 0',transformStyle:'preserve-3d',transform:cameraTransform(camera)}}>{children}</div></div></div></AbsoluteFill>;
 }
 
 export function OpaquePaper({children,x=0,y=0,z=0,width=600,height=500,rotation=0,tone=1,contentOpacity=1,reveal=1,paperColor='#FBF7FD',inkColor='#24182D'}:any){
@@ -24,4 +24,4 @@ export function OpaquePaper({children,x=0,y=0,z=0,width=600,height=500,rotation=
 }
 
 // Preferred root: the exact same camera drives the backdrop AND foreground.
-export function CourseWorld({camera,values={},children,x=755,y=540,id='course-world',sourceNote,sourceCreditOpacity=1}:any){return <AbsoluteFill><CourseBackground camera={camera} values={values} id={id}/><CameraStage camera={camera} x={x} y={y}>{children}</CameraStage><SourceCredit text={sourceNote??values.sourceNote} fontFamily={values.font} opacity={sourceCreditOpacity}/></AbsoluteFill>;}
+export function CourseWorld({camera,values={},children,x,y,id='course-world',sourceNote,sourceCreditOpacity=1}:any){return <AbsoluteFill><CourseBackground camera={camera} values={values} id={id}/><CameraStage camera={camera} x={x} y={y}>{children}</CameraStage><SourceCredit text={sourceNote??values.sourceNote} fontFamily={values.font} opacity={sourceCreditOpacity}/></AbsoluteFill>;}

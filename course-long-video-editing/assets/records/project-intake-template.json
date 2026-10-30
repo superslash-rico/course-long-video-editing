@@ -33,20 +33,43 @@
     },
     "transitions": [
       {
-        "boundary": "intro-to-course",
+        "boundary": "intro-to-lesson-overview",
         "status": "pending-source-review",
         "method": null,
         "finalInterval": null
       },
       {
-        "boundary": "course-to-outro",
+        "boundary": "lesson-overview-to-body",
+        "status": "pending-source-review",
+        "method": null,
+        "finalInterval": null
+      },
+      {
+        "boundary": "body-to-outro",
         "status": "pending-source-review",
         "method": null,
         "finalInterval": null
       }
     ],
     "automaticChapterPackaging": false,
-    "pendingAssets": []
+    "pendingAssets": [],
+    "lessonOverview": {
+      "required": true,
+      "status": "pending",
+      "purpose": "this-lesson-content-and-learning-objectives",
+      "defaultMaxSeconds": 10,
+      "defaultNarration": false,
+      "textFile": null,
+      "finalInterval": null
+    },
+    "backgroundMusic": {
+      "completeCourseDefault": true,
+      "status": "pending",
+      "style": "light-electronic-instrumental-without-lyrics",
+      "existingTrackChecked": false,
+      "rights": null,
+      "actualMixEvidence": null
+    }
   },
   "timing": {
     "sourceToContentMapping": [],

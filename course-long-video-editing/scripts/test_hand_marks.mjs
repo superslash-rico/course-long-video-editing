@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {handMarkLayers} from '../assets/components/course-stage/hand-marks.js';
+const checks=[];const check=(name,fn)=>{fn();checks.push({check:name,ok:true});};
+const mark={type:'highlight',rect:[110,220,450,48],seed:'this-source-line'};
+check('same-source-and-time-produce-identical-pen-geometry',()=>assert.deepEqual(handMarkLayers(mark,1200,1600),handMarkLayers(mark,1200,1600)));
+check('different-source-seed-does-not-copy-identical-pressure',()=>assert.notDeepEqual(handMarkLayers(mark,1200,1600),handMarkLayers({...mark,seed:'another-source-line'},1200,1600)));
+check('all-supported-pen-types-render-source-local-paths',()=>{for(const type of ['highlight','underline','circle','bracket','check','frame']){const layers=handMarkLayers({...mark,type},1200,1600);assert(layers.length);assert(layers.every(q=>q.d.startsWith('M')&&q.strokeWidth>0&&!q.d.includes('NaN')));}});
+check('highlight-keeps-text-translucently-readable',()=>assert(handMarkLayers(mark,1200,1600).every(q=>q.opacity<.4&&q.blend==='multiply')));
+check('mark-outside-source-is-refused',()=>assert.throws(()=>handMarkLayers({...mark,rect:[1100,220,450,48]},1200,1600)));
+check('wrong-source-size-is-refused',()=>assert.throws(()=>handMarkLayers(mark,0,1600)));
+check('invalid-pen-width-is-refused',()=>assert.throws(()=>handMarkLayers({...mark,type:'underline',stroke:-1},1200,1600)));
+check('unknown-mark-type-is-refused',()=>assert.throws(()=>handMarkLayers({...mark,type:'random'},1200,1600)));
+check('pixel-stroke-scales-with-document',()=>assert.equal(handMarkLayers({...mark,type:'underline'},1200,1600,.5)[0].strokeWidth,6));
+console.log(JSON.stringify({ok:true,checks,scope:'Pure geometry and deterministic-source-coordinate invariants; actual runtime/native strokes still require visual review.'},null,2));

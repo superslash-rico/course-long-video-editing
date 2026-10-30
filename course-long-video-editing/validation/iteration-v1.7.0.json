@@ -1,0 +1,88 @@
+{
+  "packageVersion": "1.7.0",
+  "date": "2026-10-29",
+  "status": "Confirmed persistent requirements implemented locally; no external publication",
+  "requirements": {
+    "everyLessonOverview": "this lesson content plus observable learning objectives, after intro before body; default <=10s typewriter/SFX, no new narration/presenter/extra footage",
+    "visualStandard": "full canvas, actual visible dot parallax, foreground spatial camera, purposeful cross-scene variety, large subject logos, real sources and authored renderable documents, human pen marks, adaptive live presenter",
+    "packagingMusic": "user original intro/outro, light electronic instrumental music by default for complete course, speech ducking/listening and source rights evidence",
+    "scope": "current user overrides, partial-stage boundaries, real recording/tutorial differentiation, original speech/caption protection, source notes and user aesthetic approval retained"
+  },
+  "checks": [
+    {
+      "script": "scripts/test_lesson_standard.py",
+      "ok": true,
+      "count": 30,
+      "scope": "Synthetic evidence/timing boundaries only; not real aesthetics, readability, playback or user approval."
+    },
+    {
+      "script": "scripts/test_workflow_gate.py",
+      "ok": true,
+      "count": 35,
+      "scope": "Synthetic filesystem/identity fixtures only. No real playback, visual taste, decoding or user approval claim."
+    },
+    {
+      "script": "scripts/selftest.py",
+      "ok": true,
+      "count": 46,
+      "scope": "Synthetic records and temporary filesystem. No aesthetic, actual transcript accuracy, listening, native rendering or second-computer claim."
+    },
+    {
+      "script": "scripts/test_hand_marks.mjs",
+      "ok": true,
+      "count": 9,
+      "scope": "Pure geometry and deterministic-source-coordinate invariants; actual runtime/native strokes still require visual review."
+    },
+    {
+      "script": "scripts/test_camera.mjs",
+      "ok": true,
+      "count": 17,
+      "scope": "Pure camera invariants and seconds/fps reconstruction. Does not establish native geometry or visual taste."
+    },
+    {
+      "script": "scripts/test_source_credit.mjs",
+      "ok": true,
+      "count": 9,
+      "scope": "Pure screen-space layout bounds and scaling. Actual native text, long-note wrapping and occlusion require visual review."
+    },
+    {
+      "script": "scripts/validate_runtime.mjs",
+      "ok": true,
+      "count": 15,
+      "scope": "Local Chromium layout/seek/input harness with bundled fonts; native rendering, human listening and physical colleague machines are separate.",
+      "visualFramesActuallyInspected": [
+        "stage-5_5",
+        "stage-21",
+        "pen-complete",
+        "pen-mid-stroke"
+      ]
+    },
+    {
+      "script": "official skill-creator quick_validate.py",
+      "ok": true,
+      "scope": "Actual frontmatter, name, description and unfinished scaffold checks; temporary isolated PyYAML dependency, no global environment change"
+    },
+    {
+      "script": "isolated install/upgrade trial",
+      "ok": true,
+      "count": 9,
+      "scope": "Cold installation from other cwd, new per-lesson tasks, refused incomplete evidence, recognized 1.6.2 backup upgrade, modified-install preservation; no independent model/native/second-machine claim"
+    },
+    {
+      "script": "scripts/verify_package.py",
+      "ok": true,
+      "scope": "202 files with 201 declared inventory entries before final report refresh; hashes, font inventory, local references, private-path/credential patterns and relative dependencies checked"
+    }
+  ],
+  "validationBoundaries": {
+    "localBrowser": "synthetic layouts and pen marks only; actual screenshots viewed at readable resolution",
+    "changedRemotionSourceDocument": "pure path tests plus synthetic SVG visual harness; receiving native composition review required",
+    "currentApprovedLesson": "left unchanged; this version does not retroactively approve or rewrite it",
+    "freshIndependentModelBehavior": "not-run; no subagent delegated in this session",
+    "nextRealLesson": "required native representative render, current speech/captions, all source instances and current user aesthetic review",
+    "secondPhysicalComputer": "not-run",
+    "newPublicMedia": "none; prior user-authorized reference media preserved"
+  },
+  "installation": "candidate validated before backup/installation; actual local file hash readback recorded separately",
+  "publication": "not-requested; no GitHub push/release"
+}

@@ -5,7 +5,7 @@
   "width": 1920,
   "height": 1080,
   "exampleDurationSeconds": 24,
-  "status": "confirmed-background-language; reusable engineering demonstration; new-complete-scene-aesthetic-review-pending",
+  "status": "confirmed-background-language; centered-world and human-pen offline-Chromium-checked; receiving native composition and current lesson aesthetic review required",
   "aspectPolicy": "16:9 design units; 1080p and 4K scaled placements; other aspect ratios require new layout",
   "purpose": "Reusable background, shared foreground camera transform, opaque objects and source-local annotations; content/camera routes must be authored for each lesson",
   "rights": "Self-authored adaptation for this workflow and authorized colleagues; no third-party lesson media",
@@ -29,7 +29,8 @@
     "package.json",
     "source-document.tsx",
     "source-credit.tsx",
-    "source-credit-layout.js"
+    "source-credit-layout.js",
+    "hand-marks.js"
   ],
   "preferredRoot": "CourseWorld",
   "sourceEvidenceComponent": "source-document.tsx / SourceDocument",
@@ -40,5 +41,7 @@
     "leftDesign1080": 24,
     "bottomDesign1080": 18,
     "cameraIndependent": true
-  }
+  },
+  "fullCanvasPolicy": "Centered default world, no fixed presenter gutter or interior clipping frame; actual reading-unit clearance required",
+  "annotationPolicy": "Deterministic human pen paths in source coordinates; legacy semantic UI frame supported"
 }

@@ -23,6 +23,8 @@ python3 scripts/create_scene.py --output "本课/工作文件/动画/新场景" 
 
 路径相对当前工作区，仅作调用示例。助手从已确认课程信息推导路径和内容，不把此命令变成要求用户填写的表单。`--kind remotion`选择TSX示例，`--kind background`选择纯背景。脚本拒绝覆盖已有目录或写入安装包，输出scene-record.json说明下一步。对专业场景，读取并重写shots/content/seconds后再导入；纯背景没有独立自动播放时钟。
 
+先按[三级素材顺序](material-research-and-capture.md)确定内容来源，再复用机制。代码卡只负责关系/标签，不代替真实对象。真实证据段优先使用SourceDocument，拟人标记由hand-marks.js确定性生成；此组件也可用于自制卡片上的实际内容。全画布舞台默认居中，不保留固定人像侧栏；点阵与主体相机共同驱动，最终是否可见须看当前实际合成。
+
 真实证据段优先使用SourceDocument；原件的src/sourceWidth/sourceHeight来自本课实际绑定。x/y是物件中心，width为设计坐标宽；marks使用源图像素rect及局部秒，父层CourseWorld实际包装所有主体。相机fz与物件z可用于不同深度的阅读落点，HTML/Remotion共享cameraTransform。
 
 SourceCredit统一固定来源说明在屏幕左下小字层。CourseWorld自动显示values.sourceNote；自定义根布局需把SourceCredit放在CameraStage外同级，不能再另画来源条。原件批注仍在SourceDocument内，二者采用不同坐标层。
@@ -35,7 +37,7 @@ SourceCredit统一固定来源说明在屏幕左下小字层。CourseWorld自动
 
 - [identity-slash](../assets/templates/identity-slash/resource.json)：固定A斜杠名签。Rico课程可延续已确认身份，其他讲师先从真实介绍确认；姓名可有、身份未知则留空。`seconds`等于当前实例时长，可由bind_instance.py生成。默认值支持无props挂载，但不能替代真实参数绑定检查。
 - [quote-highlight-follow](../assets/templates/quote-highlight-follow/resource.json)：C大字+B荧光+D跟读与半透明暗场。新增文字区X/Y/宽、行距、未读透明度和暗场中心/半径控制，均为组件自然画布坐标；结合原片移动人像和字幕选位。每条重建真实词级cues，不能用示范节奏冒充口播。完整字形/行首/条件/退场逐句核对。
-- [presenter-circle](../assets/components/presenter-circle/resource.json)：处理当前真实输入的圆窗；路线不是人脸自动追踪。正数示范时长只兼容未绑定验证；实际落位由bind_instance.py按帧数/fps显式写入seconds，不依赖隐式宿主时长；长连续动画可共用副本，最后才还原。副本源声音和重复字幕均关闭。媒体sourceIn/rate/时间偏移取当前切段，不从片头重新播。
+- [presenter-circle](../assets/components/presenter-circle/resource.json)：处理当前真实输入的圆窗；路线不是人脸自动追踪；默认起终点仅为技术示例，本课必须按实际阅读单位重写路线/分段，不能固定一角或机械循环四角。正数示范时长只兼容未绑定验证；实际落位由bind_instance.py按帧数/fps显式写入seconds，不依赖隐式宿主时长；长连续动画可共用副本，最后才还原。副本源声音和重复字幕均关闭。媒体sourceIn/rate/时间偏移取当前切段，不从片头重新播。
 
 ## 声音
 
